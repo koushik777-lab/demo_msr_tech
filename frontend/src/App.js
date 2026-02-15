@@ -1,52 +1,56 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useEffect } from "react";
+import "./App.css";
+import { Toaster } from "./components/ui/sonner";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
+function App() {
   useEffect(() => {
-    helloWorldApi();
+    // Add smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+    
+    // Magnetic button effect
+    const magneticButtons = document.querySelectorAll('.magnetic-btn');
+    
+    magneticButtons.forEach(button => {
+      button.addEventListener('mousemove', (e) => {
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+      });
+      
+      button.addEventListener('mouseleave', () => {
+        button.style.transform = 'translate(0, 0)';
+      });
+    });
+    
+    return () => {
+      magneticButtons.forEach(button => {
+        button.removeEventListener('mousemove', () => {});
+        button.removeEventListener('mouseleave', () => {});
+      });
+    };
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
-
-function App() {
-  return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Toaster position="top-right" />
+      <Header />
+      <Hero />
+      <Services />
+      <Portfolio />
+      <WhyChooseUs />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
