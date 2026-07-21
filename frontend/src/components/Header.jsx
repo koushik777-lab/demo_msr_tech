@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import GlassSurface from './GlassSurface';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,89 +25,114 @@ const Header = () => {
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/25"
-      style={{ padding: '16px 7.6923%' }}
-    >
-      <div className="flex items-center justify-between h-12">
-        {/* Logo */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="cursor-pointer"
+    <>
+      <motion.div
+        initial={{ y: -100, x: "-50%" }}
+        animate={{ y: 0, x: "-50%" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="fixed top-6 left-1/2 z-50 w-[95%] max-w-5xl"
+      >
+        <GlassSurface
+          borderRadius={40}
+          borderWidth={0}
+          opacity={0.6}
+          brightness={105}
+          blur={20}
+          className="shadow-[0_20px_50px_rgba(0,0,0,0.5)] shadow-black/20 ring-1 ring-white/10"
+          style={{
+            boxShadow: `
+              0 20px 40px rgba(0,0,0,0.4),
+              inset 0 1px 0 0 rgba(255,255,255,0.3),
+              inset 0 0 0 1px rgba(255,255,255,0.05)
+            `
+          }}
         >
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--brand-primary)' }}>
-            MSRTECH
-          </h1>
-        </motion.div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link, index) => (
-            <motion.a
-              key={link.name}
-              href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="text-gray-400 hover:text-white transition-colors duration-300 text-lg font-medium"
+          <div className="flex items-center justify-between w-full px-6 py-3">
+            {/* Logo */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="cursor-pointer relative z-10"
             >
-              {link.name}
-            </motion.a>
-          ))}
-          <motion.a
-            href="#contact"
-            onClick={(e) => scrollToSection(e, '#contact')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn-primary magnetic-btn"
-          >
-            Get Started
-          </motion.a>
-        </nav>
+              <h1 className="text-xl font-bold tracking-tight bg-gradient-to-r from-white via-white/80 to-white/60 bg-clip-text text-transparent">
+                MSR  TECH  HUB
+                <span className="text-brand-primary ml-1.5">•</span>
+              </h1>
+            </motion.div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-1">
+              {navLinks.map((link, index) => (
+                <motion.a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => scrollToSection(e, link.href)}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 + index * 0.1 }}
+                  className="relative px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors duration-300 rounded-full hover:bg-white/5"
+                >
+                  {link.name}
+                </motion.a>
+              ))}
+            </nav>
 
-      {/* Mobile Menu */}
+            {/* CTA Button */}
+            <div className="hidden md:block">
+              <motion.a
+                href="#contact"
+                onClick={(e) => scrollToSection(e, '#contact')}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-5 py-2.5 text-sm font-medium bg-white text-black rounded-full hover:bg-gray-100 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+              >
+                Get Started
+              </motion.a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-white/90 p-2 hover:bg-white/10 rounded-full transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </GlassSurface>
+      </motion.div>
+
+      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden mt-4 pb-4"
+          initial={{ opacity: 0, scale: 0.9, y: -20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.9, y: -20 }}
+          className="fixed top-24 left-4 right-4 z-40"
         >
-          <nav className="flex flex-col gap-4">
-            {navLinks.map((link) => (
+          <GlassSurface borderRadius={24} opacity={0.8} blur={30}>
+            <nav className="flex flex-col gap-2 p-4 w-full">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => scrollToSection(e, link.href)}
+                  className="text-center py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all font-medium text-lg"
+                >
+                  {link.name}
+                </a>
+              ))}
               <a
-                key={link.name}
-                href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
-                className="text-gray-400 hover:text-white transition-colors duration-300 text-lg"
+                href="#contact"
+                onClick={(e) => scrollToSection(e, '#contact')}
+                className="mt-2 py-3 text-center bg-white text-black font-semibold rounded-xl"
               >
-                {link.name}
+                Get Started
               </a>
-            ))}
-            <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, '#contact')}
-              className="btn-primary w-full text-center"
-            >
-              Get Started
-            </a>
-          </nav>
+            </nav>
+          </GlassSurface>
         </motion.div>
       )}
-    </motion.header>
+    </>
   );
 };
 

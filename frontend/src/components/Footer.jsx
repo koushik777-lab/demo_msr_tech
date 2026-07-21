@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -101,9 +101,7 @@ const Footer = () => {
           <p className="body-small" style={{ color: 'var(--text-muted)' }}>
             © 2025 MSRTECH. All rights reserved.
           </p>
-          <p className="body-small flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
-            Made with <Heart size={16} fill="var(--brand-primary)" color="var(--brand-primary)" /> by MSRTECH Team
-          </p>
+
         </div>
       </div>
     </footer>

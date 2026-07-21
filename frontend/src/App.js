@@ -50,7 +50,7 @@ function App() {
       <WhyChooseUs />
       <Testimonials />
       <Contact />
-      <Footer />
+      <Footer /> 
     </div>
   );
 }

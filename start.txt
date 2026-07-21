@@ -1,0 +1,28 @@
+=========================================
+HOW TO START THE PROJECT
+=========================================
+
+PREREQUISITES:
+1. Ensure MongoDB is running locally on port 27017.
+   (It is currently active and running on your system!)
+
+-----------------------------------------
+1. START THE BACKEND (FastAPI / Python)
+-----------------------------------------
+Open a terminal and run:
+
+cd demo_msr_tech/backend
+source venv/bin/activate
+uvicorn server:app --reload
+
+The backend will start on http://127.0.0.1:8000
+
+-----------------------------------------
+2. START THE FRONTEND (React)
+-----------------------------------------
+Open a second terminal and run:
+
+cd demo_msr_tech/frontend
+npm run dev
+
+The frontend will start on http://localhost:3000

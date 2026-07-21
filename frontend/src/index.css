@@ -2,17 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import Google Fonts - Outfit for Premium Feel */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Kode+Mono:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Kode Mono', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #000000;
     color: #FFFFFF;
     overflow-x: hidden;
+}
+
+/* Premium Text Gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #b4b4b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-brand {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-active) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 code {
@@ -31,16 +46,16 @@ code {
     --bg-primary: #000000;
     --bg-secondary: #121212;
     --bg-overlay: rgba(255, 255, 255, 0.1);
-    
+
     /* Text - High Contrast for Dark Theme */
     --text-primary: #FFFFFF;
     --text-secondary: rgba(255, 255, 255, 0.85);
     --text-muted: #4D4D4D;
-    
+
     /* Borders - Subtle Dark Theme */
     --border-subtle: rgba(255, 255, 255, 0.25);
     --border-medium: rgba(255, 255, 255, 0.4);
-    
+
     /* MAIN ACCENT COLORS - Brand Colors Only */
     --brand-primary: #00FFD1;
     --brand-hover: rgba(0, 255, 209, 0.1);
@@ -78,7 +93,7 @@ html {
 
 /* Grid Pattern Overlay */
 .grid-pattern {
-    background-image: 
+    background-image:
         repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 7.6923%),
         repeating-linear-gradient(-90deg, transparent, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 7.6923%);
     background-size: 100% 100%;
@@ -134,6 +149,7 @@ html {
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
     }
+
     .dark {
         --background: 0 0% 3.9%;
         --foreground: 0 0% 98%;
@@ -166,6 +182,7 @@ html {
     * {
         @apply border-border;
     }
+
     body {
         @apply bg-background text-foreground;
     }
