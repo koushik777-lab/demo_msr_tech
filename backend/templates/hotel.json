@@ -1,0 +1,1406 @@
+{
+  "sector": "hotel",
+  "display_name": "Hotels & Hospitality",
+  "icon": "🏨",
+  "description": "Hotels, resorts, guesthouses & hospitality",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#0284c7",
+    "secondary": "#071d2b",
+    "accent": "#38bdf8",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#0284c7",
+      "secondary": "#071d2b",
+      "accent": "#38bdf8"
+    },
+    {
+      "id": "bold",
+      "primary": "#ea580c",
+      "secondary": "#111827",
+      "accent": "#fdba74"
+    },
+    {
+      "id": "classic",
+      "primary": "#15803d",
+      "secondary": "#0f172a",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#ec4899",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#0c4a6e",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+              "heading": "Experience Premium Luxury",
+              "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+              "cta_text": "Book a Room",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+              "heading": "Stunning Suites & Rooms",
+              "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+              "cta_text": "View Gallery",
+              "cta_link": "#gallery"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+              "heading": "Fine Dining & Wellness",
+              "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+              "cta_text": "Our Services",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Guest Services",
+          "subheading": "We offer premium facilities to make your stay unforgettable.",
+          "items": [
+            {
+              "icon": "Bed",
+              "title": "Luxury Accommodation",
+              "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+            },
+            {
+              "icon": "Utensils",
+              "title": "Fine Dining",
+              "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+            },
+            {
+              "icon": "Waves",
+              "title": "Infinity Pool",
+              "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+            },
+            {
+              "icon": "Flower",
+              "title": "Wellness Spa",
+              "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+            },
+            {
+              "icon": "UserCheck",
+              "title": "Concierge Service",
+              "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+            },
+            {
+              "icon": "Car",
+              "title": "Airport Transfers",
+              "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Team",
+          "members": [
+            {
+              "name": "Robert D'Souza",
+              "role": "General Manager",
+              "image": ""
+            },
+            {
+              "name": "Chef Marco Rossi",
+              "role": "Executive Chef",
+              "image": ""
+            },
+            {
+              "name": "Sarah Miller",
+              "role": "Guest Relations Head",
+              "image": ""
+            },
+            {
+              "name": "Dr. Elena Vance",
+              "role": "Spa & Wellness Director",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Guest Reviews",
+          "items": [
+            {
+              "name": "David W.",
+              "role": "Business Traveler",
+              "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+              "rating": 5
+            },
+            {
+              "name": "Clara J.",
+              "role": "Family Guest",
+              "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+              "rating": 5
+            },
+            {
+              "name": "Rajesh K.",
+              "role": "Couple Guest",
+              "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Frequently Asked Questions",
+          "items": [
+            {
+              "question": "What are the check-in and check-out times?",
+              "answer": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in or late check-out is subject to room availability."
+            },
+            {
+              "question": "Is breakfast included in the booking?",
+              "answer": "Yes, all bookings include a complementary buffet breakfast served in our main dining hall from 7:00 AM to 10:30 AM."
+            },
+            {
+              "question": "Do you have free Wi-Fi?",
+              "answer": "Yes, high-speed Wi-Fi is complimentary and accessible across the entire hotel premises and guest rooms."
+            },
+            {
+              "question": "What is your cancellation policy?",
+              "answer": "Cancellations made 24 hours prior to the check-in date are fully refundable. Terms may vary for special holiday bookings."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Reserve Your Stay",
+          "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Hotel",
+          "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact & Reservations",
+          "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "Experience Premium Luxury",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "Stunning Suites & Rooms",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "Fine Dining & Wellness",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Guest Services",
+            "subheading": "We offer premium facilities to make your stay unforgettable.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Team",
+            "members": [
+              {
+                "name": "Robert D'Souza",
+                "role": "General Manager",
+                "image": ""
+              },
+              {
+                "name": "Chef Marco Rossi",
+                "role": "Executive Chef",
+                "image": ""
+              },
+              {
+                "name": "Sarah Miller",
+                "role": "Guest Relations Head",
+                "image": ""
+              },
+              {
+                "name": "Dr. Elena Vance",
+                "role": "Spa & Wellness Director",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Guest Reviews",
+            "items": [
+              {
+                "name": "David W.",
+                "role": "Business Traveler",
+                "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+                "rating": 5
+              },
+              {
+                "name": "Clara J.",
+                "role": "Family Guest",
+                "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh K.",
+                "role": "Couple Guest",
+                "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What are the check-in and check-out times?",
+                "answer": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in or late check-out is subject to room availability."
+              },
+              {
+                "question": "Is breakfast included in the booking?",
+                "answer": "Yes, all bookings include a complementary buffet breakfast served in our main dining hall from 7:00 AM to 10:30 AM."
+              },
+              {
+                "question": "Do you have free Wi-Fi?",
+                "answer": "Yes, high-speed Wi-Fi is complimentary and accessible across the entire hotel premises and guest rooms."
+              },
+              {
+                "question": "What is your cancellation policy?",
+                "answer": "Cancellations made 24 hours prior to the check-in date are fully refundable. Terms may vary for special holiday bookings."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Stay",
+            "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "EXPERIENCE PREMIUM LUXURY",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "STUNNING SUITES & ROOMS",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "FINE DINING & WELLNESS",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR GUEST SERVICES",
+            "subheading": "WE OFFER PREMIUM FACILITIES TO MAKE YOUR STAY UNFORGETTABLE.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR TEAM",
+            "members": [
+              {
+                "name": "Robert D'Souza",
+                "role": "General Manager",
+                "image": ""
+              },
+              {
+                "name": "Chef Marco Rossi",
+                "role": "Executive Chef",
+                "image": ""
+              },
+              {
+                "name": "Sarah Miller",
+                "role": "Guest Relations Head",
+                "image": ""
+              },
+              {
+                "name": "Dr. Elena Vance",
+                "role": "Spa & Wellness Director",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "GUEST REVIEWS",
+            "items": [
+              {
+                "name": "David W.",
+                "role": "Business Traveler",
+                "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+                "rating": 5
+              },
+              {
+                "name": "Clara J.",
+                "role": "Family Guest",
+                "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh K.",
+                "role": "Couple Guest",
+                "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "FREQUENTLY ASKED QUESTIONS",
+            "items": [
+              {
+                "question": "What are the check-in and check-out times?",
+                "answer": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in or late check-out is subject to room availability."
+              },
+              {
+                "question": "Is breakfast included in the booking?",
+                "answer": "Yes, all bookings include a complementary buffet breakfast served in our main dining hall from 7:00 AM to 10:30 AM."
+              },
+              {
+                "question": "Do you have free Wi-Fi?",
+                "answer": "Yes, high-speed Wi-Fi is complimentary and accessible across the entire hotel premises and guest rooms."
+              },
+              {
+                "question": "What is your cancellation policy?",
+                "answer": "Cancellations made 24 hours prior to the check-in date are fully refundable. Terms may vary for special holiday bookings."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "RESERVE YOUR STAY",
+            "subheading": "SEND US YOUR RESERVATION REQUEST AND WE'LL CONFIRM ROOM AVAILABILITY SHORTLY."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "Experience Premium Luxury",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "Stunning Suites & Rooms",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "Fine Dining & Wellness",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What are the check-in and check-out times?",
+                "answer": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in or late check-out is subject to room availability."
+              },
+              {
+                "question": "Is breakfast included in the booking?",
+                "answer": "Yes, all bookings include a complementary buffet breakfast served in our main dining hall from 7:00 AM to 10:30 AM."
+              },
+              {
+                "question": "Do you have free Wi-Fi?",
+                "answer": "Yes, high-speed Wi-Fi is complimentary and accessible across the entire hotel premises and guest rooms."
+              },
+              {
+                "question": "What is your cancellation policy?",
+                "answer": "Cancellations made 24 hours prior to the check-in date are fully refundable. Terms may vary for special holiday bookings."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Guest Reviews",
+            "items": [
+              {
+                "name": "David W.",
+                "role": "Business Traveler",
+                "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+                "rating": 5
+              },
+              {
+                "name": "Clara J.",
+                "role": "Family Guest",
+                "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh K.",
+                "role": "Couple Guest",
+                "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Team",
+            "members": [
+              {
+                "name": "Robert D'Souza",
+                "role": "General Manager",
+                "image": ""
+              },
+              {
+                "name": "Chef Marco Rossi",
+                "role": "Executive Chef",
+                "image": ""
+              },
+              {
+                "name": "Sarah Miller",
+                "role": "Guest Relations Head",
+                "image": ""
+              },
+              {
+                "name": "Dr. Elena Vance",
+                "role": "Spa & Wellness Director",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Guest Services",
+            "subheading": "We offer premium facilities to make your stay unforgettable.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Stay",
+            "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "Experience Premium Luxury",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "Stunning Suites & Rooms",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "Fine Dining & Wellness",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Guest Services",
+            "subheading": "We offer premium facilities to make your stay unforgettable.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Team",
+            "members": [
+              {
+                "name": "Robert D'Souza",
+                "role": "General Manager",
+                "image": ""
+              },
+              {
+                "name": "Chef Marco Rossi",
+                "role": "Executive Chef",
+                "image": ""
+              },
+              {
+                "name": "Sarah Miller",
+                "role": "Guest Relations Head",
+                "image": ""
+              },
+              {
+                "name": "Dr. Elena Vance",
+                "role": "Spa & Wellness Director",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Guest Reviews",
+            "items": [
+              {
+                "name": "David W.",
+                "role": "Business Traveler",
+                "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+                "rating": 5
+              },
+              {
+                "name": "Clara J.",
+                "role": "Family Guest",
+                "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh K.",
+                "role": "Couple Guest",
+                "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Stay",
+            "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "Experience Premium Luxury",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "Stunning Suites & Rooms",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "Fine Dining & Wellness",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Guest Services",
+            "subheading": "We offer premium facilities to make your stay unforgettable.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Stay",
+            "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0c4a6e",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+                "heading": "🔥 Experience Premium Luxury",
+                "subheading": "Enjoy world-class hospitality, stunning ambient rooms, and scenic views at our luxury resort.",
+                "cta_text": "Book a Room",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200",
+                "heading": "🔥 Stunning Suites & Rooms",
+                "subheading": "Elegant suites equipped with smart automation, mini-bar, and high-speed complementary Wi-Fi.",
+                "cta_text": "View Gallery",
+                "cta_link": "#gallery"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+                "heading": "🔥 Fine Dining & Wellness",
+                "subheading": "Indulge in gourmet cuisines prepared by Michelin-star chefs and relax in our wellness spa.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Guest Services",
+            "subheading": "We offer premium facilities to make your stay unforgettable.",
+            "items": [
+              {
+                "icon": "Bed",
+                "title": "Luxury Accommodation",
+                "description": "Spacious rooms with posture-pedic beds, premium linens, and private balconies."
+              },
+              {
+                "icon": "Utensils",
+                "title": "Fine Dining",
+                "description": "Multi-cuisine restaurant and 24/7 in-room dining featuring organic ingredients."
+              },
+              {
+                "icon": "Waves",
+                "title": "Infinity Pool",
+                "description": "Temperature-controlled swimming pool with poolside lounge and mocktail bar."
+              },
+              {
+                "icon": "Flower",
+                "title": "Wellness Spa",
+                "description": "Relaxing aromatherapy, deep tissue massages, and sauna chambers."
+              },
+              {
+                "icon": "UserCheck",
+                "title": "Concierge Service",
+                "description": "Local tour guides, ticket booking, and round-the-clock help desk support."
+              },
+              {
+                "icon": "Car",
+                "title": "Airport Transfers",
+                "description": "Complementary private chauffeur pickup and drop-off services for suite guests."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Team",
+            "members": [
+              {
+                "name": "Robert D'Souza",
+                "role": "General Manager",
+                "image": ""
+              },
+              {
+                "name": "Chef Marco Rossi",
+                "role": "Executive Chef",
+                "image": ""
+              },
+              {
+                "name": "Sarah Miller",
+                "role": "Guest Relations Head",
+                "image": ""
+              },
+              {
+                "name": "Dr. Elena Vance",
+                "role": "Spa & Wellness Director",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Guest Reviews",
+            "items": [
+              {
+                "name": "David W.",
+                "role": "Business Traveler",
+                "text": "Outstanding service! The staff went above and beyond. Rooms were incredibly clean and quiet.",
+                "rating": 5
+              },
+              {
+                "name": "Clara J.",
+                "role": "Family Guest",
+                "text": "The infinity pool and kids zone are fantastic. Chef Marco's seafood pasta is to die for!",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh K.",
+                "role": "Couple Guest",
+                "text": "Perfect weekend getaway. The wellness spa session was so refreshing. Will definitely visit again.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What are the check-in and check-out times?",
+                "answer": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in or late check-out is subject to room availability."
+              },
+              {
+                "question": "Is breakfast included in the booking?",
+                "answer": "Yes, all bookings include a complementary buffet breakfast served in our main dining hall from 7:00 AM to 10:30 AM."
+              },
+              {
+                "question": "Do you have free Wi-Fi?",
+                "answer": "Yes, high-speed Wi-Fi is complimentary and accessible across the entire hotel premises and guest rooms."
+              },
+              {
+                "question": "What is your cancellation policy?",
+                "answer": "Cancellations made 24 hours prior to the check-in date are fully refundable. Terms may vary for special holiday bookings."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Stay",
+            "subheading": "Send us your reservation request and we'll confirm room availability shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Hotel",
+            "body": "Founded in 2016, our luxury hotel has been a beacon of premium hospitality and comfort. Nestled in a scenic locality, we blend contemporary design with warm, personalized service. With 120 premium rooms, a world-class restaurant, an infinity pool, and a fully equipped business center, we cater to vacationers, families, and business executives alike, ensuring every stay is comfortable and memorable."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "Get in touch with our help desk for bookings, event banquets, or corporate stays."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

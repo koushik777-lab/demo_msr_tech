@@ -1,12 +1,22 @@
 .text-rotate {
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
-    /* Prevent wrapping */
     white-space: pre;
-    /* Keep spaces */
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.text-rotate-inner {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .text-rotate-sr-only {

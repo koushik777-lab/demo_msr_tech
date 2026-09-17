@@ -1,0 +1,1395 @@
+{
+  "sector": "restaurant",
+  "display_name": "Restaurant & Food",
+  "icon": "🍽️",
+  "description": "Restaurants, cafés & food delivery",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#ea580c",
+    "secondary": "#111827",
+    "accent": "#fdba74",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#ea580c",
+      "secondary": "#111827",
+      "accent": "#fdba74"
+    },
+    {
+      "id": "bold",
+      "primary": "#dc2626",
+      "secondary": "#0f172a",
+      "accent": "#fca5a5"
+    },
+    {
+      "id": "classic",
+      "primary": "#b91c1c",
+      "secondary": "#1a0f0f",
+      "accent": "#f87171"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#d946ef",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1C1917",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+              "heading": "Flavours That Tell a Story",
+              "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+              "cta_text": "Reserve a Table",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+              "heading": "Cosy Dining Atmosphere",
+              "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+              "cta_text": "Explore Menu",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+              "heading": "Masterfully Prepared Dishes",
+              "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+              "cta_text": "Order Online",
+              "cta_link": "#contact"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Menu Highlights",
+          "subheading": "A curated selection of our most loved dishes.",
+          "items": [
+            {
+              "icon": "Utensils",
+              "title": "Fresh Salads",
+              "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+            },
+            {
+              "icon": "Flame",
+              "title": "Signature Curries",
+              "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+            },
+            {
+              "icon": "Pizza",
+              "title": "Wood-Fired Pizzas",
+              "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+            },
+            {
+              "icon": "Flame",
+              "title": "Grills & BBQ",
+              "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+            },
+            {
+              "icon": "Cake",
+              "title": "Artisan Desserts",
+              "description": "Handcrafted desserts made fresh daily by our pastry chef."
+            },
+            {
+              "icon": "Wine",
+              "title": "Curated Beverages",
+              "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "gallery-1",
+        "type": "gallery",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "A Feast for the Eyes",
+          "items": []
+        },
+        "styles": {}
+      },
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Our Kitchen, Our Story",
+          "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "What Our Guests Say",
+          "items": [
+            {
+              "name": "Arjun S.",
+              "role": "Regular Guest",
+              "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+              "rating": 5
+            },
+            {
+              "name": "Lakshmi P.",
+              "role": "Food Blogger",
+              "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+              "rating": 5
+            },
+            {
+              "name": "Vikram M.",
+              "role": "Corporate Client",
+              "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Reserve Your Table",
+          "subheading": "Book a table or place a catering order. We look forward to serving you."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-page-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Our Story",
+          "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Culinary Team",
+          "members": [
+            {
+              "name": "Chef Ravi Kumar",
+              "role": "Executive Chef & Founder",
+              "image": ""
+            },
+            {
+              "name": "Aisha Bakshi",
+              "role": "Pastry Chef",
+              "image": ""
+            },
+            {
+              "name": "Suresh Nair",
+              "role": "Head of Operations",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact & Reservations",
+          "subheading": "For reservations, catering inquiries, and feedback."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "Flavours That Tell a Story",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "Cosy Dining Atmosphere",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "Masterfully Prepared Dishes",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Menu Highlights",
+            "subheading": "A curated selection of our most loved dishes.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "A Feast for the Eyes",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Kitchen, Our Story",
+            "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "What Our Guests Say",
+            "items": [
+              {
+                "name": "Arjun S.",
+                "role": "Regular Guest",
+                "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+                "rating": 5
+              },
+              {
+                "name": "Lakshmi P.",
+                "role": "Food Blogger",
+                "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram M.",
+                "role": "Corporate Client",
+                "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Table",
+            "subheading": "Book a table or place a catering order. We look forward to serving you."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "FLAVOURS THAT TELL A STORY",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "COSY DINING ATMOSPHERE",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "MASTERFULLY PREPARED DISHES",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR MENU HIGHLIGHTS",
+            "subheading": "A CURATED SELECTION OF OUR MOST LOVED DISHES.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "A FEAST FOR THE EYES",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "OUR KITCHEN, OUR STORY",
+            "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "WHAT OUR GUESTS SAY",
+            "items": [
+              {
+                "name": "Arjun S.",
+                "role": "Regular Guest",
+                "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+                "rating": 5
+              },
+              {
+                "name": "Lakshmi P.",
+                "role": "Food Blogger",
+                "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram M.",
+                "role": "Corporate Client",
+                "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "RESERVE YOUR TABLE",
+            "subheading": "BOOK A TABLE OR PLACE A CATERING ORDER. WE LOOK FORWARD TO SERVING YOU."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "Flavours That Tell a Story",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "Cosy Dining Atmosphere",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "Masterfully Prepared Dishes",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "What Our Guests Say",
+            "items": [
+              {
+                "name": "Arjun S.",
+                "role": "Regular Guest",
+                "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+                "rating": 5
+              },
+              {
+                "name": "Lakshmi P.",
+                "role": "Food Blogger",
+                "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram M.",
+                "role": "Corporate Client",
+                "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Kitchen, Our Story",
+            "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "A Feast for the Eyes",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Menu Highlights",
+            "subheading": "A curated selection of our most loved dishes.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Table",
+            "subheading": "Book a table or place a catering order. We look forward to serving you."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "Flavours That Tell a Story",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "Cosy Dining Atmosphere",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "Masterfully Prepared Dishes",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Menu Highlights",
+            "subheading": "A curated selection of our most loved dishes.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "A Feast for the Eyes",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Kitchen, Our Story",
+            "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "What Our Guests Say",
+            "items": [
+              {
+                "name": "Arjun S.",
+                "role": "Regular Guest",
+                "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+                "rating": 5
+              },
+              {
+                "name": "Lakshmi P.",
+                "role": "Food Blogger",
+                "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram M.",
+                "role": "Corporate Client",
+                "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Table",
+            "subheading": "Book a table or place a catering order. We look forward to serving you."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "Flavours That Tell a Story",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "Cosy Dining Atmosphere",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "Masterfully Prepared Dishes",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Menu Highlights",
+            "subheading": "A curated selection of our most loved dishes.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Table",
+            "subheading": "Book a table or place a catering order. We look forward to serving you."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200",
+                "heading": "🔥 Flavours That Tell a Story",
+                "subheading": "Authentic cuisine crafted with love, using the freshest ingredients. Dine with us or order online.",
+                "cta_text": "Reserve a Table",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200",
+                "heading": "🔥 Cosy Dining Atmosphere",
+                "subheading": "Enjoy our curated interior dining spaces with friendly service and ambient music.",
+                "cta_text": "Explore Menu",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200",
+                "heading": "🔥 Masterfully Prepared Dishes",
+                "subheading": "Every plate is curated by our executive chefs using organic farm-to-table ingredients.",
+                "cta_text": "Order Online",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Menu Highlights",
+            "subheading": "A curated selection of our most loved dishes.",
+            "items": [
+              {
+                "icon": "Utensils",
+                "title": "Fresh Salads",
+                "description": "Farm-to-table salads with house-made dressings and seasonal ingredients."
+              },
+              {
+                "icon": "Flame",
+                "title": "Signature Curries",
+                "description": "Rich, aromatic curries slow-cooked with traditional spices and recipes."
+              },
+              {
+                "icon": "Pizza",
+                "title": "Wood-Fired Pizzas",
+                "description": "Hand-stretched dough topped with artisan ingredients, baked in our wood-fired oven."
+              },
+              {
+                "icon": "Flame",
+                "title": "Grills & BBQ",
+                "description": "Prime cuts marinated and grilled to perfection over live charcoal."
+              },
+              {
+                "icon": "Cake",
+                "title": "Artisan Desserts",
+                "description": "Handcrafted desserts made fresh daily by our pastry chef."
+              },
+              {
+                "icon": "Wine",
+                "title": "Curated Beverages",
+                "description": "Cocktails, mocktails, wines, and fresh juices to complement every meal."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "A Feast for the Eyes",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Kitchen, Our Story",
+            "body": "Founded by Chef Ravi Kumar, our restaurant brings together decades of culinary tradition with modern innovation. Every dish on our menu is a personal expression of our love for food — crafted with the finest local ingredients, time-honored recipes, and a passion for creating unforgettable dining experiences."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "What Our Guests Say",
+            "items": [
+              {
+                "name": "Arjun S.",
+                "role": "Regular Guest",
+                "text": "The biryani here is the best I've had in the city. The ambiance is perfect for family dinners too.",
+                "rating": 5
+              },
+              {
+                "name": "Lakshmi P.",
+                "role": "Food Blogger",
+                "text": "Every dish is a masterpiece. The presentation is stunning and the flavors are even better.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram M.",
+                "role": "Corporate Client",
+                "text": "We host all our client dinners here. Exceptional food, impeccable service, every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Reserve Your Table",
+            "subheading": "Book a table or place a catering order. We look forward to serving you."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Established in 2010, we've been delighting guests with authentic flavors and warm hospitality. Our kitchen runs on passion, quality ingredients, and recipes perfected over generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Culinary Team",
+            "members": [
+              {
+                "name": "Chef Ravi Kumar",
+                "role": "Executive Chef & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Bakshi",
+                "role": "Pastry Chef",
+                "image": ""
+              },
+              {
+                "name": "Suresh Nair",
+                "role": "Head of Operations",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Reservations",
+            "subheading": "For reservations, catering inquiries, and feedback."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

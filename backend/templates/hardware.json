@@ -1,0 +1,1140 @@
+{
+  "sector": "hardware",
+  "display_name": "Hardware Store",
+  "icon": "🔧",
+  "description": "Hardware stores & tool suppliers",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#dc2626",
+    "secondary": "#111827",
+    "accent": "#fca5a5",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#dc2626",
+      "secondary": "#111827",
+      "accent": "#fca5a5"
+    },
+    {
+      "id": "bold",
+      "primary": "#ea580c",
+      "secondary": "#0f172a",
+      "accent": "#fdba74"
+    },
+    {
+      "id": "classic",
+      "primary": "#2563eb",
+      "secondary": "#1e293b",
+      "accent": "#60a5fa"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#d946ef",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1C1917",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+              "heading": "Everything You Need to Build & Fix",
+              "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+              "cta_text": "Browse Products",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+              "heading": "Premium Professional Supplies",
+              "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+              "cta_text": "Our Catalog",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+              "heading": "Power & Precision Tools",
+              "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+              "cta_text": "View Power Tools",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Product Categories",
+          "subheading": "Thousands of products across every category.",
+          "items": [
+            {
+              "icon": "Hammer",
+              "title": "Hand Tools",
+              "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+            },
+            {
+              "icon": "Zap",
+              "title": "Power Tools",
+              "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+            },
+            {
+              "icon": "Wrench",
+              "title": "Fasteners & Fixings",
+              "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+            },
+            {
+              "icon": "Droplet",
+              "title": "Plumbing Supplies",
+              "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+            },
+            {
+              "icon": "Plug",
+              "title": "Electrical",
+              "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+            },
+            {
+              "icon": "Paintbrush",
+              "title": "Paints & Finishes",
+              "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Your Trusted Hardware Partner Since 1998",
+          "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "What Our Customers Say",
+          "items": [
+            {
+              "name": "Mohan R.",
+              "role": "Contractor",
+              "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+              "rating": 5
+            },
+            {
+              "name": "Sunita K.",
+              "role": "Homeowner",
+              "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+              "rating": 5
+            },
+            {
+              "name": "Ravi P.",
+              "role": "Electrician",
+              "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Get a Bulk Quote",
+          "subheading": "For large orders and contractor accounts, contact us for special pricing."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-page-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Our Story",
+          "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact Us",
+          "subheading": "Enquire about products, bulk orders, or store visits."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "Everything You Need to Build & Fix",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "Premium Professional Supplies",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "Power & Precision Tools",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Product Categories",
+            "subheading": "Thousands of products across every category.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Your Trusted Hardware Partner Since 1998",
+            "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Customers Say",
+            "items": [
+              {
+                "name": "Mohan R.",
+                "role": "Contractor",
+                "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+                "rating": 5
+              },
+              {
+                "name": "Sunita K.",
+                "role": "Homeowner",
+                "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+                "rating": 5
+              },
+              {
+                "name": "Ravi P.",
+                "role": "Electrician",
+                "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get a Bulk Quote",
+            "subheading": "For large orders and contractor accounts, contact us for special pricing."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "EVERYTHING YOU NEED TO BUILD & FIX",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "PREMIUM PROFESSIONAL SUPPLIES",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "POWER & PRECISION TOOLS",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "PRODUCT CATEGORIES",
+            "subheading": "THOUSANDS OF PRODUCTS ACROSS EVERY CATEGORY.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "YOUR TRUSTED HARDWARE PARTNER SINCE 1998",
+            "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "WHAT OUR CUSTOMERS SAY",
+            "items": [
+              {
+                "name": "Mohan R.",
+                "role": "Contractor",
+                "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+                "rating": 5
+              },
+              {
+                "name": "Sunita K.",
+                "role": "Homeowner",
+                "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+                "rating": 5
+              },
+              {
+                "name": "Ravi P.",
+                "role": "Electrician",
+                "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "GET A BULK QUOTE",
+            "subheading": "FOR LARGE ORDERS AND CONTRACTOR ACCOUNTS, CONTACT US FOR SPECIAL PRICING."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "Everything You Need to Build & Fix",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "Premium Professional Supplies",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "Power & Precision Tools",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "What Our Customers Say",
+            "items": [
+              {
+                "name": "Mohan R.",
+                "role": "Contractor",
+                "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+                "rating": 5
+              },
+              {
+                "name": "Sunita K.",
+                "role": "Homeowner",
+                "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+                "rating": 5
+              },
+              {
+                "name": "Ravi P.",
+                "role": "Electrician",
+                "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Your Trusted Hardware Partner Since 1998",
+            "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Product Categories",
+            "subheading": "Thousands of products across every category.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get a Bulk Quote",
+            "subheading": "For large orders and contractor accounts, contact us for special pricing."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "Everything You Need to Build & Fix",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "Premium Professional Supplies",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "Power & Precision Tools",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Product Categories",
+            "subheading": "Thousands of products across every category.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Your Trusted Hardware Partner Since 1998",
+            "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Customers Say",
+            "items": [
+              {
+                "name": "Mohan R.",
+                "role": "Contractor",
+                "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+                "rating": 5
+              },
+              {
+                "name": "Sunita K.",
+                "role": "Homeowner",
+                "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+                "rating": 5
+              },
+              {
+                "name": "Ravi P.",
+                "role": "Electrician",
+                "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get a Bulk Quote",
+            "subheading": "For large orders and contractor accounts, contact us for special pricing."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "Everything You Need to Build & Fix",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "Premium Professional Supplies",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "Power & Precision Tools",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Product Categories",
+            "subheading": "Thousands of products across every category.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Get a Bulk Quote",
+            "subheading": "For large orders and contractor accounts, contact us for special pricing."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200",
+                "heading": "🔥 Everything You Need to Build & Fix",
+                "subheading": "Quality tools, hardware, and building materials for professionals and DIY enthusiasts. Same-day delivery available.",
+                "cta_text": "Browse Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1530124560072-aae8002bd088?q=80&w=1200",
+                "heading": "🔥 Premium Professional Supplies",
+                "subheading": "A vast collection of industrial screws, fixtures, handtools, and electrical components.",
+                "cta_text": "Our Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200",
+                "heading": "🔥 Power & Precision Tools",
+                "subheading": "Top-tier drilling, cutting, and grinding machinery from trusted international brands.",
+                "cta_text": "View Power Tools",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Product Categories",
+            "subheading": "Thousands of products across every category.",
+            "items": [
+              {
+                "icon": "Hammer",
+                "title": "Hand Tools",
+                "description": "Hammers, screwdrivers, wrenches, pliers, and every hand tool for any job."
+              },
+              {
+                "icon": "Zap",
+                "title": "Power Tools",
+                "description": "Drills, grinders, saws, and professional-grade power tools from top brands."
+              },
+              {
+                "icon": "Wrench",
+                "title": "Fasteners & Fixings",
+                "description": "Screws, bolts, nuts, anchors, and specialized fasteners in bulk or retail packs."
+              },
+              {
+                "icon": "Droplet",
+                "title": "Plumbing Supplies",
+                "description": "Pipes, fittings, valves, and all plumbing materials for residential and commercial work."
+              },
+              {
+                "icon": "Plug",
+                "title": "Electrical",
+                "description": "Cables, switches, circuit breakers, and electrical components for every installation."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Paints & Finishes",
+                "description": "Interior, exterior, and specialty paints with mixing services available in-store."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Your Trusted Hardware Partner Since 1998",
+            "body": "For over 25 years, we've been the go-to destination for contractors, builders, and homeowners. We stock over 15,000 products from 200+ trusted brands, offer competitive pricing with bulk discounts, and provide expert advice to help you choose the right product for every job."
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Customers Say",
+            "items": [
+              {
+                "name": "Mohan R.",
+                "role": "Contractor",
+                "text": "Best prices in the market and the staff actually knows what they're talking about. My go-to store for all projects.",
+                "rating": 5
+              },
+              {
+                "name": "Sunita K.",
+                "role": "Homeowner",
+                "text": "Found everything I needed for my bathroom renovation in one place. Helpful staff and fast delivery.",
+                "rating": 5
+              },
+              {
+                "name": "Ravi P.",
+                "role": "Electrician",
+                "text": "Excellent stock of electrical supplies. They always have what I need, even the hard-to-find items.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get a Bulk Quote",
+            "subheading": "For large orders and contractor accounts, contact us for special pricing."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-page-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Started by a family of builders in 1998, we understand the needs of tradespeople and homeowners from the ground up. Our commitment to quality products, fair prices, and expert service has made us the most trusted hardware store in the region."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Us",
+            "subheading": "Enquire about products, bulk orders, or store visits."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1504 @@
+{
+  "sector": "construction",
+  "display_name": "Construction",
+  "icon": "🏗️",
+  "description": "Contractors, builders & renovation firms",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#ea580c",
+    "secondary": "#111827",
+    "accent": "#fdba74",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#ea580c",
+      "secondary": "#111827",
+      "accent": "#fdba74"
+    },
+    {
+      "id": "bold",
+      "primary": "#eab308",
+      "secondary": "#0f172a",
+      "accent": "#fde047"
+    },
+    {
+      "id": "classic",
+      "primary": "#2563eb",
+      "secondary": "#0f172a",
+      "accent": "#60a5fa"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#4b5563",
+      "secondary": "#111827",
+      "accent": "#9ca3af"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#c026d3",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1C2526",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+              "heading": "Building Your Vision, Brick by Brick",
+              "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+              "cta_text": "Get a Free Quote",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+              "heading": "Innovative Architectural Designs",
+              "subheading": "We partner with leading designers to build spaces that inspire and last.",
+              "cta_text": "View Projects",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+              "heading": "Quality Craftsmanship",
+              "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+              "cta_text": "Our Services",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Services",
+          "subheading": "From foundations to finishing, we handle it all.",
+          "items": [
+            {
+              "icon": "Building",
+              "title": "New Construction",
+              "description": "Full-service residential and commercial construction from groundbreaking to handover."
+            },
+            {
+              "icon": "Hammer",
+              "title": "Renovation & Remodeling",
+              "description": "Transform your existing space with our expert renovation and remodeling services."
+            },
+            {
+              "icon": "Home",
+              "title": "Roofing & Waterproofing",
+              "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+            },
+            {
+              "icon": "Zap",
+              "title": "MEP Services",
+              "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+            },
+            {
+              "icon": "Layers",
+              "title": "Masonry & Concrete",
+              "description": "High-quality masonry and concrete work for structures that stand the test of time."
+            },
+            {
+              "icon": "Paintbrush",
+              "title": "Interior Finishing",
+              "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "portfolio-1",
+        "type": "gallery",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Projects",
+          "items": []
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "What Our Clients Say",
+          "items": [
+            {
+              "name": "Rajesh Kumar",
+              "role": "Homeowner",
+              "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+              "rating": 5
+            },
+            {
+              "name": "Priya Sharma",
+              "role": "Business Owner",
+              "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+              "rating": 5
+            },
+            {
+              "name": "Amit Patel",
+              "role": "Property Developer",
+              "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Frequently Asked Questions",
+          "items": [
+            {
+              "question": "How long does a typical construction project take?",
+              "answer": "Project timelines vary based on scope and size. A typical residential construction takes 6–18 months. We provide detailed timelines during the initial consultation."
+            },
+            {
+              "question": "Do you handle permits and approvals?",
+              "answer": "Yes, we manage all necessary permits, approvals, and regulatory compliance on your behalf."
+            },
+            {
+              "question": "What is your payment structure?",
+              "answer": "We typically structure payments in milestones: 20% upfront, progress payments at key stages, and final payment upon completion."
+            },
+            {
+              "question": "Do you provide a warranty?",
+              "answer": "We provide a 1-year structural warranty and work closely with material suppliers for extended warranties on specific components."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Request a Free Quote",
+          "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Company",
+          "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Meet Our Team",
+          "members": [
+            {
+              "name": "Suresh Menon",
+              "role": "Chief Engineer & Founder",
+              "image": ""
+            },
+            {
+              "name": "Anita Desai",
+              "role": "Project Manager",
+              "image": ""
+            },
+            {
+              "name": "Ravi Nair",
+              "role": "Head of Architecture",
+              "image": ""
+            },
+            {
+              "name": "Deepa Singh",
+              "role": "Interior Design Lead",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Get in Touch",
+          "subheading": "Have a project in mind? Let's build something great together."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "Building Your Vision, Brick by Brick",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "Innovative Architectural Designs",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "Quality Craftsmanship",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "From foundations to finishing, we handle it all.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "portfolio-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Projects",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Clients Say",
+            "items": [
+              {
+                "name": "Rajesh Kumar",
+                "role": "Homeowner",
+                "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+                "rating": 5
+              },
+              {
+                "name": "Priya Sharma",
+                "role": "Business Owner",
+                "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+                "rating": 5
+              },
+              {
+                "name": "Amit Patel",
+                "role": "Property Developer",
+                "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How long does a typical construction project take?",
+                "answer": "Project timelines vary based on scope and size. A typical residential construction takes 6–18 months. We provide detailed timelines during the initial consultation."
+              },
+              {
+                "question": "Do you handle permits and approvals?",
+                "answer": "Yes, we manage all necessary permits, approvals, and regulatory compliance on your behalf."
+              },
+              {
+                "question": "What is your payment structure?",
+                "answer": "We typically structure payments in milestones: 20% upfront, progress payments at key stages, and final payment upon completion."
+              },
+              {
+                "question": "Do you provide a warranty?",
+                "answer": "We provide a 1-year structural warranty and work closely with material suppliers for extended warranties on specific components."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Request a Free Quote",
+            "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "BUILDING YOUR VISION, BRICK BY BRICK",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "INNOVATIVE ARCHITECTURAL DESIGNS",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "QUALITY CRAFTSMANSHIP",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR SERVICES",
+            "subheading": "FROM FOUNDATIONS TO FINISHING, WE HANDLE IT ALL.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "portfolio-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR PROJECTS",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "WHAT OUR CLIENTS SAY",
+            "items": [
+              {
+                "name": "Rajesh Kumar",
+                "role": "Homeowner",
+                "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+                "rating": 5
+              },
+              {
+                "name": "Priya Sharma",
+                "role": "Business Owner",
+                "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+                "rating": 5
+              },
+              {
+                "name": "Amit Patel",
+                "role": "Property Developer",
+                "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "FREQUENTLY ASKED QUESTIONS",
+            "items": [
+              {
+                "question": "How long does a typical construction project take?",
+                "answer": "Project timelines vary based on scope and size. A typical residential construction takes 6–18 months. We provide detailed timelines during the initial consultation."
+              },
+              {
+                "question": "Do you handle permits and approvals?",
+                "answer": "Yes, we manage all necessary permits, approvals, and regulatory compliance on your behalf."
+              },
+              {
+                "question": "What is your payment structure?",
+                "answer": "We typically structure payments in milestones: 20% upfront, progress payments at key stages, and final payment upon completion."
+              },
+              {
+                "question": "Do you provide a warranty?",
+                "answer": "We provide a 1-year structural warranty and work closely with material suppliers for extended warranties on specific components."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "REQUEST A FREE QUOTE",
+            "subheading": "TELL US ABOUT YOUR PROJECT AND WE'LL GET BACK TO YOU WITHIN 24 HOURS."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "Building Your Vision, Brick by Brick",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "Innovative Architectural Designs",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "Quality Craftsmanship",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How long does a typical construction project take?",
+                "answer": "Project timelines vary based on scope and size. A typical residential construction takes 6–18 months. We provide detailed timelines during the initial consultation."
+              },
+              {
+                "question": "Do you handle permits and approvals?",
+                "answer": "Yes, we manage all necessary permits, approvals, and regulatory compliance on your behalf."
+              },
+              {
+                "question": "What is your payment structure?",
+                "answer": "We typically structure payments in milestones: 20% upfront, progress payments at key stages, and final payment upon completion."
+              },
+              {
+                "question": "Do you provide a warranty?",
+                "answer": "We provide a 1-year structural warranty and work closely with material suppliers for extended warranties on specific components."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "What Our Clients Say",
+            "items": [
+              {
+                "name": "Rajesh Kumar",
+                "role": "Homeowner",
+                "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+                "rating": 5
+              },
+              {
+                "name": "Priya Sharma",
+                "role": "Business Owner",
+                "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+                "rating": 5
+              },
+              {
+                "name": "Amit Patel",
+                "role": "Property Developer",
+                "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "portfolio-1",
+          "type": "gallery",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Projects",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "From foundations to finishing, we handle it all.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Request a Free Quote",
+            "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "Building Your Vision, Brick by Brick",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "Innovative Architectural Designs",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "Quality Craftsmanship",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "From foundations to finishing, we handle it all.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "portfolio-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Projects",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Clients Say",
+            "items": [
+              {
+                "name": "Rajesh Kumar",
+                "role": "Homeowner",
+                "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+                "rating": 5
+              },
+              {
+                "name": "Priya Sharma",
+                "role": "Business Owner",
+                "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+                "rating": 5
+              },
+              {
+                "name": "Amit Patel",
+                "role": "Property Developer",
+                "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Request a Free Quote",
+            "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "Building Your Vision, Brick by Brick",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "Innovative Architectural Designs",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "Quality Craftsmanship",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "From foundations to finishing, we handle it all.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Request a Free Quote",
+            "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C2526",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+                "heading": "🔥 Building Your Vision, Brick by Brick",
+                "subheading": "Expert contractors delivering quality construction & renovation services across the region.",
+                "cta_text": "Get a Free Quote",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200",
+                "heading": "🔥 Innovative Architectural Designs",
+                "subheading": "We partner with leading designers to build spaces that inspire and last.",
+                "cta_text": "View Projects",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=1200",
+                "heading": "🔥 Quality Craftsmanship",
+                "subheading": "Dedicated to excellence, safety, and delivering on time, every time.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "From foundations to finishing, we handle it all.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "New Construction",
+                "description": "Full-service residential and commercial construction from groundbreaking to handover."
+              },
+              {
+                "icon": "Hammer",
+                "title": "Renovation & Remodeling",
+                "description": "Transform your existing space with our expert renovation and remodeling services."
+              },
+              {
+                "icon": "Home",
+                "title": "Roofing & Waterproofing",
+                "description": "Durable roofing solutions and waterproofing systems for lasting protection."
+              },
+              {
+                "icon": "Zap",
+                "title": "MEP Services",
+                "description": "Complete mechanical, electrical, and plumbing solutions for any project."
+              },
+              {
+                "icon": "Layers",
+                "title": "Masonry & Concrete",
+                "description": "High-quality masonry and concrete work for structures that stand the test of time."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Interior Finishing",
+                "description": "Premium interior finishing — flooring, painting, carpentry, and more."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "portfolio-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Projects",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Clients Say",
+            "items": [
+              {
+                "name": "Rajesh Kumar",
+                "role": "Homeowner",
+                "text": "Outstanding work! They built our dream home on time and within budget. Highly professional team.",
+                "rating": 5
+              },
+              {
+                "name": "Priya Sharma",
+                "role": "Business Owner",
+                "text": "Renovated our entire office building. The quality and attention to detail was exceptional.",
+                "rating": 5
+              },
+              {
+                "name": "Amit Patel",
+                "role": "Property Developer",
+                "text": "Reliable, skilled, and communicative. Will definitely use their services again for future projects.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How long does a typical construction project take?",
+                "answer": "Project timelines vary based on scope and size. A typical residential construction takes 6–18 months. We provide detailed timelines during the initial consultation."
+              },
+              {
+                "question": "Do you handle permits and approvals?",
+                "answer": "Yes, we manage all necessary permits, approvals, and regulatory compliance on your behalf."
+              },
+              {
+                "question": "What is your payment structure?",
+                "answer": "We typically structure payments in milestones: 20% upfront, progress payments at key stages, and final payment upon completion."
+              },
+              {
+                "question": "Do you provide a warranty?",
+                "answer": "We provide a 1-year structural warranty and work closely with material suppliers for extended warranties on specific components."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Request a Free Quote",
+            "subheading": "Tell us about your project and we'll get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Company",
+            "body": "With over 15 years of experience in the construction industry, we have built hundreds of homes, offices, and commercial spaces. Our team of licensed engineers, architects, and skilled tradespeople deliver projects with uncompromising quality and safety standards. We believe in transparent communication, fair pricing, and craftsmanship that lasts generations."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Team",
+            "members": [
+              {
+                "name": "Suresh Menon",
+                "role": "Chief Engineer & Founder",
+                "image": ""
+              },
+              {
+                "name": "Anita Desai",
+                "role": "Project Manager",
+                "image": ""
+              },
+              {
+                "name": "Ravi Nair",
+                "role": "Head of Architecture",
+                "image": ""
+              },
+              {
+                "name": "Deepa Singh",
+                "role": "Interior Design Lead",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Have a project in mind? Let's build something great together."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

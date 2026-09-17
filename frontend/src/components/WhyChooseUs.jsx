@@ -42,8 +42,7 @@ const WhyChooseUs = () => {
     <section
       id="why-us"
       ref={ref}
-      className="relative py-32 overflow-hidden"
-      style={{ background: '#000000', padding: '160px 7.6923%' }}
+      className="relative py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden" style={{ background: 'var(--bg-primary)' }}
     >
       {/* Grid Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
@@ -82,7 +81,7 @@ const WhyChooseUs = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {whyChooseUs.map((feature, index) => {
-            const IconComponent = iconMap[feature.icon];
+            const IconComponent = iconMap[feature.icon] || Sparkles;
             
             return (
               <motion.div
@@ -91,9 +90,9 @@ const WhyChooseUs = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-8 cursor-pointer group relative"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--bg-overlay)',
                   backdropFilter: 'blur(12px)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  border: '1px solid var(--border-subtle)',
                   transition: 'all 0.4s ease-in-out'
                 }}
               >
@@ -125,9 +124,9 @@ const WhyChooseUs = () => {
                 <div
                   className="absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm"
                   style={{
-                    background: 'rgba(0, 255, 209, 0.1)',
+                    background: 'var(--brand-hover)',
                     color: 'var(--brand-primary)',
-                    border: '1px solid rgba(0, 255, 209, 0.3)'
+                    border: '1px solid var(--border-subtle)'
                   }}
                 >
                   {String(index + 1).padStart(2, '0')}
@@ -144,8 +143,8 @@ const WhyChooseUs = () => {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="mt-20 text-center p-12 glass"
           style={{
-            background: 'rgba(0, 255, 209, 0.05)',
-            border: '1px solid rgba(0, 255, 209, 0.2)'
+            background: 'var(--brand-hover)',
+            border: '1px solid var(--border-subtle)'
           }}
         >
           <h3 className="display-medium mb-6">Ready to Elevate Your Digital Presence?</h3>
@@ -156,7 +155,7 @@ const WhyChooseUs = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary magnetic-btn"
           >
             Get Started Today

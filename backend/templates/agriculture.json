@@ -1,0 +1,1406 @@
+{
+  "sector": "agriculture",
+  "display_name": "Agriculture & Farming",
+  "icon": "🚜",
+  "description": "Farming, organic produce & agricultural services",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#16a34a",
+    "secondary": "#091a10",
+    "accent": "#86efac",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#16a34a",
+      "secondary": "#091a10",
+      "accent": "#86efac"
+    },
+    {
+      "id": "bold",
+      "primary": "#eab308",
+      "secondary": "#0f172a",
+      "accent": "#fef08a"
+    },
+    {
+      "id": "classic",
+      "primary": "#15803d",
+      "secondary": "#0b1c12",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#4b5563",
+      "secondary": "#111827",
+      "accent": "#9ca3af"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#d946ef",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#14532d",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+              "heading": "Sustainable Farming Solutions",
+              "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+              "cta_text": "Explore Services",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+              "heading": "Fresh Organic Produce",
+              "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+              "cta_text": "Our Products",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+              "heading": "Modern Agritech & Automation",
+              "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+              "cta_text": "Contact Us",
+              "cta_link": "#contact"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Services",
+          "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+          "items": [
+            {
+              "icon": "Sprout",
+              "title": "Seed Cultivation",
+              "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+            },
+            {
+              "icon": "Layers",
+              "title": "Soil Testing",
+              "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+            },
+            {
+              "icon": "Leaf",
+              "title": "Organic Fertilizers",
+              "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+            },
+            {
+              "icon": "Gauge",
+              "title": "Precision Farming",
+              "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+            },
+            {
+              "icon": "Thermometer",
+              "title": "Cold Storage",
+              "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+            },
+            {
+              "icon": "Truck",
+              "title": "Logistics & Supply",
+              "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Experts",
+          "members": [
+            {
+              "name": "Dr. Ramesh Patel",
+              "role": "Chief Agronomist",
+              "image": ""
+            },
+            {
+              "name": "Sanjay Sharma",
+              "role": "Soil Scientist",
+              "image": ""
+            },
+            {
+              "name": "Vikram Singh",
+              "role": "Agritech Engineer",
+              "image": ""
+            },
+            {
+              "name": "Ananya Roy",
+              "role": "Organic Farming Advisor",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Farmer Testimonials",
+          "items": [
+            {
+              "name": "Harish K.",
+              "role": "Wheat Farmer",
+              "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+              "rating": 5
+            },
+            {
+              "name": "Savita D.",
+              "role": "Horticulturist",
+              "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+              "rating": 5
+            },
+            {
+              "name": "Preeti S.",
+              "role": "Cooperative Manager",
+              "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Frequently Asked Questions",
+          "items": [
+            {
+              "question": "How do I request soil testing?",
+              "answer": "Simply fill out our contact form or visit our center. We will guide you on how to collect soil samples and send them to us."
+            },
+            {
+              "question": "Are your products certified organic?",
+              "answer": "Yes, our organic fertilizers and produce are fully certified by local and national organic farming authorities."
+            },
+            {
+              "question": "What is precision farming?",
+              "answer": "Precision farming uses technology like moisture sensors and GPS-guided equipment to ensure crops receive exactly what they need for optimal growth."
+            },
+            {
+              "question": "Do you offer bulk purchasing?",
+              "answer": "Yes, we offer custom bulk pricing for cooperative societies, farming communities, and commercial wholesale buyers."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Get in Touch",
+          "subheading": "Reach out to us for consulting, seed booking, or general queries."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Enterprise",
+          "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact & Consulting",
+          "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "Sustainable Farming Solutions",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "Fresh Organic Produce",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "Modern Agritech & Automation",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Experts",
+            "members": [
+              {
+                "name": "Dr. Ramesh Patel",
+                "role": "Chief Agronomist",
+                "image": ""
+              },
+              {
+                "name": "Sanjay Sharma",
+                "role": "Soil Scientist",
+                "image": ""
+              },
+              {
+                "name": "Vikram Singh",
+                "role": "Agritech Engineer",
+                "image": ""
+              },
+              {
+                "name": "Ananya Roy",
+                "role": "Organic Farming Advisor",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Farmer Testimonials",
+            "items": [
+              {
+                "name": "Harish K.",
+                "role": "Wheat Farmer",
+                "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+                "rating": 5
+              },
+              {
+                "name": "Savita D.",
+                "role": "Horticulturist",
+                "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+                "rating": 5
+              },
+              {
+                "name": "Preeti S.",
+                "role": "Cooperative Manager",
+                "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How do I request soil testing?",
+                "answer": "Simply fill out our contact form or visit our center. We will guide you on how to collect soil samples and send them to us."
+              },
+              {
+                "question": "Are your products certified organic?",
+                "answer": "Yes, our organic fertilizers and produce are fully certified by local and national organic farming authorities."
+              },
+              {
+                "question": "What is precision farming?",
+                "answer": "Precision farming uses technology like moisture sensors and GPS-guided equipment to ensure crops receive exactly what they need for optimal growth."
+              },
+              {
+                "question": "Do you offer bulk purchasing?",
+                "answer": "Yes, we offer custom bulk pricing for cooperative societies, farming communities, and commercial wholesale buyers."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Reach out to us for consulting, seed booking, or general queries."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "SUSTAINABLE FARMING SOLUTIONS",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "FRESH ORGANIC PRODUCE",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "MODERN AGRITECH & AUTOMATION",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR SERVICES",
+            "subheading": "WE PROVIDE END-TO-END SUPPORT FOR FARMERS AND AGRICULTURAL BUSINESSES.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR EXPERTS",
+            "members": [
+              {
+                "name": "Dr. Ramesh Patel",
+                "role": "Chief Agronomist",
+                "image": ""
+              },
+              {
+                "name": "Sanjay Sharma",
+                "role": "Soil Scientist",
+                "image": ""
+              },
+              {
+                "name": "Vikram Singh",
+                "role": "Agritech Engineer",
+                "image": ""
+              },
+              {
+                "name": "Ananya Roy",
+                "role": "Organic Farming Advisor",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "FARMER TESTIMONIALS",
+            "items": [
+              {
+                "name": "Harish K.",
+                "role": "Wheat Farmer",
+                "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+                "rating": 5
+              },
+              {
+                "name": "Savita D.",
+                "role": "Horticulturist",
+                "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+                "rating": 5
+              },
+              {
+                "name": "Preeti S.",
+                "role": "Cooperative Manager",
+                "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "FREQUENTLY ASKED QUESTIONS",
+            "items": [
+              {
+                "question": "How do I request soil testing?",
+                "answer": "Simply fill out our contact form or visit our center. We will guide you on how to collect soil samples and send them to us."
+              },
+              {
+                "question": "Are your products certified organic?",
+                "answer": "Yes, our organic fertilizers and produce are fully certified by local and national organic farming authorities."
+              },
+              {
+                "question": "What is precision farming?",
+                "answer": "Precision farming uses technology like moisture sensors and GPS-guided equipment to ensure crops receive exactly what they need for optimal growth."
+              },
+              {
+                "question": "Do you offer bulk purchasing?",
+                "answer": "Yes, we offer custom bulk pricing for cooperative societies, farming communities, and commercial wholesale buyers."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "GET IN TOUCH",
+            "subheading": "REACH OUT TO US FOR CONSULTING, SEED BOOKING, OR GENERAL QUERIES."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "Sustainable Farming Solutions",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "Fresh Organic Produce",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "Modern Agritech & Automation",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How do I request soil testing?",
+                "answer": "Simply fill out our contact form or visit our center. We will guide you on how to collect soil samples and send them to us."
+              },
+              {
+                "question": "Are your products certified organic?",
+                "answer": "Yes, our organic fertilizers and produce are fully certified by local and national organic farming authorities."
+              },
+              {
+                "question": "What is precision farming?",
+                "answer": "Precision farming uses technology like moisture sensors and GPS-guided equipment to ensure crops receive exactly what they need for optimal growth."
+              },
+              {
+                "question": "Do you offer bulk purchasing?",
+                "answer": "Yes, we offer custom bulk pricing for cooperative societies, farming communities, and commercial wholesale buyers."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Farmer Testimonials",
+            "items": [
+              {
+                "name": "Harish K.",
+                "role": "Wheat Farmer",
+                "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+                "rating": 5
+              },
+              {
+                "name": "Savita D.",
+                "role": "Horticulturist",
+                "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+                "rating": 5
+              },
+              {
+                "name": "Preeti S.",
+                "role": "Cooperative Manager",
+                "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Experts",
+            "members": [
+              {
+                "name": "Dr. Ramesh Patel",
+                "role": "Chief Agronomist",
+                "image": ""
+              },
+              {
+                "name": "Sanjay Sharma",
+                "role": "Soil Scientist",
+                "image": ""
+              },
+              {
+                "name": "Vikram Singh",
+                "role": "Agritech Engineer",
+                "image": ""
+              },
+              {
+                "name": "Ananya Roy",
+                "role": "Organic Farming Advisor",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Reach out to us for consulting, seed booking, or general queries."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "Sustainable Farming Solutions",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "Fresh Organic Produce",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "Modern Agritech & Automation",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Experts",
+            "members": [
+              {
+                "name": "Dr. Ramesh Patel",
+                "role": "Chief Agronomist",
+                "image": ""
+              },
+              {
+                "name": "Sanjay Sharma",
+                "role": "Soil Scientist",
+                "image": ""
+              },
+              {
+                "name": "Vikram Singh",
+                "role": "Agritech Engineer",
+                "image": ""
+              },
+              {
+                "name": "Ananya Roy",
+                "role": "Organic Farming Advisor",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Farmer Testimonials",
+            "items": [
+              {
+                "name": "Harish K.",
+                "role": "Wheat Farmer",
+                "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+                "rating": 5
+              },
+              {
+                "name": "Savita D.",
+                "role": "Horticulturist",
+                "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+                "rating": 5
+              },
+              {
+                "name": "Preeti S.",
+                "role": "Cooperative Manager",
+                "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Reach out to us for consulting, seed booking, or general queries."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "Sustainable Farming Solutions",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "Fresh Organic Produce",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "Modern Agritech & Automation",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Reach out to us for consulting, seed booking, or general queries."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#14532d",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+                "heading": "🔥 Sustainable Farming Solutions",
+                "subheading": "Providing organic and high-yield farming practices for a healthier, greener tomorrow.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=1200",
+                "heading": "🔥 Fresh Organic Produce",
+                "subheading": "Farm-fresh vegetables and seasonal fruits cultivated with 100% natural, eco-friendly fertilizers.",
+                "cta_text": "Our Products",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200",
+                "heading": "🔥 Modern Agritech & Automation",
+                "subheading": "Utilizing smart drip irrigation and precision farming tools for maximum harvesting yield.",
+                "cta_text": "Contact Us",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "We provide end-to-end support for farmers and agricultural businesses.",
+            "items": [
+              {
+                "icon": "Sprout",
+                "title": "Seed Cultivation",
+                "description": "High-quality, disease-resistant hybrid seeds selected for maximum growth potential."
+              },
+              {
+                "icon": "Layers",
+                "title": "Soil Testing",
+                "description": "Scientific soil nutrient analysis and ph testing to customize fertilization schedules."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Organic Fertilizers",
+                "description": "Natural compost and bio-fertilizers to sustain soil health and ecology."
+              },
+              {
+                "icon": "Gauge",
+                "title": "Precision Farming",
+                "description": "Drone mapping, moisture sensors, and automated crop monitoring for modern farms."
+              },
+              {
+                "icon": "Thermometer",
+                "title": "Cold Storage",
+                "description": "Temperature-controlled warehousing to preserve post-harvest freshness and shelf life."
+              },
+              {
+                "icon": "Truck",
+                "title": "Logistics & Supply",
+                "description": "Reliable farm-to-market shipping network to minimize transit times and food waste."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Experts",
+            "members": [
+              {
+                "name": "Dr. Ramesh Patel",
+                "role": "Chief Agronomist",
+                "image": ""
+              },
+              {
+                "name": "Sanjay Sharma",
+                "role": "Soil Scientist",
+                "image": ""
+              },
+              {
+                "name": "Vikram Singh",
+                "role": "Agritech Engineer",
+                "image": ""
+              },
+              {
+                "name": "Ananya Roy",
+                "role": "Organic Farming Advisor",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Farmer Testimonials",
+            "items": [
+              {
+                "name": "Harish K.",
+                "role": "Wheat Farmer",
+                "text": "The soil testing service completely changed how we fertilize. Our crop yield increased by 25% this season!",
+                "rating": 5
+              },
+              {
+                "name": "Savita D.",
+                "role": "Horticulturist",
+                "text": "Their hybrid seeds have excellent germination rates. The cold storage facility helps us get better market prices.",
+                "rating": 5
+              },
+              {
+                "name": "Preeti S.",
+                "role": "Cooperative Manager",
+                "text": "Reliable logistics and smart agritech advice. A trusted partner for our entire village community.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "How do I request soil testing?",
+                "answer": "Simply fill out our contact form or visit our center. We will guide you on how to collect soil samples and send them to us."
+              },
+              {
+                "question": "Are your products certified organic?",
+                "answer": "Yes, our organic fertilizers and produce are fully certified by local and national organic farming authorities."
+              },
+              {
+                "question": "What is precision farming?",
+                "answer": "Precision farming uses technology like moisture sensors and GPS-guided equipment to ensure crops receive exactly what they need for optimal growth."
+              },
+              {
+                "question": "Do you offer bulk purchasing?",
+                "answer": "Yes, we offer custom bulk pricing for cooperative societies, farming communities, and commercial wholesale buyers."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Reach out to us for consulting, seed booking, or general queries."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Enterprise",
+            "body": "Established in 2012, we are dedicated to bridging the gap between traditional farming wisdom and modern agricultural technology. Our team of agronomists, soil experts, and engineering pioneers work closely with local farming communities. We provide high-grade organic fertilizers, advanced soil tests, and precise logistics to empower farmers, maximize ecological sustainability, and secure agricultural supply chains."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Consulting",
+            "subheading": "Send us your queries and our agri-consultants will get back to you within 24 hours."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

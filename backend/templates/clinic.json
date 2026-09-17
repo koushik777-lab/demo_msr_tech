@@ -1,0 +1,1406 @@
+{
+  "sector": "clinic",
+  "display_name": "Clinic & Health Centers",
+  "icon": "🏥",
+  "description": "Medical clinics, dental clinics & health centers",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#0d9488",
+    "secondary": "#071d1a",
+    "accent": "#2dd4bf",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#0d9488",
+      "secondary": "#071d1a",
+      "accent": "#2dd4bf"
+    },
+    {
+      "id": "bold",
+      "primary": "#0284c7",
+      "secondary": "#0b132b",
+      "accent": "#38bdf8"
+    },
+    {
+      "id": "classic",
+      "primary": "#0f766e",
+      "secondary": "#0f172a",
+      "accent": "#34d399"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#ec4899",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#115E59",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+              "heading": "Your Trusted Health Partner",
+              "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+              "cta_text": "Book Appointment",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+              "heading": "Expert Consultations",
+              "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+              "cta_text": "Our Doctors",
+              "cta_link": "#team"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+              "heading": "Modern Laboratory & Care",
+              "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+              "cta_text": "View Specialties",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Clinical Specialties",
+          "subheading": "Comprehensive health care services provided by experienced professionals.",
+          "items": [
+            {
+              "icon": "User",
+              "title": "General Consultation",
+              "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+            },
+            {
+              "icon": "Baby",
+              "title": "Pediatric Care",
+              "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+            },
+            {
+              "icon": "Heart",
+              "title": "Cardiology Check",
+              "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+            },
+            {
+              "icon": "Smile",
+              "title": "Dental Treatment",
+              "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+            },
+            {
+              "icon": "Activity",
+              "title": "Lab Diagnostics",
+              "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+            },
+            {
+              "icon": "PhoneCall",
+              "title": "Emergency Assistance",
+              "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Specialists",
+          "members": [
+            {
+              "name": "Dr. Rohit Sharma",
+              "role": "Senior General Physician",
+              "image": ""
+            },
+            {
+              "name": "Dr. Sneha Verma",
+              "role": "Pediatrician",
+              "image": ""
+            },
+            {
+              "name": "Dr. Kabir Roy",
+              "role": "Cardiologist",
+              "image": ""
+            },
+            {
+              "name": "Dr. Pooja Sen",
+              "role": "Cosmetic Dentist",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Patient Reviews",
+          "items": [
+            {
+              "name": "Anil S.",
+              "role": "Patient",
+              "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+              "rating": 5
+            },
+            {
+              "name": "Ritika G.",
+              "role": "Patient",
+              "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+              "rating": 5
+            },
+            {
+              "name": "Vikram C.",
+              "role": "Patient",
+              "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Clinical FAQs",
+          "items": [
+            {
+              "question": "How do I book an appointment?",
+              "answer": "You can fill out the booking form on this website, call our front desk directly, or visit us in person to book a slot."
+            },
+            {
+              "question": "What insurance plans do you accept?",
+              "answer": "We accept major national health insurance policies. Please check with our billing desk during registration to verify your policy."
+            },
+            {
+              "question": "What are your OPD hours?",
+              "answer": "Our general outpatient departments are open Monday to Saturday from 9:00 AM to 7:00 PM. Emergency support is active 24/7."
+            },
+            {
+              "question": "Do you provide home sample collection?",
+              "answer": "Yes, we offer home collection services for blood and pathology tests within a 5km radius of the clinic. Book via phone."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Book Your Slot",
+          "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Health Center",
+          "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact & Appointments",
+          "subheading": "Send us your query and our clinical desk will get back to you shortly."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "Your Trusted Health Partner",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "Expert Consultations",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Modern Laboratory & Care",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Clinical Specialties",
+            "subheading": "Comprehensive health care services provided by experienced professionals.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialists",
+            "members": [
+              {
+                "name": "Dr. Rohit Sharma",
+                "role": "Senior General Physician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sneha Verma",
+                "role": "Pediatrician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Kabir Roy",
+                "role": "Cardiologist",
+                "image": ""
+              },
+              {
+                "name": "Dr. Pooja Sen",
+                "role": "Cosmetic Dentist",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Reviews",
+            "items": [
+              {
+                "name": "Anil S.",
+                "role": "Patient",
+                "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+                "rating": 5
+              },
+              {
+                "name": "Ritika G.",
+                "role": "Patient",
+                "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram C.",
+                "role": "Patient",
+                "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Clinical FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can fill out the booking form on this website, call our front desk directly, or visit us in person to book a slot."
+              },
+              {
+                "question": "What insurance plans do you accept?",
+                "answer": "We accept major national health insurance policies. Please check with our billing desk during registration to verify your policy."
+              },
+              {
+                "question": "What are your OPD hours?",
+                "answer": "Our general outpatient departments are open Monday to Saturday from 9:00 AM to 7:00 PM. Emergency support is active 24/7."
+              },
+              {
+                "question": "Do you provide home sample collection?",
+                "answer": "Yes, we offer home collection services for blood and pathology tests within a 5km radius of the clinic. Book via phone."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Slot",
+            "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "YOUR TRUSTED HEALTH PARTNER",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "EXPERT CONSULTATIONS",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "MODERN LABORATORY & CARE",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "CLINICAL SPECIALTIES",
+            "subheading": "COMPREHENSIVE HEALTH CARE SERVICES PROVIDED BY EXPERIENCED PROFESSIONALS.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR SPECIALISTS",
+            "members": [
+              {
+                "name": "Dr. Rohit Sharma",
+                "role": "Senior General Physician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sneha Verma",
+                "role": "Pediatrician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Kabir Roy",
+                "role": "Cardiologist",
+                "image": ""
+              },
+              {
+                "name": "Dr. Pooja Sen",
+                "role": "Cosmetic Dentist",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "PATIENT REVIEWS",
+            "items": [
+              {
+                "name": "Anil S.",
+                "role": "Patient",
+                "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+                "rating": 5
+              },
+              {
+                "name": "Ritika G.",
+                "role": "Patient",
+                "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram C.",
+                "role": "Patient",
+                "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "CLINICAL FAQS",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can fill out the booking form on this website, call our front desk directly, or visit us in person to book a slot."
+              },
+              {
+                "question": "What insurance plans do you accept?",
+                "answer": "We accept major national health insurance policies. Please check with our billing desk during registration to verify your policy."
+              },
+              {
+                "question": "What are your OPD hours?",
+                "answer": "Our general outpatient departments are open Monday to Saturday from 9:00 AM to 7:00 PM. Emergency support is active 24/7."
+              },
+              {
+                "question": "Do you provide home sample collection?",
+                "answer": "Yes, we offer home collection services for blood and pathology tests within a 5km radius of the clinic. Book via phone."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "BOOK YOUR SLOT",
+            "subheading": "FILL IN THE FORM BELOW AND WE WILL CALL YOU BACK TO CONFIRM YOUR CONSULTATION TIME."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "Your Trusted Health Partner",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "Expert Consultations",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Modern Laboratory & Care",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Clinical FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can fill out the booking form on this website, call our front desk directly, or visit us in person to book a slot."
+              },
+              {
+                "question": "What insurance plans do you accept?",
+                "answer": "We accept major national health insurance policies. Please check with our billing desk during registration to verify your policy."
+              },
+              {
+                "question": "What are your OPD hours?",
+                "answer": "Our general outpatient departments are open Monday to Saturday from 9:00 AM to 7:00 PM. Emergency support is active 24/7."
+              },
+              {
+                "question": "Do you provide home sample collection?",
+                "answer": "Yes, we offer home collection services for blood and pathology tests within a 5km radius of the clinic. Book via phone."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Patient Reviews",
+            "items": [
+              {
+                "name": "Anil S.",
+                "role": "Patient",
+                "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+                "rating": 5
+              },
+              {
+                "name": "Ritika G.",
+                "role": "Patient",
+                "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram C.",
+                "role": "Patient",
+                "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialists",
+            "members": [
+              {
+                "name": "Dr. Rohit Sharma",
+                "role": "Senior General Physician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sneha Verma",
+                "role": "Pediatrician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Kabir Roy",
+                "role": "Cardiologist",
+                "image": ""
+              },
+              {
+                "name": "Dr. Pooja Sen",
+                "role": "Cosmetic Dentist",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Clinical Specialties",
+            "subheading": "Comprehensive health care services provided by experienced professionals.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Slot",
+            "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "Your Trusted Health Partner",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "Expert Consultations",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Modern Laboratory & Care",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Clinical Specialties",
+            "subheading": "Comprehensive health care services provided by experienced professionals.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialists",
+            "members": [
+              {
+                "name": "Dr. Rohit Sharma",
+                "role": "Senior General Physician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sneha Verma",
+                "role": "Pediatrician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Kabir Roy",
+                "role": "Cardiologist",
+                "image": ""
+              },
+              {
+                "name": "Dr. Pooja Sen",
+                "role": "Cosmetic Dentist",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Reviews",
+            "items": [
+              {
+                "name": "Anil S.",
+                "role": "Patient",
+                "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+                "rating": 5
+              },
+              {
+                "name": "Ritika G.",
+                "role": "Patient",
+                "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram C.",
+                "role": "Patient",
+                "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Slot",
+            "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "Your Trusted Health Partner",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "Expert Consultations",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Modern Laboratory & Care",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Clinical Specialties",
+            "subheading": "Comprehensive health care services provided by experienced professionals.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Slot",
+            "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#115E59",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+                "heading": "🔥 Your Trusted Health Partner",
+                "subheading": "Providing advanced, empathetic medical care and diagnostic services for you and your family.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?q=80&w=1200",
+                "heading": "🔥 Expert Consultations",
+                "subheading": "Consult with certified specialists in general health, orthopedics, and pediatric wellness.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "🔥 Modern Laboratory & Care",
+                "subheading": "State-of-the-art laboratory testing, pharmacy, and clean modern clinical chambers.",
+                "cta_text": "View Specialties",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Clinical Specialties",
+            "subheading": "Comprehensive health care services provided by experienced professionals.",
+            "items": [
+              {
+                "icon": "User",
+                "title": "General Consultation",
+                "description": "Primary healthcare, diagnosis, fever treatment, and routine health checkups."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatric Care",
+                "description": "Child immunizations, growth monitoring, and specialized child healthcare."
+              },
+              {
+                "icon": "Heart",
+                "title": "Cardiology Check",
+                "description": "ECG, blood pressure monitoring, and cardiovascular health consultations."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Treatment",
+                "description": "Tooth extractions, dental implants, cleanings, and cosmetic dentistry."
+              },
+              {
+                "icon": "Activity",
+                "title": "Lab Diagnostics",
+                "description": "Accurate blood tests, lipid profiles, thyroid panel, and pathology tests."
+              },
+              {
+                "icon": "PhoneCall",
+                "title": "Emergency Assistance",
+                "description": "First-aid, stabilization, and immediate physician consults for urgent health concerns."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialists",
+            "members": [
+              {
+                "name": "Dr. Rohit Sharma",
+                "role": "Senior General Physician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sneha Verma",
+                "role": "Pediatrician",
+                "image": ""
+              },
+              {
+                "name": "Dr. Kabir Roy",
+                "role": "Cardiologist",
+                "image": ""
+              },
+              {
+                "name": "Dr. Pooja Sen",
+                "role": "Cosmetic Dentist",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Reviews",
+            "items": [
+              {
+                "name": "Anil S.",
+                "role": "Patient",
+                "text": "Extremely neat and professional clinic. Dr. Rohit is patient and explained my treatment options clearly.",
+                "rating": 5
+              },
+              {
+                "name": "Ritika G.",
+                "role": "Patient",
+                "text": "Dr. Sneha is wonderful with kids. My daughter was very comfortable during the vaccination.",
+                "rating": 5
+              },
+              {
+                "name": "Vikram C.",
+                "role": "Patient",
+                "text": "Very clean lab diagnostics. I got my blood test reports in under 3 hours via email. Recommended!",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Clinical FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can fill out the booking form on this website, call our front desk directly, or visit us in person to book a slot."
+              },
+              {
+                "question": "What insurance plans do you accept?",
+                "answer": "We accept major national health insurance policies. Please check with our billing desk during registration to verify your policy."
+              },
+              {
+                "question": "What are your OPD hours?",
+                "answer": "Our general outpatient departments are open Monday to Saturday from 9:00 AM to 7:00 PM. Emergency support is active 24/7."
+              },
+              {
+                "question": "Do you provide home sample collection?",
+                "answer": "Yes, we offer home collection services for blood and pathology tests within a 5km radius of the clinic. Book via phone."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Slot",
+            "subheading": "Fill in the form below and we will call you back to confirm your consultation time."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Health Center",
+            "body": "Founded in 2018, our clinic has committed to making high-quality, empathetic healthcare accessible. We feature clean clinical chambers, a modern dental setup, and fully digital diagnostic labs. With a panel of 15+ consultant doctors and friendly nursing staff, we focus on preventive care and patient satisfaction to deliver wellness outcomes for the entire community."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Send us your query and our clinical desk will get back to you shortly."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

@@ -42,8 +42,7 @@ const Services = () => {
     <section
       id="services"
       ref={ref}
-      className="relative py-32 overflow-hidden"
-      style={{ background: '#000000', padding: '160px 7.6923%' }}
+      className="relative py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden" style={{ background: 'var(--bg-primary)' }}
     >
       {/* Grid Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
@@ -82,7 +81,7 @@ const Services = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {services.map((service, index) => {
-            const IconComponent = iconMap[service.icon];
+            const IconComponent = iconMap[service.icon] || Globe;
             
             return (
               <motion.div
@@ -91,9 +90,9 @@ const Services = () => {
                 whileHover={{ y: -10 }}
                 className="glass p-8 card-hover cursor-pointer group"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--bg-overlay)',
                   backdropFilter: 'blur(12px)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  border: '1px solid var(--border-subtle)',
                   transition: 'all 0.4s ease-in-out'
                 }}
               >
@@ -103,7 +102,7 @@ const Services = () => {
                   transition={{ duration: 0.6 }}
                   className="w-16 h-16 rounded-lg flex items-center justify-center mb-6"
                   style={{
-                    background: 'rgba(0, 255, 209, 0.1)',
+                    background: 'var(--brand-hover)',
                     border: '1px solid var(--brand-primary)'
                   }}
                 >
@@ -141,7 +140,7 @@ const Services = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary magnetic-btn"
           >
             Discuss Your Project

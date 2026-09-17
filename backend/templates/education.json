@@ -1,0 +1,1506 @@
+{
+  "sector": "education",
+  "display_name": "Education & Coaching",
+  "icon": "🎓",
+  "description": "Schools, coaching & online courses",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#2563eb",
+    "secondary": "#0f172a",
+    "accent": "#60a5fa",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#2563eb",
+      "secondary": "#0f172a",
+      "accent": "#60a5fa"
+    },
+    {
+      "id": "bold",
+      "primary": "#ea580c",
+      "secondary": "#111827",
+      "accent": "#fdb874"
+    },
+    {
+      "id": "classic",
+      "primary": "#16a34a",
+      "secondary": "#0f172a",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#d946ef",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1E1B4B",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+              "heading": "Unlock Your True Potential",
+              "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+              "cta_text": "Enroll Now",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+              "heading": "Collaborative Learning Spaces",
+              "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+              "cta_text": "Explore Campus",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+              "heading": "Flexible Online Classes",
+              "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+              "cta_text": "Get Started",
+              "cta_link": "#contact"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Programs",
+          "subheading": "From school coaching to professional certifications — we have a program for you.",
+          "items": [
+            {
+              "icon": "Compass",
+              "title": "JEE & NEET Coaching",
+              "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+            },
+            {
+              "icon": "BookOpen",
+              "title": "School Tutoring (6–12)",
+              "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+            },
+            {
+              "icon": "Briefcase",
+              "title": "MBA Entrance Prep",
+              "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+            },
+            {
+              "icon": "Laptop",
+              "title": "Coding & Technology",
+              "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+            },
+            {
+              "icon": "Globe",
+              "title": "Language Learning",
+              "description": "English communication, IELTS, and French/German courses for global opportunities."
+            },
+            {
+              "icon": "Paintbrush",
+              "title": "Creative Arts",
+              "description": "Drawing, music, photography, and creative writing courses for all ages."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "pricing-1",
+        "type": "pricing",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Course Plans",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": "₹2,999/mo",
+              "features": [
+                "1 Course Access",
+                "Pre-recorded Videos",
+                "Study Material",
+                "Weekly Doubt Sessions"
+              ],
+              "popular": false
+            },
+            {
+              "name": "Standard",
+              "price": "₹5,999/mo",
+              "features": [
+                "3 Courses",
+                "Live Classes",
+                "Personal Mentor",
+                "Mock Tests",
+                "Certificate"
+              ],
+              "popular": true
+            },
+            {
+              "name": "Premium",
+              "price": "₹11,999/mo",
+              "features": [
+                "Unlimited Courses",
+                "1-on-1 Mentoring",
+                "All Mock Tests",
+                "Interview Prep",
+                "Placement Assistance",
+                "Lifetime Access"
+              ],
+              "popular": false
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Our Educators",
+          "members": [
+            {
+              "name": "Dr. Rohit Saxena",
+              "role": "Physics, IIT Delhi Alumni",
+              "image": ""
+            },
+            {
+              "name": "Priya Agarwal",
+              "role": "Mathematics, Gold Medalist",
+              "image": ""
+            },
+            {
+              "name": "Arun Menon",
+              "role": "Chemistry, 15+ yrs experience",
+              "image": ""
+            },
+            {
+              "name": "Kavitha Nair",
+              "role": "English & Communication",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Student Success Stories",
+          "items": [
+            {
+              "name": "Ayush K.",
+              "role": "IIT JEE AIR 247",
+              "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+              "rating": 5
+            },
+            {
+              "name": "Divya S.",
+              "role": "NEET Qualifier",
+              "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+              "rating": 5
+            },
+            {
+              "name": "Rahul M.",
+              "role": "Working Professional",
+              "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Start Learning Today",
+          "subheading": "Book a free counseling session and find the right program for your goals."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Our Institution",
+          "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Admissions & Enquiries",
+          "subheading": "Speak to our counselors about the right program for you."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "Unlock Your True Potential",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "Collaborative Learning Spaces",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "Flexible Online Classes",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "From school coaching to professional certifications — we have a program for you.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Course Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹2,999/mo",
+                "features": [
+                  "1 Course Access",
+                  "Pre-recorded Videos",
+                  "Study Material",
+                  "Weekly Doubt Sessions"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Standard",
+                "price": "₹5,999/mo",
+                "features": [
+                  "3 Courses",
+                  "Live Classes",
+                  "Personal Mentor",
+                  "Mock Tests",
+                  "Certificate"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Premium",
+                "price": "₹11,999/mo",
+                "features": [
+                  "Unlimited Courses",
+                  "1-on-1 Mentoring",
+                  "All Mock Tests",
+                  "Interview Prep",
+                  "Placement Assistance",
+                  "Lifetime Access"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Educators",
+            "members": [
+              {
+                "name": "Dr. Rohit Saxena",
+                "role": "Physics, IIT Delhi Alumni",
+                "image": ""
+              },
+              {
+                "name": "Priya Agarwal",
+                "role": "Mathematics, Gold Medalist",
+                "image": ""
+              },
+              {
+                "name": "Arun Menon",
+                "role": "Chemistry, 15+ yrs experience",
+                "image": ""
+              },
+              {
+                "name": "Kavitha Nair",
+                "role": "English & Communication",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Student Success Stories",
+            "items": [
+              {
+                "name": "Ayush K.",
+                "role": "IIT JEE AIR 247",
+                "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+                "rating": 5
+              },
+              {
+                "name": "Divya S.",
+                "role": "NEET Qualifier",
+                "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+                "rating": 5
+              },
+              {
+                "name": "Rahul M.",
+                "role": "Working Professional",
+                "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Learning Today",
+            "subheading": "Book a free counseling session and find the right program for your goals."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "UNLOCK YOUR TRUE POTENTIAL",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "COLLABORATIVE LEARNING SPACES",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "FLEXIBLE ONLINE CLASSES",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR PROGRAMS",
+            "subheading": "FROM SCHOOL COACHING TO PROFESSIONAL CERTIFICATIONS — WE HAVE A PROGRAM FOR YOU.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "COURSE PLANS",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹2,999/mo",
+                "features": [
+                  "1 Course Access",
+                  "Pre-recorded Videos",
+                  "Study Material",
+                  "Weekly Doubt Sessions"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Standard",
+                "price": "₹5,999/mo",
+                "features": [
+                  "3 Courses",
+                  "Live Classes",
+                  "Personal Mentor",
+                  "Mock Tests",
+                  "Certificate"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Premium",
+                "price": "₹11,999/mo",
+                "features": [
+                  "Unlimited Courses",
+                  "1-on-1 Mentoring",
+                  "All Mock Tests",
+                  "Interview Prep",
+                  "Placement Assistance",
+                  "Lifetime Access"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "OUR EDUCATORS",
+            "members": [
+              {
+                "name": "Dr. Rohit Saxena",
+                "role": "Physics, IIT Delhi Alumni",
+                "image": ""
+              },
+              {
+                "name": "Priya Agarwal",
+                "role": "Mathematics, Gold Medalist",
+                "image": ""
+              },
+              {
+                "name": "Arun Menon",
+                "role": "Chemistry, 15+ yrs experience",
+                "image": ""
+              },
+              {
+                "name": "Kavitha Nair",
+                "role": "English & Communication",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "STUDENT SUCCESS STORIES",
+            "items": [
+              {
+                "name": "Ayush K.",
+                "role": "IIT JEE AIR 247",
+                "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+                "rating": 5
+              },
+              {
+                "name": "Divya S.",
+                "role": "NEET Qualifier",
+                "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+                "rating": 5
+              },
+              {
+                "name": "Rahul M.",
+                "role": "Working Professional",
+                "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "START LEARNING TODAY",
+            "subheading": "BOOK A FREE COUNSELING SESSION AND FIND THE RIGHT PROGRAM FOR YOUR GOALS."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "Unlock Your True Potential",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "Collaborative Learning Spaces",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "Flexible Online Classes",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Student Success Stories",
+            "items": [
+              {
+                "name": "Ayush K.",
+                "role": "IIT JEE AIR 247",
+                "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+                "rating": 5
+              },
+              {
+                "name": "Divya S.",
+                "role": "NEET Qualifier",
+                "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+                "rating": 5
+              },
+              {
+                "name": "Rahul M.",
+                "role": "Working Professional",
+                "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Educators",
+            "members": [
+              {
+                "name": "Dr. Rohit Saxena",
+                "role": "Physics, IIT Delhi Alumni",
+                "image": ""
+              },
+              {
+                "name": "Priya Agarwal",
+                "role": "Mathematics, Gold Medalist",
+                "image": ""
+              },
+              {
+                "name": "Arun Menon",
+                "role": "Chemistry, 15+ yrs experience",
+                "image": ""
+              },
+              {
+                "name": "Kavitha Nair",
+                "role": "English & Communication",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Course Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹2,999/mo",
+                "features": [
+                  "1 Course Access",
+                  "Pre-recorded Videos",
+                  "Study Material",
+                  "Weekly Doubt Sessions"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Standard",
+                "price": "₹5,999/mo",
+                "features": [
+                  "3 Courses",
+                  "Live Classes",
+                  "Personal Mentor",
+                  "Mock Tests",
+                  "Certificate"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Premium",
+                "price": "₹11,999/mo",
+                "features": [
+                  "Unlimited Courses",
+                  "1-on-1 Mentoring",
+                  "All Mock Tests",
+                  "Interview Prep",
+                  "Placement Assistance",
+                  "Lifetime Access"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "From school coaching to professional certifications — we have a program for you.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Learning Today",
+            "subheading": "Book a free counseling session and find the right program for your goals."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "Unlock Your True Potential",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "Collaborative Learning Spaces",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "Flexible Online Classes",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "From school coaching to professional certifications — we have a program for you.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Educators",
+            "members": [
+              {
+                "name": "Dr. Rohit Saxena",
+                "role": "Physics, IIT Delhi Alumni",
+                "image": ""
+              },
+              {
+                "name": "Priya Agarwal",
+                "role": "Mathematics, Gold Medalist",
+                "image": ""
+              },
+              {
+                "name": "Arun Menon",
+                "role": "Chemistry, 15+ yrs experience",
+                "image": ""
+              },
+              {
+                "name": "Kavitha Nair",
+                "role": "English & Communication",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Student Success Stories",
+            "items": [
+              {
+                "name": "Ayush K.",
+                "role": "IIT JEE AIR 247",
+                "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+                "rating": 5
+              },
+              {
+                "name": "Divya S.",
+                "role": "NEET Qualifier",
+                "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+                "rating": 5
+              },
+              {
+                "name": "Rahul M.",
+                "role": "Working Professional",
+                "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Start Learning Today",
+            "subheading": "Book a free counseling session and find the right program for your goals."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "Unlock Your True Potential",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "Collaborative Learning Spaces",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "Flexible Online Classes",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "From school coaching to professional certifications — we have a program for you.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Start Learning Today",
+            "subheading": "Book a free counseling session and find the right program for your goals."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200",
+                "heading": "🔥 Unlock Your True Potential",
+                "subheading": "Expert-led courses, personalized mentorship, and a learning community that empowers you to achieve your goals.",
+                "cta_text": "Enroll Now",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+                "heading": "🔥 Collaborative Learning Spaces",
+                "subheading": "Engage with students and teachers in interactive, smart classrooms designed for collaboration.",
+                "cta_text": "Explore Campus",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+                "heading": "🔥 Flexible Online Classes",
+                "subheading": "Study from anywhere at your own pace with lifetime access to top digital libraries and resources.",
+                "cta_text": "Get Started",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "From school coaching to professional certifications — we have a program for you.",
+            "items": [
+              {
+                "icon": "Compass",
+                "title": "JEE & NEET Coaching",
+                "description": "Intensive preparation for engineering and medical entrance exams with proven strategies."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "School Tutoring (6–12)",
+                "description": "Subject-specific tutoring aligned with CBSE, ICSE, and state board curricula."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "MBA Entrance Prep",
+                "description": "CAT, XAT, and GMAT coaching with mock tests and personal mentoring."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Coding & Technology",
+                "description": "Full-stack development, data science, and AI/ML courses for career transitions."
+              },
+              {
+                "icon": "Globe",
+                "title": "Language Learning",
+                "description": "English communication, IELTS, and French/German courses for global opportunities."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Creative Arts",
+                "description": "Drawing, music, photography, and creative writing courses for all ages."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Course Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹2,999/mo",
+                "features": [
+                  "1 Course Access",
+                  "Pre-recorded Videos",
+                  "Study Material",
+                  "Weekly Doubt Sessions"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Standard",
+                "price": "₹5,999/mo",
+                "features": [
+                  "3 Courses",
+                  "Live Classes",
+                  "Personal Mentor",
+                  "Mock Tests",
+                  "Certificate"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Premium",
+                "price": "₹11,999/mo",
+                "features": [
+                  "Unlimited Courses",
+                  "1-on-1 Mentoring",
+                  "All Mock Tests",
+                  "Interview Prep",
+                  "Placement Assistance",
+                  "Lifetime Access"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Educators",
+            "members": [
+              {
+                "name": "Dr. Rohit Saxena",
+                "role": "Physics, IIT Delhi Alumni",
+                "image": ""
+              },
+              {
+                "name": "Priya Agarwal",
+                "role": "Mathematics, Gold Medalist",
+                "image": ""
+              },
+              {
+                "name": "Arun Menon",
+                "role": "Chemistry, 15+ yrs experience",
+                "image": ""
+              },
+              {
+                "name": "Kavitha Nair",
+                "role": "English & Communication",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Student Success Stories",
+            "items": [
+              {
+                "name": "Ayush K.",
+                "role": "IIT JEE AIR 247",
+                "text": "The structured approach and dedicated mentors here made the difference. Got AIR 247 in JEE Advanced!",
+                "rating": 5
+              },
+              {
+                "name": "Divya S.",
+                "role": "NEET Qualifier",
+                "text": "Their biology classes transformed my understanding. Cleared NEET in the first attempt with 680/720.",
+                "rating": 5
+              },
+              {
+                "name": "Rahul M.",
+                "role": "Working Professional",
+                "text": "The coding bootcamp helped me transition from a non-tech job to a software developer role in 5 months.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Learning Today",
+            "subheading": "Book a free counseling session and find the right program for your goals."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Institution",
+            "body": "Founded in 2008, we have helped over 25,000 students achieve academic excellence and career success. Our unique pedagogy combines conceptual clarity, exam-oriented practice, and continuous mentorship. We believe every student has the potential to succeed — our job is to unlock it."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Admissions & Enquiries",
+            "subheading": "Speak to our counselors about the right program for you."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

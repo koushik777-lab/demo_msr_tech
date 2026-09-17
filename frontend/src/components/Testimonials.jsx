@@ -20,8 +20,8 @@ const Testimonials = () => {
     <section
       id="testimonials"
       ref={ref}
-      className="relative py-32 overflow-hidden"
-      style={{ background: '#121212', padding: '160px 7.6923%' }}
+      className="relative py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden"
+      style={{ background: 'var(--bg-secondary)' }}
     >
       {/* Grid Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
@@ -64,9 +64,9 @@ const Testimonials = () => {
             <div
               className="p-12 relative overflow-hidden"
               style={{
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'var(--bg-overlay)',
                 backdropFilter: 'blur(12px)',
-                border: '1px solid rgba(255, 255, 255, 0.1)'
+                border: '1px solid var(--border-subtle)'
               }}
             >
               {/* Quote Icon */}
@@ -116,7 +116,8 @@ const Testimonials = () => {
                 >
                   <img
                     src={testimonials[currentIndex].image}
-                    alt={testimonials[currentIndex].name}
+                    alt={`${testimonials[currentIndex].name} - ${testimonials[currentIndex].company}`}
+                    loading="lazy"
                     className="w-16 h-16 rounded-full object-cover border-2"
                     style={{ borderColor: 'var(--brand-primary)' }}
                   />
@@ -141,8 +142,8 @@ const Testimonials = () => {
                 onClick={prevTestimonial}
                 className="w-12 h-12 rounded-full flex items-center justify-center"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                  background: 'var(--bg-overlay)',
+                  border: '1px solid var(--border-subtle)'
                 }}
               >
                 <ChevronLeft size={24} style={{ color: 'var(--brand-primary)' }} />
@@ -154,8 +155,8 @@ const Testimonials = () => {
                 onClick={nextTestimonial}
                 className="w-12 h-12 rounded-full flex items-center justify-center"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                  background: 'var(--bg-overlay)',
+                  border: '1px solid var(--border-subtle)'
                 }}
               >
                 <ChevronRight size={24} style={{ color: 'var(--brand-primary)' }} />
@@ -171,7 +172,7 @@ const Testimonials = () => {
                   onClick={() => setCurrentIndex(index)}
                   className="w-2 h-2 rounded-full transition-all duration-300"
                   style={{
-                    background: index === currentIndex ? 'var(--brand-primary)' : 'rgba(255, 255, 255, 0.3)',
+                    background: index === currentIndex ? 'var(--brand-primary)' : 'var(--border-medium)',
                     width: index === currentIndex ? '24px' : '8px'
                   }}
                 />

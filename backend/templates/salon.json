@@ -1,0 +1,1589 @@
+{
+  "sector": "salon",
+  "display_name": "Salon & Beauty",
+  "icon": "💇",
+  "description": "Hair salons, spas & beauty studios",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#ec4899",
+    "secondary": "#1e1b2e",
+    "accent": "#f59e0b",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#ec4899",
+      "secondary": "#1e1b2e",
+      "accent": "#f59e0b"
+    },
+    {
+      "id": "bold",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "classic",
+      "primary": "#7c3aed",
+      "secondary": "#120c1f",
+      "accent": "#a78bfa"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#db2777",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1E1B2E",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+              "heading": "Look & Feel Your Absolute Best",
+              "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+              "cta_text": "Book Appointment",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+              "heading": "Relaxing Spa Treatments",
+              "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+              "cta_text": "Explore Services",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+              "heading": "Premium Nail & Lash Styling",
+              "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+              "cta_text": "Our Prices",
+              "cta_link": "#pricing"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Services",
+          "subheading": "Indulge in a full range of beauty and wellness treatments.",
+          "items": [
+            {
+              "icon": "Scissors",
+              "title": "Hair Styling",
+              "description": "Expert cuts, blowouts, and styling for every hair type and length."
+            },
+            {
+              "icon": "Paintbrush",
+              "title": "Hair Coloring",
+              "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+            },
+            {
+              "icon": "Sparkles",
+              "title": "Nail Art & Manicure",
+              "description": "Gel, acrylic, and nail art designs that express your unique style."
+            },
+            {
+              "icon": "Leaf",
+              "title": "Facial Treatments",
+              "description": "Rejuvenating facials tailored to your skin type using premium products."
+            },
+            {
+              "icon": "Flower",
+              "title": "Spa & Massage",
+              "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+            },
+            {
+              "icon": "Crown",
+              "title": "Bridal Packages",
+              "description": "Complete bridal makeover packages for your most special day."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "pricing-1",
+        "type": "pricing",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Service Packages",
+          "plans": [
+            {
+              "name": "Glow",
+              "price": "₹999",
+              "features": [
+                "Haircut & Style",
+                "Basic Facial",
+                "Nail Polish"
+              ],
+              "popular": false
+            },
+            {
+              "name": "Radiance",
+              "price": "₹2,499",
+              "features": [
+                "Haircut & Color",
+                "Advanced Facial",
+                "Gel Manicure",
+                "Hair Spa"
+              ],
+              "popular": true
+            },
+            {
+              "name": "Luxe",
+              "price": "₹4,999",
+              "features": [
+                "Complete Hair Makeover",
+                "Premium Facial",
+                "Gel Mani + Pedi",
+                "Full Body Massage",
+                "Priority Booking"
+              ],
+              "popular": false
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "gallery-1",
+        "type": "gallery",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Our Work",
+          "items": []
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Happy Clients",
+          "items": [
+            {
+              "name": "Shruti M.",
+              "role": "Regular Client",
+              "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+              "rating": 5
+            },
+            {
+              "name": "Pooja R.",
+              "role": "Bride",
+              "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+              "rating": 5
+            },
+            {
+              "name": "Kavya T.",
+              "role": "Client",
+              "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Book Your Appointment",
+          "subheading": "Choose your service and we'll confirm your slot within the hour."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Our Story",
+          "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Meet Our Artists",
+          "members": [
+            {
+              "name": "Nisha Kapoor",
+              "role": "Master Stylist & Founder",
+              "image": ""
+            },
+            {
+              "name": "Aisha Khan",
+              "role": "Senior Colorist",
+              "image": ""
+            },
+            {
+              "name": "Divya Pillai",
+              "role": "Nail Art Specialist",
+              "image": ""
+            },
+            {
+              "name": "Meghna Jain",
+              "role": "Spa & Wellness Expert",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Book Your Visit",
+          "subheading": "We'd love to welcome you. Reserve your spot today."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "Look & Feel Your Absolute Best",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "Relaxing Spa Treatments",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "Premium Nail & Lash Styling",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "Indulge in a full range of beauty and wellness treatments.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Service Packages",
+            "plans": [
+              {
+                "name": "Glow",
+                "price": "₹999",
+                "features": [
+                  "Haircut & Style",
+                  "Basic Facial",
+                  "Nail Polish"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Radiance",
+                "price": "₹2,499",
+                "features": [
+                  "Haircut & Color",
+                  "Advanced Facial",
+                  "Gel Manicure",
+                  "Hair Spa"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Luxe",
+                "price": "₹4,999",
+                "features": [
+                  "Complete Hair Makeover",
+                  "Premium Facial",
+                  "Gel Mani + Pedi",
+                  "Full Body Massage",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Work",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Happy Clients",
+            "items": [
+              {
+                "name": "Shruti M.",
+                "role": "Regular Client",
+                "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+                "rating": 5
+              },
+              {
+                "name": "Pooja R.",
+                "role": "Bride",
+                "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+                "rating": 5
+              },
+              {
+                "name": "Kavya T.",
+                "role": "Client",
+                "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Appointment",
+            "subheading": "Choose your service and we'll confirm your slot within the hour."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "LOOK & FEEL YOUR ABSOLUTE BEST",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "RELAXING SPA TREATMENTS",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "PREMIUM NAIL & LASH STYLING",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR SERVICES",
+            "subheading": "INDULGE IN A FULL RANGE OF BEAUTY AND WELLNESS TREATMENTS.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "SERVICE PACKAGES",
+            "plans": [
+              {
+                "name": "Glow",
+                "price": "₹999",
+                "features": [
+                  "Haircut & Style",
+                  "Basic Facial",
+                  "Nail Polish"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Radiance",
+                "price": "₹2,499",
+                "features": [
+                  "Haircut & Color",
+                  "Advanced Facial",
+                  "Gel Manicure",
+                  "Hair Spa"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Luxe",
+                "price": "₹4,999",
+                "features": [
+                  "Complete Hair Makeover",
+                  "Premium Facial",
+                  "Gel Mani + Pedi",
+                  "Full Body Massage",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "OUR WORK",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "HAPPY CLIENTS",
+            "items": [
+              {
+                "name": "Shruti M.",
+                "role": "Regular Client",
+                "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+                "rating": 5
+              },
+              {
+                "name": "Pooja R.",
+                "role": "Bride",
+                "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+                "rating": 5
+              },
+              {
+                "name": "Kavya T.",
+                "role": "Client",
+                "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "BOOK YOUR APPOINTMENT",
+            "subheading": "CHOOSE YOUR SERVICE AND WE'LL CONFIRM YOUR SLOT WITHIN THE HOUR."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "Look & Feel Your Absolute Best",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "Relaxing Spa Treatments",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "Premium Nail & Lash Styling",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Happy Clients",
+            "items": [
+              {
+                "name": "Shruti M.",
+                "role": "Regular Client",
+                "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+                "rating": 5
+              },
+              {
+                "name": "Pooja R.",
+                "role": "Bride",
+                "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+                "rating": 5
+              },
+              {
+                "name": "Kavya T.",
+                "role": "Client",
+                "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Work",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Service Packages",
+            "plans": [
+              {
+                "name": "Glow",
+                "price": "₹999",
+                "features": [
+                  "Haircut & Style",
+                  "Basic Facial",
+                  "Nail Polish"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Radiance",
+                "price": "₹2,499",
+                "features": [
+                  "Haircut & Color",
+                  "Advanced Facial",
+                  "Gel Manicure",
+                  "Hair Spa"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Luxe",
+                "price": "₹4,999",
+                "features": [
+                  "Complete Hair Makeover",
+                  "Premium Facial",
+                  "Gel Mani + Pedi",
+                  "Full Body Massage",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "Indulge in a full range of beauty and wellness treatments.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Appointment",
+            "subheading": "Choose your service and we'll confirm your slot within the hour."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "Look & Feel Your Absolute Best",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "Relaxing Spa Treatments",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "Premium Nail & Lash Styling",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "Indulge in a full range of beauty and wellness treatments.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Work",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Happy Clients",
+            "items": [
+              {
+                "name": "Shruti M.",
+                "role": "Regular Client",
+                "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+                "rating": 5
+              },
+              {
+                "name": "Pooja R.",
+                "role": "Bride",
+                "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+                "rating": 5
+              },
+              {
+                "name": "Kavya T.",
+                "role": "Client",
+                "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Appointment",
+            "subheading": "Choose your service and we'll confirm your slot within the hour."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "Look & Feel Your Absolute Best",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "Relaxing Spa Treatments",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "Premium Nail & Lash Styling",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "Indulge in a full range of beauty and wellness treatments.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Appointment",
+            "subheading": "Choose your service and we'll confirm your slot within the hour."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B2E",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200",
+                "heading": "🔥 Look & Feel Your Absolute Best",
+                "subheading": "Premium hair, nail, and spa services in a luxurious, relaxing environment. Book your transformation today.",
+                "cta_text": "Book Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200",
+                "heading": "🔥 Relaxing Spa Treatments",
+                "subheading": "Indulge in organic stone massages, custom facials, and full body wellness therapies.",
+                "cta_text": "Explore Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1604654894610-df4906b147c0?q=80&w=1200",
+                "heading": "🔥 Premium Nail & Lash Styling",
+                "subheading": "Get precision manicures, nail art, and lash extensions from certified stylists.",
+                "cta_text": "Our Prices",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "Indulge in a full range of beauty and wellness treatments.",
+            "items": [
+              {
+                "icon": "Scissors",
+                "title": "Hair Styling",
+                "description": "Expert cuts, blowouts, and styling for every hair type and length."
+              },
+              {
+                "icon": "Paintbrush",
+                "title": "Hair Coloring",
+                "description": "Balayage, highlights, full color, and creative color techniques by certified colorists."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Nail Art & Manicure",
+                "description": "Gel, acrylic, and nail art designs that express your unique style."
+              },
+              {
+                "icon": "Leaf",
+                "title": "Facial Treatments",
+                "description": "Rejuvenating facials tailored to your skin type using premium products."
+              },
+              {
+                "icon": "Flower",
+                "title": "Spa & Massage",
+                "description": "Full-body massages and spa packages for deep relaxation and rejuvenation."
+              },
+              {
+                "icon": "Crown",
+                "title": "Bridal Packages",
+                "description": "Complete bridal makeover packages for your most special day."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Service Packages",
+            "plans": [
+              {
+                "name": "Glow",
+                "price": "₹999",
+                "features": [
+                  "Haircut & Style",
+                  "Basic Facial",
+                  "Nail Polish"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Radiance",
+                "price": "₹2,499",
+                "features": [
+                  "Haircut & Color",
+                  "Advanced Facial",
+                  "Gel Manicure",
+                  "Hair Spa"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Luxe",
+                "price": "₹4,999",
+                "features": [
+                  "Complete Hair Makeover",
+                  "Premium Facial",
+                  "Gel Mani + Pedi",
+                  "Full Body Massage",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "gallery-1",
+          "type": "gallery",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Work",
+            "items": []
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Happy Clients",
+            "items": [
+              {
+                "name": "Shruti M.",
+                "role": "Regular Client",
+                "text": "I've been coming here for 3 years. The stylists truly understand my hair and always deliver beyond my expectations.",
+                "rating": 5
+              },
+              {
+                "name": "Pooja R.",
+                "role": "Bride",
+                "text": "The bridal package was absolutely stunning. My wedding look was exactly what I dreamed of. Thank you!",
+                "rating": 5
+              },
+              {
+                "name": "Kavya T.",
+                "role": "Client",
+                "text": "The spa experience here is unmatched. Feels like a mini vacation every single time.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Appointment",
+            "subheading": "Choose your service and we'll confirm your slot within the hour."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Story",
+            "body": "Born from a passion for beauty and self-expression, our salon has been transforming looks and boosting confidence since 2012. Our team of internationally trained stylists, colorists, and therapists bring global trends to your doorstep. We use only the finest, cruelty-free products and maintain the highest standards of hygiene and service excellence."
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Artists",
+            "members": [
+              {
+                "name": "Nisha Kapoor",
+                "role": "Master Stylist & Founder",
+                "image": ""
+              },
+              {
+                "name": "Aisha Khan",
+                "role": "Senior Colorist",
+                "image": ""
+              },
+              {
+                "name": "Divya Pillai",
+                "role": "Nail Art Specialist",
+                "image": ""
+              },
+              {
+                "name": "Meghna Jain",
+                "role": "Spa & Wellness Expert",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Book Your Visit",
+            "subheading": "We'd love to welcome you. Reserve your spot today."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

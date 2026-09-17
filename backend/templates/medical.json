@@ -1,0 +1,1406 @@
+{
+  "sector": "medical",
+  "display_name": "Medical & Healthcare",
+  "icon": "🏥",
+  "description": "Clinics, hospitals & healthcare providers",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#0d9488",
+    "secondary": "#081e1b",
+    "accent": "#34d399",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#0d9488",
+      "secondary": "#081e1b",
+      "accent": "#34d399"
+    },
+    {
+      "id": "bold",
+      "primary": "#0284c7",
+      "secondary": "#0f172a",
+      "accent": "#38bdf8"
+    },
+    {
+      "id": "classic",
+      "primary": "#166534",
+      "secondary": "#14532d",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#ec4899",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#134E4A",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+              "heading": "Your Health Is Our Priority",
+              "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+              "cta_text": "Book an Appointment",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+              "heading": "Patient-Centered Clinical Care",
+              "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+              "cta_text": "Our Doctors",
+              "cta_link": "#team"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+              "heading": "State-of-the-Art Laboratory",
+              "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+              "cta_text": "Get in Touch",
+              "cta_link": "#contact"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Specialties",
+          "subheading": "Comprehensive medical care across multiple disciplines.",
+          "items": [
+            {
+              "icon": "Heart",
+              "title": "Cardiology",
+              "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+            },
+            {
+              "icon": "Brain",
+              "title": "Neurology",
+              "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+            },
+            {
+              "icon": "Bone",
+              "title": "Orthopedics",
+              "description": "Joint replacement, sports medicine, and musculoskeletal care."
+            },
+            {
+              "icon": "Baby",
+              "title": "Pediatrics",
+              "description": "Specialized medical care for infants, children, and adolescents."
+            },
+            {
+              "icon": "Eye",
+              "title": "Ophthalmology",
+              "description": "Complete eye care services including LASIK, cataract surgery, and more."
+            },
+            {
+              "icon": "Smile",
+              "title": "Dental Care",
+              "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Doctors",
+          "members": [
+            {
+              "name": "Dr. Arjun Mehta",
+              "role": "Cardiologist, MD",
+              "image": ""
+            },
+            {
+              "name": "Dr. Sunita Rao",
+              "role": "Neurologist, DM",
+              "image": ""
+            },
+            {
+              "name": "Dr. Vikram Joshi",
+              "role": "Orthopedic Surgeon, MS",
+              "image": ""
+            },
+            {
+              "name": "Dr. Priya Nambiar",
+              "role": "Pediatrician, DCH",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Patient Testimonials",
+          "items": [
+            {
+              "name": "Meena K.",
+              "role": "Patient",
+              "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+              "rating": 5
+            },
+            {
+              "name": "Ramesh V.",
+              "role": "Patient",
+              "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+              "rating": 5
+            },
+            {
+              "name": "Ananya B.",
+              "role": "Patient",
+              "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Patient FAQs",
+          "items": [
+            {
+              "question": "How do I book an appointment?",
+              "answer": "You can book online using our contact form, call us directly, or walk in during clinic hours."
+            },
+            {
+              "question": "Do you accept insurance?",
+              "answer": "Yes, we work with most major insurance providers. Please contact us to verify your specific plan."
+            },
+            {
+              "question": "What are your clinic hours?",
+              "answer": "We are open Monday–Saturday, 8:00 AM to 8:00 PM. Emergency services are available 24/7."
+            },
+            {
+              "question": "Are online consultations available?",
+              "answer": "Yes! We offer telemedicine consultations for follow-ups and minor conditions. Ask us during booking."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Book an Appointment",
+          "subheading": "Fill in your details and we'll confirm your appointment shortly."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Clinic",
+          "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact & Appointments",
+          "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "Your Health Is Our Priority",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Patient-Centered Clinical Care",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "State-of-the-Art Laboratory",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialties",
+            "subheading": "Comprehensive medical care across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Doctors",
+            "members": [
+              {
+                "name": "Dr. Arjun Mehta",
+                "role": "Cardiologist, MD",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sunita Rao",
+                "role": "Neurologist, DM",
+                "image": ""
+              },
+              {
+                "name": "Dr. Vikram Joshi",
+                "role": "Orthopedic Surgeon, MS",
+                "image": ""
+              },
+              {
+                "name": "Dr. Priya Nambiar",
+                "role": "Pediatrician, DCH",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Testimonials",
+            "items": [
+              {
+                "name": "Meena K.",
+                "role": "Patient",
+                "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+                "rating": 5
+              },
+              {
+                "name": "Ramesh V.",
+                "role": "Patient",
+                "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+                "rating": 5
+              },
+              {
+                "name": "Ananya B.",
+                "role": "Patient",
+                "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Patient FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can book online using our contact form, call us directly, or walk in during clinic hours."
+              },
+              {
+                "question": "Do you accept insurance?",
+                "answer": "Yes, we work with most major insurance providers. Please contact us to verify your specific plan."
+              },
+              {
+                "question": "What are your clinic hours?",
+                "answer": "We are open Monday–Saturday, 8:00 AM to 8:00 PM. Emergency services are available 24/7."
+              },
+              {
+                "question": "Are online consultations available?",
+                "answer": "Yes! We offer telemedicine consultations for follow-ups and minor conditions. Ask us during booking."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book an Appointment",
+            "subheading": "Fill in your details and we'll confirm your appointment shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "YOUR HEALTH IS OUR PRIORITY",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "PATIENT-CENTERED CLINICAL CARE",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "STATE-OF-THE-ART LABORATORY",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR SPECIALTIES",
+            "subheading": "COMPREHENSIVE MEDICAL CARE ACROSS MULTIPLE DISCIPLINES.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR DOCTORS",
+            "members": [
+              {
+                "name": "Dr. Arjun Mehta",
+                "role": "Cardiologist, MD",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sunita Rao",
+                "role": "Neurologist, DM",
+                "image": ""
+              },
+              {
+                "name": "Dr. Vikram Joshi",
+                "role": "Orthopedic Surgeon, MS",
+                "image": ""
+              },
+              {
+                "name": "Dr. Priya Nambiar",
+                "role": "Pediatrician, DCH",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "PATIENT TESTIMONIALS",
+            "items": [
+              {
+                "name": "Meena K.",
+                "role": "Patient",
+                "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+                "rating": 5
+              },
+              {
+                "name": "Ramesh V.",
+                "role": "Patient",
+                "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+                "rating": 5
+              },
+              {
+                "name": "Ananya B.",
+                "role": "Patient",
+                "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "PATIENT FAQS",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can book online using our contact form, call us directly, or walk in during clinic hours."
+              },
+              {
+                "question": "Do you accept insurance?",
+                "answer": "Yes, we work with most major insurance providers. Please contact us to verify your specific plan."
+              },
+              {
+                "question": "What are your clinic hours?",
+                "answer": "We are open Monday–Saturday, 8:00 AM to 8:00 PM. Emergency services are available 24/7."
+              },
+              {
+                "question": "Are online consultations available?",
+                "answer": "Yes! We offer telemedicine consultations for follow-ups and minor conditions. Ask us during booking."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "BOOK AN APPOINTMENT",
+            "subheading": "FILL IN YOUR DETAILS AND WE'LL CONFIRM YOUR APPOINTMENT SHORTLY."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "Your Health Is Our Priority",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Patient-Centered Clinical Care",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "State-of-the-Art Laboratory",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Patient FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can book online using our contact form, call us directly, or walk in during clinic hours."
+              },
+              {
+                "question": "Do you accept insurance?",
+                "answer": "Yes, we work with most major insurance providers. Please contact us to verify your specific plan."
+              },
+              {
+                "question": "What are your clinic hours?",
+                "answer": "We are open Monday–Saturday, 8:00 AM to 8:00 PM. Emergency services are available 24/7."
+              },
+              {
+                "question": "Are online consultations available?",
+                "answer": "Yes! We offer telemedicine consultations for follow-ups and minor conditions. Ask us during booking."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Patient Testimonials",
+            "items": [
+              {
+                "name": "Meena K.",
+                "role": "Patient",
+                "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+                "rating": 5
+              },
+              {
+                "name": "Ramesh V.",
+                "role": "Patient",
+                "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+                "rating": 5
+              },
+              {
+                "name": "Ananya B.",
+                "role": "Patient",
+                "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Doctors",
+            "members": [
+              {
+                "name": "Dr. Arjun Mehta",
+                "role": "Cardiologist, MD",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sunita Rao",
+                "role": "Neurologist, DM",
+                "image": ""
+              },
+              {
+                "name": "Dr. Vikram Joshi",
+                "role": "Orthopedic Surgeon, MS",
+                "image": ""
+              },
+              {
+                "name": "Dr. Priya Nambiar",
+                "role": "Pediatrician, DCH",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialties",
+            "subheading": "Comprehensive medical care across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book an Appointment",
+            "subheading": "Fill in your details and we'll confirm your appointment shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "Your Health Is Our Priority",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Patient-Centered Clinical Care",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "State-of-the-Art Laboratory",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialties",
+            "subheading": "Comprehensive medical care across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Doctors",
+            "members": [
+              {
+                "name": "Dr. Arjun Mehta",
+                "role": "Cardiologist, MD",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sunita Rao",
+                "role": "Neurologist, DM",
+                "image": ""
+              },
+              {
+                "name": "Dr. Vikram Joshi",
+                "role": "Orthopedic Surgeon, MS",
+                "image": ""
+              },
+              {
+                "name": "Dr. Priya Nambiar",
+                "role": "Pediatrician, DCH",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Testimonials",
+            "items": [
+              {
+                "name": "Meena K.",
+                "role": "Patient",
+                "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+                "rating": 5
+              },
+              {
+                "name": "Ramesh V.",
+                "role": "Patient",
+                "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+                "rating": 5
+              },
+              {
+                "name": "Ananya B.",
+                "role": "Patient",
+                "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Book an Appointment",
+            "subheading": "Fill in your details and we'll confirm your appointment shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "Your Health Is Our Priority",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "Patient-Centered Clinical Care",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "State-of-the-Art Laboratory",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialties",
+            "subheading": "Comprehensive medical care across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Book an Appointment",
+            "subheading": "Fill in your details and we'll confirm your appointment shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#134E4A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200",
+                "heading": "🔥 Your Health Is Our Priority",
+                "subheading": "Compassionate, expert medical care for you and your family. Trusted by thousands of patients.",
+                "cta_text": "Book an Appointment",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200",
+                "heading": "🔥 Patient-Centered Clinical Care",
+                "subheading": "Advanced diagnostics, primary therapies, and specialized wellness management clinics.",
+                "cta_text": "Our Doctors",
+                "cta_link": "#team"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1579154769741-628d97e65f3c?q=80&w=1200",
+                "heading": "🔥 State-of-the-Art Laboratory",
+                "subheading": "Cutting-edge biotech and precise imaging equipment for faster and accurate clinical reports.",
+                "cta_text": "Get in Touch",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Specialties",
+            "subheading": "Comprehensive medical care across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Heart",
+                "title": "Cardiology",
+                "description": "Advanced heart care including ECG, echocardiography, and cardiac stress testing."
+              },
+              {
+                "icon": "Brain",
+                "title": "Neurology",
+                "description": "Expert diagnosis and treatment for neurological conditions and disorders."
+              },
+              {
+                "icon": "Bone",
+                "title": "Orthopedics",
+                "description": "Joint replacement, sports medicine, and musculoskeletal care."
+              },
+              {
+                "icon": "Baby",
+                "title": "Pediatrics",
+                "description": "Specialized medical care for infants, children, and adolescents."
+              },
+              {
+                "icon": "Eye",
+                "title": "Ophthalmology",
+                "description": "Complete eye care services including LASIK, cataract surgery, and more."
+              },
+              {
+                "icon": "Smile",
+                "title": "Dental Care",
+                "description": "Full-service dental clinic — from cleanings to cosmetic and restorative dentistry."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Doctors",
+            "members": [
+              {
+                "name": "Dr. Arjun Mehta",
+                "role": "Cardiologist, MD",
+                "image": ""
+              },
+              {
+                "name": "Dr. Sunita Rao",
+                "role": "Neurologist, DM",
+                "image": ""
+              },
+              {
+                "name": "Dr. Vikram Joshi",
+                "role": "Orthopedic Surgeon, MS",
+                "image": ""
+              },
+              {
+                "name": "Dr. Priya Nambiar",
+                "role": "Pediatrician, DCH",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Patient Testimonials",
+            "items": [
+              {
+                "name": "Meena K.",
+                "role": "Patient",
+                "text": "The doctors here are thorough and compassionate. I felt genuinely cared for throughout my treatment.",
+                "rating": 5
+              },
+              {
+                "name": "Ramesh V.",
+                "role": "Patient",
+                "text": "State-of-the-art facilities and incredibly knowledgeable staff. Recovery was faster than expected.",
+                "rating": 5
+              },
+              {
+                "name": "Ananya B.",
+                "role": "Patient",
+                "text": "Booking appointments is easy and the waiting time is minimal. Highly recommend this clinic.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Patient FAQs",
+            "items": [
+              {
+                "question": "How do I book an appointment?",
+                "answer": "You can book online using our contact form, call us directly, or walk in during clinic hours."
+              },
+              {
+                "question": "Do you accept insurance?",
+                "answer": "Yes, we work with most major insurance providers. Please contact us to verify your specific plan."
+              },
+              {
+                "question": "What are your clinic hours?",
+                "answer": "We are open Monday–Saturday, 8:00 AM to 8:00 PM. Emergency services are available 24/7."
+              },
+              {
+                "question": "Are online consultations available?",
+                "answer": "Yes! We offer telemedicine consultations for follow-ups and minor conditions. Ask us during booking."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Book an Appointment",
+            "subheading": "Fill in your details and we'll confirm your appointment shortly."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Clinic",
+            "body": "Founded in 2005, our multi-specialty clinic has been serving the community with compassionate, evidence-based medical care. We combine the latest medical technology with a patient-centered approach to deliver outcomes that matter. Our team of over 20 specialist doctors and 50 support staff work together to ensure every patient receives the best possible care in a comfortable, welcoming environment."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact & Appointments",
+            "subheading": "Reach out to us for appointments, queries, or emergency guidance."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

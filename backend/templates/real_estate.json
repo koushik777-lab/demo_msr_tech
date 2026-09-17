@@ -1,0 +1,1406 @@
+{
+  "sector": "real_estate",
+  "display_name": "Real Estate",
+  "icon": "🏠",
+  "description": "Real estate agencies & property listings",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#2563eb",
+    "secondary": "#0f172a",
+    "accent": "#60a5fa",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#2563eb",
+      "secondary": "#0f172a",
+      "accent": "#60a5fa"
+    },
+    {
+      "id": "bold",
+      "primary": "#059669",
+      "secondary": "#111827",
+      "accent": "#34d399"
+    },
+    {
+      "id": "classic",
+      "primary": "#4f46e5",
+      "secondary": "#1e293b",
+      "accent": "#818cf8"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#ec4899",
+      "secondary": "#1e1b4b",
+      "accent": "#f472b6"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#0F172A",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+              "heading": "Find Your Perfect Home",
+              "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+              "cta_text": "Browse Properties",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+              "heading": "Elegant Modern Living",
+              "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+              "cta_text": "Consult Agent",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+              "heading": "Penthouse City Views",
+              "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+              "cta_text": "View Listings",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Services",
+          "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+          "items": [
+            {
+              "icon": "Home",
+              "title": "Residential Sales",
+              "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+            },
+            {
+              "icon": "Building",
+              "title": "Commercial Properties",
+              "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+            },
+            {
+              "icon": "Key",
+              "title": "Rentals",
+              "description": "Short and long-term rental properties for individuals, families, and corporates."
+            },
+            {
+              "icon": "Coins",
+              "title": "Investment Advisory",
+              "description": "Expert guidance on high-yield property investments and portfolio diversification."
+            },
+            {
+              "icon": "FileText",
+              "title": "Legal & Documentation",
+              "description": "Complete assistance with property documentation, registration, and legal verification."
+            },
+            {
+              "icon": "Hammer",
+              "title": "New Developments",
+              "description": "Be the first to book in premium new launch projects at pre-launch prices."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Meet Our Agents",
+          "members": [
+            {
+              "name": "Anil Sharma",
+              "role": "Senior Property Advisor",
+              "image": ""
+            },
+            {
+              "name": "Rekha Gupta",
+              "role": "Luxury Homes Specialist",
+              "image": ""
+            },
+            {
+              "name": "Suresh Kumar",
+              "role": "Commercial Real Estate Expert",
+              "image": ""
+            },
+            {
+              "name": "Priya Verma",
+              "role": "Investment Consultant",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Client Success Stories",
+          "items": [
+            {
+              "name": "Rohit N.",
+              "role": "Home Buyer",
+              "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+              "rating": 5
+            },
+            {
+              "name": "Geeta M.",
+              "role": "Property Investor",
+              "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+              "rating": 5
+            },
+            {
+              "name": "Sanjay T.",
+              "role": "Home Seller",
+              "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Common Questions",
+          "items": [
+            {
+              "question": "How do I start the home buying process?",
+              "answer": "Start by consulting with one of our agents who will assess your requirements, budget, and help you shortlist suitable properties."
+            },
+            {
+              "question": "What documents are required for purchasing property?",
+              "answer": "Typically: PAN card, Aadhaar, income proof, bank statements, and property-specific documents. Our team handles all verification."
+            },
+            {
+              "question": "Do you assist with home loans?",
+              "answer": "Yes, we have tie-ups with major banks and can help you get pre-approved for a home loan at competitive interest rates."
+            },
+            {
+              "question": "What are your brokerage charges?",
+              "answer": "Our brokerage is typically 1-2% of the transaction value, which is competitive in the market. We can discuss this during our initial meeting."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Talk to an Expert",
+          "subheading": "Share your requirements and we'll match you with the perfect property."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Agency",
+          "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact Our Agents",
+          "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "Find Your Perfect Home",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "Elegant Modern Living",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "Penthouse City Views",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Agents",
+            "members": [
+              {
+                "name": "Anil Sharma",
+                "role": "Senior Property Advisor",
+                "image": ""
+              },
+              {
+                "name": "Rekha Gupta",
+                "role": "Luxury Homes Specialist",
+                "image": ""
+              },
+              {
+                "name": "Suresh Kumar",
+                "role": "Commercial Real Estate Expert",
+                "image": ""
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Investment Consultant",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Success Stories",
+            "items": [
+              {
+                "name": "Rohit N.",
+                "role": "Home Buyer",
+                "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+                "rating": 5
+              },
+              {
+                "name": "Geeta M.",
+                "role": "Property Investor",
+                "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+                "rating": 5
+              },
+              {
+                "name": "Sanjay T.",
+                "role": "Home Seller",
+                "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Common Questions",
+            "items": [
+              {
+                "question": "How do I start the home buying process?",
+                "answer": "Start by consulting with one of our agents who will assess your requirements, budget, and help you shortlist suitable properties."
+              },
+              {
+                "question": "What documents are required for purchasing property?",
+                "answer": "Typically: PAN card, Aadhaar, income proof, bank statements, and property-specific documents. Our team handles all verification."
+              },
+              {
+                "question": "Do you assist with home loans?",
+                "answer": "Yes, we have tie-ups with major banks and can help you get pre-approved for a home loan at competitive interest rates."
+              },
+              {
+                "question": "What are your brokerage charges?",
+                "answer": "Our brokerage is typically 1-2% of the transaction value, which is competitive in the market. We can discuss this during our initial meeting."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Talk to an Expert",
+            "subheading": "Share your requirements and we'll match you with the perfect property."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "FIND YOUR PERFECT HOME",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "ELEGANT MODERN LIVING",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "PENTHOUSE CITY VIEWS",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR SERVICES",
+            "subheading": "END-TO-END REAL ESTATE SOLUTIONS FOR BUYERS, SELLERS, AND INVESTORS.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "MEET OUR AGENTS",
+            "members": [
+              {
+                "name": "Anil Sharma",
+                "role": "Senior Property Advisor",
+                "image": ""
+              },
+              {
+                "name": "Rekha Gupta",
+                "role": "Luxury Homes Specialist",
+                "image": ""
+              },
+              {
+                "name": "Suresh Kumar",
+                "role": "Commercial Real Estate Expert",
+                "image": ""
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Investment Consultant",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "CLIENT SUCCESS STORIES",
+            "items": [
+              {
+                "name": "Rohit N.",
+                "role": "Home Buyer",
+                "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+                "rating": 5
+              },
+              {
+                "name": "Geeta M.",
+                "role": "Property Investor",
+                "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+                "rating": 5
+              },
+              {
+                "name": "Sanjay T.",
+                "role": "Home Seller",
+                "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "COMMON QUESTIONS",
+            "items": [
+              {
+                "question": "How do I start the home buying process?",
+                "answer": "Start by consulting with one of our agents who will assess your requirements, budget, and help you shortlist suitable properties."
+              },
+              {
+                "question": "What documents are required for purchasing property?",
+                "answer": "Typically: PAN card, Aadhaar, income proof, bank statements, and property-specific documents. Our team handles all verification."
+              },
+              {
+                "question": "Do you assist with home loans?",
+                "answer": "Yes, we have tie-ups with major banks and can help you get pre-approved for a home loan at competitive interest rates."
+              },
+              {
+                "question": "What are your brokerage charges?",
+                "answer": "Our brokerage is typically 1-2% of the transaction value, which is competitive in the market. We can discuss this during our initial meeting."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "TALK TO AN EXPERT",
+            "subheading": "SHARE YOUR REQUIREMENTS AND WE'LL MATCH YOU WITH THE PERFECT PROPERTY."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "Find Your Perfect Home",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "Elegant Modern Living",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "Penthouse City Views",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Common Questions",
+            "items": [
+              {
+                "question": "How do I start the home buying process?",
+                "answer": "Start by consulting with one of our agents who will assess your requirements, budget, and help you shortlist suitable properties."
+              },
+              {
+                "question": "What documents are required for purchasing property?",
+                "answer": "Typically: PAN card, Aadhaar, income proof, bank statements, and property-specific documents. Our team handles all verification."
+              },
+              {
+                "question": "Do you assist with home loans?",
+                "answer": "Yes, we have tie-ups with major banks and can help you get pre-approved for a home loan at competitive interest rates."
+              },
+              {
+                "question": "What are your brokerage charges?",
+                "answer": "Our brokerage is typically 1-2% of the transaction value, which is competitive in the market. We can discuss this during our initial meeting."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Client Success Stories",
+            "items": [
+              {
+                "name": "Rohit N.",
+                "role": "Home Buyer",
+                "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+                "rating": 5
+              },
+              {
+                "name": "Geeta M.",
+                "role": "Property Investor",
+                "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+                "rating": 5
+              },
+              {
+                "name": "Sanjay T.",
+                "role": "Home Seller",
+                "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Agents",
+            "members": [
+              {
+                "name": "Anil Sharma",
+                "role": "Senior Property Advisor",
+                "image": ""
+              },
+              {
+                "name": "Rekha Gupta",
+                "role": "Luxury Homes Specialist",
+                "image": ""
+              },
+              {
+                "name": "Suresh Kumar",
+                "role": "Commercial Real Estate Expert",
+                "image": ""
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Investment Consultant",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Talk to an Expert",
+            "subheading": "Share your requirements and we'll match you with the perfect property."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "Find Your Perfect Home",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "Elegant Modern Living",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "Penthouse City Views",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Agents",
+            "members": [
+              {
+                "name": "Anil Sharma",
+                "role": "Senior Property Advisor",
+                "image": ""
+              },
+              {
+                "name": "Rekha Gupta",
+                "role": "Luxury Homes Specialist",
+                "image": ""
+              },
+              {
+                "name": "Suresh Kumar",
+                "role": "Commercial Real Estate Expert",
+                "image": ""
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Investment Consultant",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Success Stories",
+            "items": [
+              {
+                "name": "Rohit N.",
+                "role": "Home Buyer",
+                "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+                "rating": 5
+              },
+              {
+                "name": "Geeta M.",
+                "role": "Property Investor",
+                "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+                "rating": 5
+              },
+              {
+                "name": "Sanjay T.",
+                "role": "Home Seller",
+                "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Talk to an Expert",
+            "subheading": "Share your requirements and we'll match you with the perfect property."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "Find Your Perfect Home",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "Elegant Modern Living",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "Penthouse City Views",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Talk to an Expert",
+            "subheading": "Share your requirements and we'll match you with the perfect property."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#0F172A",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+                "heading": "🔥 Find Your Perfect Home",
+                "subheading": "Thousands of verified luxury properties. Buy, sell, or rent with confidence through our expert agents.",
+                "cta_text": "Browse Properties",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200",
+                "heading": "🔥 Elegant Modern Living",
+                "subheading": "Curated interiors, spacious floorplans, and prime locations tailored to your high-end lifestyle.",
+                "cta_text": "Consult Agent",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200",
+                "heading": "🔥 Penthouse City Views",
+                "subheading": "Premium apartments in the heart of the city with breathtaking views and amenities.",
+                "cta_text": "View Listings",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Services",
+            "subheading": "End-to-end real estate solutions for buyers, sellers, and investors.",
+            "items": [
+              {
+                "icon": "Home",
+                "title": "Residential Sales",
+                "description": "Find your dream home from our curated listings of apartments, villas, and independent houses."
+              },
+              {
+                "icon": "Building",
+                "title": "Commercial Properties",
+                "description": "Premium office spaces, retail shops, and warehouses for your business needs."
+              },
+              {
+                "icon": "Key",
+                "title": "Rentals",
+                "description": "Short and long-term rental properties for individuals, families, and corporates."
+              },
+              {
+                "icon": "Coins",
+                "title": "Investment Advisory",
+                "description": "Expert guidance on high-yield property investments and portfolio diversification."
+              },
+              {
+                "icon": "FileText",
+                "title": "Legal & Documentation",
+                "description": "Complete assistance with property documentation, registration, and legal verification."
+              },
+              {
+                "icon": "Hammer",
+                "title": "New Developments",
+                "description": "Be the first to book in premium new launch projects at pre-launch prices."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Meet Our Agents",
+            "members": [
+              {
+                "name": "Anil Sharma",
+                "role": "Senior Property Advisor",
+                "image": ""
+              },
+              {
+                "name": "Rekha Gupta",
+                "role": "Luxury Homes Specialist",
+                "image": ""
+              },
+              {
+                "name": "Suresh Kumar",
+                "role": "Commercial Real Estate Expert",
+                "image": ""
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Investment Consultant",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Success Stories",
+            "items": [
+              {
+                "name": "Rohit N.",
+                "role": "Home Buyer",
+                "text": "Found our dream home within 2 weeks. The agent was incredibly helpful and made the whole process stress-free.",
+                "rating": 5
+              },
+              {
+                "name": "Geeta M.",
+                "role": "Property Investor",
+                "text": "Excellent investment advice. My portfolio has grown 40% in 2 years thanks to their guidance.",
+                "rating": 5
+              },
+              {
+                "name": "Sanjay T.",
+                "role": "Home Seller",
+                "text": "Got a great price for my property in record time. Professional, honest, and highly competent.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Common Questions",
+            "items": [
+              {
+                "question": "How do I start the home buying process?",
+                "answer": "Start by consulting with one of our agents who will assess your requirements, budget, and help you shortlist suitable properties."
+              },
+              {
+                "question": "What documents are required for purchasing property?",
+                "answer": "Typically: PAN card, Aadhaar, income proof, bank statements, and property-specific documents. Our team handles all verification."
+              },
+              {
+                "question": "Do you assist with home loans?",
+                "answer": "Yes, we have tie-ups with major banks and can help you get pre-approved for a home loan at competitive interest rates."
+              },
+              {
+                "question": "What are your brokerage charges?",
+                "answer": "Our brokerage is typically 1-2% of the transaction value, which is competitive in the market. We can discuss this during our initial meeting."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Talk to an Expert",
+            "subheading": "Share your requirements and we'll match you with the perfect property."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Agency",
+            "body": "With over 20 years in the real estate business, we've facilitated thousands of successful transactions worth billions of rupees. Our reputation is built on transparency, expertise, and a genuine commitment to finding the right property for every client. We operate across 12 cities with a team of 50+ licensed real estate professionals."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Agents",
+            "subheading": "Looking to buy, sell, or rent? Our experts are ready to help."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

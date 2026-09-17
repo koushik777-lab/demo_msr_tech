@@ -10,14 +10,14 @@ body {
     font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #000000;
-    color: #FFFFFF;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     overflow-x: hidden;
 }
 
 /* Premium Text Gradient */
 .text-gradient {
-    background: linear-gradient(135deg, #FFFFFF 0%, #b4b4b4 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -40,26 +40,31 @@ code {
     box-sizing: border-box;
 }
 
-/* Dark Theme Variables */
+/* Light Theme Variables */
 :root {
-    /* Backgrounds - Dark Theme Foundation */
-    --bg-primary: #000000;
-    --bg-secondary: #121212;
-    --bg-overlay: rgba(255, 255, 255, 0.1);
+    color-scheme: light;
 
-    /* Text - High Contrast for Dark Theme */
-    --text-primary: #FFFFFF;
-    --text-secondary: rgba(255, 255, 255, 0.85);
-    --text-muted: #4D4D4D;
+    /* Backgrounds - Light Theme Foundation */
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
+    --bg-overlay: rgba(0, 0, 0, 0.04);
 
-    /* Borders - Subtle Dark Theme */
-    --border-subtle: rgba(255, 255, 255, 0.25);
-    --border-medium: rgba(255, 255, 255, 0.4);
+    /* Text - High Contrast for Light Theme */
+    --text-primary: #111111;
+    --text-secondary: #444444;
+    --text-muted: #7E7E82;
+
+    /* Borders - Subtle Light Theme */
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-medium: rgba(0, 0, 0, 0.16);
 
     /* MAIN ACCENT COLORS - Brand Colors Only */
-    --brand-primary: #00FFD1;
-    --brand-hover: rgba(0, 255, 209, 0.1);
-    --brand-active: #6FD2C0;
+    --brand-primary: #0D9488;
+    --brand-hover: rgba(13, 148, 136, 0.1);
+    --brand-active: #0F766E;
+
+    /* Hero Background Gradient for optimal contrast with white animation spheres */
+    --hero-bg: linear-gradient(135deg, #edf2f7 0%, #d2dbe5 100%);
 }
 
 /* Smooth Scrolling */
@@ -70,7 +75,7 @@ html {
 /* Selection Color */
 ::selection {
     background: var(--brand-primary);
-    color: #000000;
+    color: #FFFFFF;
 }
 
 /* Custom Scrollbar */
@@ -94,22 +99,23 @@ html {
 /* Grid Pattern Overlay */
 .grid-pattern {
     background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 7.6923%),
-        repeating-linear-gradient(-90deg, transparent, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 7.6923%);
+        repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0, 0, 0, 0.03) 1px, rgba(0, 0, 0, 0.03) 7.6923%),
+        repeating-linear-gradient(-90deg, transparent, transparent 1px, rgba(0, 0, 0, 0.03) 1px, rgba(0, 0, 0, 0.03) 7.6923%);
     background-size: 100% 100%;
 }
 
 /* Glassmorphism Effect */
 .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04);
 }
 
 /* Glow Effect */
 .glow {
-    box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.25);
 }
 
 /* Cursor Effects */
@@ -187,3 +193,82 @@ html {
         @apply bg-background text-foreground;
     }
 }
+
+/* Resizable Sidebar handles styling */
+.resizer-bar {
+    width: 6px;
+    cursor: col-resize;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: background-color 0.15s;
+}
+
+.resizer-bar::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: background-color 0.15s, width 0.15s;
+}
+
+.resizer-bar:hover::after,
+.resizer-bar.active::after {
+    background-color: #00FFD1;
+    width: 2px;
+}
+
+/* Editor Theme Variables (Default to Dark for that premium builder feel) */
+:root {
+  --editor-bg: #121212;
+  --editor-bg-subtle: #1E1E1E;
+  --editor-bg-overlay: rgba(255, 255, 255, 0.04);
+  --editor-text-primary: #FFFFFF;
+  --editor-text-secondary: #E0E0E0;
+  --editor-text-muted: rgba(255, 255, 255, 0.4);
+  --editor-border: rgba(255, 255, 255, 0.12);
+  --editor-border-subtle: rgba(255, 255, 255, 0.08);
+  --editor-input-bg: rgba(255, 255, 255, 0.04);
+  --editor-input-border: rgba(255, 255, 255, 0.12);
+  --editor-btn-bg: rgba(255, 255, 255, 0.02);
+}
+
+/* Light Mode Editor overrides */
+.editor-light-mode {
+  --editor-bg: #FFFFFF;
+  --editor-bg-subtle: #F8F9FA;
+  --editor-bg-overlay: rgba(0, 0, 0, 0.04);
+  --editor-text-primary: #111111;
+  --editor-text-secondary: #333333;
+  --editor-text-muted: rgba(0, 0, 0, 0.4);
+  --editor-border: rgba(0, 0, 0, 0.12);
+  --editor-border-subtle: rgba(0, 0, 0, 0.08);
+  --editor-input-bg: rgba(0, 0, 0, 0.02);
+  --editor-input-border: rgba(0, 0, 0, 0.12);
+  --editor-btn-bg: rgba(0, 0, 0, 0.02);
+}
+
+/* Dark Theme Variables for Landing Page */
+.dark-theme {
+    color-scheme: dark;
+    --bg-primary: #0F172A; /* Slate 900 */
+    --bg-secondary: #1E293B; /* Slate 800 */
+    --bg-overlay: rgba(255, 255, 255, 0.04);
+    
+    --text-primary: #F8FAFC; /* Slate 50 */
+    --text-secondary: #CBD5E1; /* Slate 300 */
+    --text-muted: #64748B; /* Slate 500 */
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-medium: rgba(255, 255, 255, 0.16);
+
+    --hero-bg: linear-gradient(135deg, #0b0f19 0%, #111827 100%);
+}
+
+.dark-theme .glass {
+    background: rgba(15, 23, 42, 0.7); /* Translucent slate bg */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,1304 @@
+{
+  "sector": "ecommerce",
+  "display_name": "E-Commerce & Retail",
+  "icon": "🛍️",
+  "description": "Online stores & retail shops",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#4f46e5",
+    "secondary": "#0f172a",
+    "accent": "#818cf8",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#4f46e5",
+      "secondary": "#0f172a",
+      "accent": "#818cf8"
+    },
+    {
+      "id": "bold",
+      "primary": "#db2777",
+      "secondary": "#111827",
+      "accent": "#f472b6"
+    },
+    {
+      "id": "classic",
+      "primary": "#2563eb",
+      "secondary": "#1e293b",
+      "accent": "#3b82f6"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#e11d48",
+      "secondary": "#1e1b4b",
+      "accent": "#fb7185"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1E1B4B",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+              "heading": "Discover Products You'll Love",
+              "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+              "cta_text": "Shop Now",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+              "heading": "Modern Shopping Experience",
+              "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+              "cta_text": "Explore Catalog",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+              "heading": "Premium Tech & Lifestyle",
+              "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+              "cta_text": "View Tech",
+              "cta_link": "#services"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Shop by Category",
+          "subheading": "Explore our curated product collections.",
+          "items": [
+            {
+              "icon": "Shirt",
+              "title": "Fashion & Apparel",
+              "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+            },
+            {
+              "icon": "Laptop",
+              "title": "Electronics",
+              "description": "The latest gadgets, accessories, and tech products at competitive prices."
+            },
+            {
+              "icon": "Home",
+              "title": "Home & Living",
+              "description": "Transform your space with furniture, decor, and kitchen essentials."
+            },
+            {
+              "icon": "Sparkles",
+              "title": "Beauty & Personal Care",
+              "description": "Premium skincare, makeup, and grooming products for your daily routine."
+            },
+            {
+              "icon": "BookOpen",
+              "title": "Books & Stationery",
+              "description": "Bestsellers, study materials, and stationery for every age and purpose."
+            },
+            {
+              "icon": "Gamepad2",
+              "title": "Sports & Hobbies",
+              "description": "Equipment, activewear, and accessories for your active lifestyle."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "pricing-1",
+        "type": "pricing",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Membership Plans",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": "Free",
+              "features": [
+                "Standard Delivery",
+                "Basic Support",
+                "30-day Returns"
+              ],
+              "popular": false
+            },
+            {
+              "name": "Premium",
+              "price": "₹299/mo",
+              "features": [
+                "Free Express Delivery",
+                "Priority Support",
+                "60-day Returns",
+                "Exclusive Deals",
+                "Early Access Sales"
+              ],
+              "popular": true
+            },
+            {
+              "name": "Business",
+              "price": "₹799/mo",
+              "features": [
+                "Free Same-day Delivery",
+                "Dedicated Account Manager",
+                "90-day Returns",
+                "Bulk Discounts",
+                "B2B Invoicing"
+              ],
+              "popular": false
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "What Our Shoppers Say",
+          "items": [
+            {
+              "name": "Neha S.",
+              "role": "Verified Buyer",
+              "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+              "rating": 5
+            },
+            {
+              "name": "Rohan G.",
+              "role": "Premium Member",
+              "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+              "rating": 5
+            },
+            {
+              "name": "Priti M.",
+              "role": "Regular Shopper",
+              "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Get in Touch",
+          "subheading": "Questions about an order? We're here 24/7 to help."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Store",
+          "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Customer Support",
+          "subheading": "We're here to help with orders, returns, and any questions."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "Discover Products You'll Love",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "Modern Shopping Experience",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "Premium Tech & Lifestyle",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Shop by Category",
+            "subheading": "Explore our curated product collections.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "Free",
+                "features": [
+                  "Standard Delivery",
+                  "Basic Support",
+                  "30-day Returns"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Premium",
+                "price": "₹299/mo",
+                "features": [
+                  "Free Express Delivery",
+                  "Priority Support",
+                  "60-day Returns",
+                  "Exclusive Deals",
+                  "Early Access Sales"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Business",
+                "price": "₹799/mo",
+                "features": [
+                  "Free Same-day Delivery",
+                  "Dedicated Account Manager",
+                  "90-day Returns",
+                  "Bulk Discounts",
+                  "B2B Invoicing"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Shoppers Say",
+            "items": [
+              {
+                "name": "Neha S.",
+                "role": "Verified Buyer",
+                "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+                "rating": 5
+              },
+              {
+                "name": "Rohan G.",
+                "role": "Premium Member",
+                "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+                "rating": 5
+              },
+              {
+                "name": "Priti M.",
+                "role": "Regular Shopper",
+                "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Questions about an order? We're here 24/7 to help."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "DISCOVER PRODUCTS YOU'LL LOVE",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "MODERN SHOPPING EXPERIENCE",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "PREMIUM TECH & LIFESTYLE",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "SHOP BY CATEGORY",
+            "subheading": "EXPLORE OUR CURATED PRODUCT COLLECTIONS.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "MEMBERSHIP PLANS",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "Free",
+                "features": [
+                  "Standard Delivery",
+                  "Basic Support",
+                  "30-day Returns"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Premium",
+                "price": "₹299/mo",
+                "features": [
+                  "Free Express Delivery",
+                  "Priority Support",
+                  "60-day Returns",
+                  "Exclusive Deals",
+                  "Early Access Sales"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Business",
+                "price": "₹799/mo",
+                "features": [
+                  "Free Same-day Delivery",
+                  "Dedicated Account Manager",
+                  "90-day Returns",
+                  "Bulk Discounts",
+                  "B2B Invoicing"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "WHAT OUR SHOPPERS SAY",
+            "items": [
+              {
+                "name": "Neha S.",
+                "role": "Verified Buyer",
+                "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+                "rating": 5
+              },
+              {
+                "name": "Rohan G.",
+                "role": "Premium Member",
+                "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+                "rating": 5
+              },
+              {
+                "name": "Priti M.",
+                "role": "Regular Shopper",
+                "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "GET IN TOUCH",
+            "subheading": "QUESTIONS ABOUT AN ORDER? WE'RE HERE 24/7 TO HELP."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "Discover Products You'll Love",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "Modern Shopping Experience",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "Premium Tech & Lifestyle",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "What Our Shoppers Say",
+            "items": [
+              {
+                "name": "Neha S.",
+                "role": "Verified Buyer",
+                "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+                "rating": 5
+              },
+              {
+                "name": "Rohan G.",
+                "role": "Premium Member",
+                "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+                "rating": 5
+              },
+              {
+                "name": "Priti M.",
+                "role": "Regular Shopper",
+                "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "Free",
+                "features": [
+                  "Standard Delivery",
+                  "Basic Support",
+                  "30-day Returns"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Premium",
+                "price": "₹299/mo",
+                "features": [
+                  "Free Express Delivery",
+                  "Priority Support",
+                  "60-day Returns",
+                  "Exclusive Deals",
+                  "Early Access Sales"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Business",
+                "price": "₹799/mo",
+                "features": [
+                  "Free Same-day Delivery",
+                  "Dedicated Account Manager",
+                  "90-day Returns",
+                  "Bulk Discounts",
+                  "B2B Invoicing"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Shop by Category",
+            "subheading": "Explore our curated product collections.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Questions about an order? We're here 24/7 to help."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "Discover Products You'll Love",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "Modern Shopping Experience",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "Premium Tech & Lifestyle",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Shop by Category",
+            "subheading": "Explore our curated product collections.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "What Our Shoppers Say",
+            "items": [
+              {
+                "name": "Neha S.",
+                "role": "Verified Buyer",
+                "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+                "rating": 5
+              },
+              {
+                "name": "Rohan G.",
+                "role": "Premium Member",
+                "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+                "rating": 5
+              },
+              {
+                "name": "Priti M.",
+                "role": "Regular Shopper",
+                "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Questions about an order? We're here 24/7 to help."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "Discover Products You'll Love",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "Modern Shopping Experience",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "Premium Tech & Lifestyle",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Shop by Category",
+            "subheading": "Explore our curated product collections.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Questions about an order? We're here 24/7 to help."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1E1B4B",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+                "heading": "🔥 Discover Products You'll Love",
+                "subheading": "Shop thousands of curated products with fast delivery, easy returns, and the best prices guaranteed.",
+                "cta_text": "Shop Now",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+                "heading": "🔥 Modern Shopping Experience",
+                "subheading": "Get your favorite gadgets, apparel, and home essentials delivered to your doorstep.",
+                "cta_text": "Explore Catalog",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
+                "heading": "🔥 Premium Tech & Lifestyle",
+                "subheading": "Top-tier electronic hardware and smart accessories with certified warranty.",
+                "cta_text": "View Tech",
+                "cta_link": "#services"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Shop by Category",
+            "subheading": "Explore our curated product collections.",
+            "items": [
+              {
+                "icon": "Shirt",
+                "title": "Fashion & Apparel",
+                "description": "Trending styles for men, women, and kids. From casual to formal, we've got it all."
+              },
+              {
+                "icon": "Laptop",
+                "title": "Electronics",
+                "description": "The latest gadgets, accessories, and tech products at competitive prices."
+              },
+              {
+                "icon": "Home",
+                "title": "Home & Living",
+                "description": "Transform your space with furniture, decor, and kitchen essentials."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Beauty & Personal Care",
+                "description": "Premium skincare, makeup, and grooming products for your daily routine."
+              },
+              {
+                "icon": "BookOpen",
+                "title": "Books & Stationery",
+                "description": "Bestsellers, study materials, and stationery for every age and purpose."
+              },
+              {
+                "icon": "Gamepad2",
+                "title": "Sports & Hobbies",
+                "description": "Equipment, activewear, and accessories for your active lifestyle."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "Free",
+                "features": [
+                  "Standard Delivery",
+                  "Basic Support",
+                  "30-day Returns"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Premium",
+                "price": "₹299/mo",
+                "features": [
+                  "Free Express Delivery",
+                  "Priority Support",
+                  "60-day Returns",
+                  "Exclusive Deals",
+                  "Early Access Sales"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Business",
+                "price": "₹799/mo",
+                "features": [
+                  "Free Same-day Delivery",
+                  "Dedicated Account Manager",
+                  "90-day Returns",
+                  "Bulk Discounts",
+                  "B2B Invoicing"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "What Our Shoppers Say",
+            "items": [
+              {
+                "name": "Neha S.",
+                "role": "Verified Buyer",
+                "text": "Amazing quality products and super fast delivery. Will definitely shop again!",
+                "rating": 5
+              },
+              {
+                "name": "Rohan G.",
+                "role": "Premium Member",
+                "text": "The premium membership is totally worth it. Free express delivery alone saves me so much.",
+                "rating": 5
+              },
+              {
+                "name": "Priti M.",
+                "role": "Regular Shopper",
+                "text": "Best online shopping experience I've had. Easy returns and excellent customer support.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Get in Touch",
+            "subheading": "Questions about an order? We're here 24/7 to help."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Store",
+            "body": "We started with a simple mission: make quality products accessible to everyone. Today, we serve over 100,000 happy customers across India with a catalog of 50,000+ products, same-day delivery in major cities, and a 100% satisfaction guarantee on every purchase."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Customer Support",
+            "subheading": "We're here to help with orders, returns, and any questions."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

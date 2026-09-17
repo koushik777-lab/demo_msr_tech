@@ -1,0 +1,1501 @@
+{
+  "sector": "fitness",
+  "display_name": "Fitness & Wellness",
+  "icon": "💪",
+  "description": "Gyms, trainers & wellness studios",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#22c55e",
+    "secondary": "#091f11",
+    "accent": "#4ade80",
+    "font_heading": "Outfit",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#22c55e",
+      "secondary": "#091f11",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "bold",
+      "primary": "#dc2626",
+      "secondary": "#111827",
+      "accent": "#fca5a5"
+    },
+    {
+      "id": "classic",
+      "primary": "#0284c7",
+      "secondary": "#0f172a",
+      "accent": "#38bdf8"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#f43f5e",
+      "secondary": "#1e1b4b",
+      "accent": "#fda4af"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#111827",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+              "heading": "Transform Your Body. Transform Your Life.",
+              "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+              "cta_text": "Start Your Journey",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+              "heading": "Find Your Inner Balance",
+              "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+              "cta_text": "Explore Programs",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+              "heading": "Push Past Your Limits",
+              "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+              "cta_text": "Join Elite Plan",
+              "cta_link": "#pricing"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Our Programs",
+          "subheading": "Find the perfect program for your fitness goals.",
+          "items": [
+            {
+              "icon": "Dumbbell",
+              "title": "Strength Training",
+              "description": "Build muscle and increase strength with our expert-guided weight training programs."
+            },
+            {
+              "icon": "Activity",
+              "title": "Cardio & HIIT",
+              "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+            },
+            {
+              "icon": "Heart",
+              "title": "Yoga & Mindfulness",
+              "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+            },
+            {
+              "icon": "Flame",
+              "title": "Boxing & MMA",
+              "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+            },
+            {
+              "icon": "Bike",
+              "title": "Cycling Classes",
+              "description": "Indoor cycling classes with motivating instructors and energizing music."
+            },
+            {
+              "icon": "Apple",
+              "title": "Nutrition Coaching",
+              "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "pricing-1",
+        "type": "pricing",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Membership Plans",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": "₹999/mo",
+              "features": [
+                "Gym Access (6 AM–10 PM)",
+                "Cardio & Free Weights",
+                "Locker Room Access"
+              ],
+              "popular": false
+            },
+            {
+              "name": "Pro",
+              "price": "₹2,499/mo",
+              "features": [
+                "24/7 Gym Access",
+                "All Group Classes",
+                "1 PT Session/month",
+                "Nutrition Guidance",
+                "App Access"
+              ],
+              "popular": true
+            },
+            {
+              "name": "Elite",
+              "price": "₹4,999/mo",
+              "features": [
+                "24/7 Access",
+                "Unlimited Classes",
+                "4 PT Sessions/month",
+                "Personalized Nutrition Plan",
+                "Body Composition Analysis",
+                "Priority Booking"
+              ],
+              "popular": false
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Our Trainers",
+          "members": [
+            {
+              "name": "Kiran Bose",
+              "role": "Head Trainer, CSCS",
+              "image": ""
+            },
+            {
+              "name": "Ananya Das",
+              "role": "Yoga & Mindfulness Coach",
+              "image": ""
+            },
+            {
+              "name": "Raj Kapoor",
+              "role": "Boxing & MMA Instructor",
+              "image": ""
+            },
+            {
+              "name": "Deepa Menon",
+              "role": "Nutritionist & Wellness Coach",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Member Success Stories",
+          "items": [
+            {
+              "name": "Arun P.",
+              "role": "Member since 2022",
+              "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+              "rating": 5
+            },
+            {
+              "name": "Sneha R.",
+              "role": "Elite Member",
+              "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+              "rating": 5
+            },
+            {
+              "name": "Mihir V.",
+              "role": "Member",
+              "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Start Your Free Trial",
+          "subheading": "Claim your 7-day free membership today. No credit card required."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Our Mission",
+          "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Join Us Today",
+          "subheading": "Drop us a message or visit us to start your fitness journey."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "Transform Your Body. Transform Your Life.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "Find Your Inner Balance",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "Push Past Your Limits",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "Find the perfect program for your fitness goals.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹999/mo",
+                "features": [
+                  "Gym Access (6 AM–10 PM)",
+                  "Cardio & Free Weights",
+                  "Locker Room Access"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Pro",
+                "price": "₹2,499/mo",
+                "features": [
+                  "24/7 Gym Access",
+                  "All Group Classes",
+                  "1 PT Session/month",
+                  "Nutrition Guidance",
+                  "App Access"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Elite",
+                "price": "₹4,999/mo",
+                "features": [
+                  "24/7 Access",
+                  "Unlimited Classes",
+                  "4 PT Sessions/month",
+                  "Personalized Nutrition Plan",
+                  "Body Composition Analysis",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Trainers",
+            "members": [
+              {
+                "name": "Kiran Bose",
+                "role": "Head Trainer, CSCS",
+                "image": ""
+              },
+              {
+                "name": "Ananya Das",
+                "role": "Yoga & Mindfulness Coach",
+                "image": ""
+              },
+              {
+                "name": "Raj Kapoor",
+                "role": "Boxing & MMA Instructor",
+                "image": ""
+              },
+              {
+                "name": "Deepa Menon",
+                "role": "Nutritionist & Wellness Coach",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Member Success Stories",
+            "items": [
+              {
+                "name": "Arun P.",
+                "role": "Member since 2022",
+                "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+                "rating": 5
+              },
+              {
+                "name": "Sneha R.",
+                "role": "Elite Member",
+                "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+                "rating": 5
+              },
+              {
+                "name": "Mihir V.",
+                "role": "Member",
+                "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Your Free Trial",
+            "subheading": "Claim your 7-day free membership today. No credit card required."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "TRANSFORM YOUR BODY. TRANSFORM YOUR LIFE.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "FIND YOUR INNER BALANCE",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "PUSH PAST YOUR LIMITS",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "OUR PROGRAMS",
+            "subheading": "FIND THE PERFECT PROGRAM FOR YOUR FITNESS GOALS.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "MEMBERSHIP PLANS",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹999/mo",
+                "features": [
+                  "Gym Access (6 AM–10 PM)",
+                  "Cardio & Free Weights",
+                  "Locker Room Access"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Pro",
+                "price": "₹2,499/mo",
+                "features": [
+                  "24/7 Gym Access",
+                  "All Group Classes",
+                  "1 PT Session/month",
+                  "Nutrition Guidance",
+                  "App Access"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Elite",
+                "price": "₹4,999/mo",
+                "features": [
+                  "24/7 Access",
+                  "Unlimited Classes",
+                  "4 PT Sessions/month",
+                  "Personalized Nutrition Plan",
+                  "Body Composition Analysis",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "OUR TRAINERS",
+            "members": [
+              {
+                "name": "Kiran Bose",
+                "role": "Head Trainer, CSCS",
+                "image": ""
+              },
+              {
+                "name": "Ananya Das",
+                "role": "Yoga & Mindfulness Coach",
+                "image": ""
+              },
+              {
+                "name": "Raj Kapoor",
+                "role": "Boxing & MMA Instructor",
+                "image": ""
+              },
+              {
+                "name": "Deepa Menon",
+                "role": "Nutritionist & Wellness Coach",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "MEMBER SUCCESS STORIES",
+            "items": [
+              {
+                "name": "Arun P.",
+                "role": "Member since 2022",
+                "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+                "rating": 5
+              },
+              {
+                "name": "Sneha R.",
+                "role": "Elite Member",
+                "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+                "rating": 5
+              },
+              {
+                "name": "Mihir V.",
+                "role": "Member",
+                "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "START YOUR FREE TRIAL",
+            "subheading": "CLAIM YOUR 7-DAY FREE MEMBERSHIP TODAY. NO CREDIT CARD REQUIRED."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "Transform Your Body. Transform Your Life.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "Find Your Inner Balance",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "Push Past Your Limits",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Member Success Stories",
+            "items": [
+              {
+                "name": "Arun P.",
+                "role": "Member since 2022",
+                "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+                "rating": 5
+              },
+              {
+                "name": "Sneha R.",
+                "role": "Elite Member",
+                "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+                "rating": 5
+              },
+              {
+                "name": "Mihir V.",
+                "role": "Member",
+                "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Trainers",
+            "members": [
+              {
+                "name": "Kiran Bose",
+                "role": "Head Trainer, CSCS",
+                "image": ""
+              },
+              {
+                "name": "Ananya Das",
+                "role": "Yoga & Mindfulness Coach",
+                "image": ""
+              },
+              {
+                "name": "Raj Kapoor",
+                "role": "Boxing & MMA Instructor",
+                "image": ""
+              },
+              {
+                "name": "Deepa Menon",
+                "role": "Nutritionist & Wellness Coach",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹999/mo",
+                "features": [
+                  "Gym Access (6 AM–10 PM)",
+                  "Cardio & Free Weights",
+                  "Locker Room Access"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Pro",
+                "price": "₹2,499/mo",
+                "features": [
+                  "24/7 Gym Access",
+                  "All Group Classes",
+                  "1 PT Session/month",
+                  "Nutrition Guidance",
+                  "App Access"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Elite",
+                "price": "₹4,999/mo",
+                "features": [
+                  "24/7 Access",
+                  "Unlimited Classes",
+                  "4 PT Sessions/month",
+                  "Personalized Nutrition Plan",
+                  "Body Composition Analysis",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "Find the perfect program for your fitness goals.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Your Free Trial",
+            "subheading": "Claim your 7-day free membership today. No credit card required."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "Transform Your Body. Transform Your Life.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "Find Your Inner Balance",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "Push Past Your Limits",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "Find the perfect program for your fitness goals.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Trainers",
+            "members": [
+              {
+                "name": "Kiran Bose",
+                "role": "Head Trainer, CSCS",
+                "image": ""
+              },
+              {
+                "name": "Ananya Das",
+                "role": "Yoga & Mindfulness Coach",
+                "image": ""
+              },
+              {
+                "name": "Raj Kapoor",
+                "role": "Boxing & MMA Instructor",
+                "image": ""
+              },
+              {
+                "name": "Deepa Menon",
+                "role": "Nutritionist & Wellness Coach",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Member Success Stories",
+            "items": [
+              {
+                "name": "Arun P.",
+                "role": "Member since 2022",
+                "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+                "rating": 5
+              },
+              {
+                "name": "Sneha R.",
+                "role": "Elite Member",
+                "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+                "rating": 5
+              },
+              {
+                "name": "Mihir V.",
+                "role": "Member",
+                "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Start Your Free Trial",
+            "subheading": "Claim your 7-day free membership today. No credit card required."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "Transform Your Body. Transform Your Life.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "Find Your Inner Balance",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "Push Past Your Limits",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "Find the perfect program for your fitness goals.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Start Your Free Trial",
+            "subheading": "Claim your 7-day free membership today. No credit card required."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#111827",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200",
+                "heading": "🔥 Transform Your Body. Transform Your Life.",
+                "subheading": "State-of-the-art gym, expert trainers, and a community that pushes you to be your best self.",
+                "cta_text": "Start Your Journey",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200",
+                "heading": "🔥 Find Your Inner Balance",
+                "subheading": "Unwind and recharge with our expert-led yoga and mindfulness sessions.",
+                "cta_text": "Explore Programs",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1200",
+                "heading": "🔥 Push Past Your Limits",
+                "subheading": "High-intensity cardio and strength coaching designed to build endurance and power.",
+                "cta_text": "Join Elite Plan",
+                "cta_link": "#pricing"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Our Programs",
+            "subheading": "Find the perfect program for your fitness goals.",
+            "items": [
+              {
+                "icon": "Dumbbell",
+                "title": "Strength Training",
+                "description": "Build muscle and increase strength with our expert-guided weight training programs."
+              },
+              {
+                "icon": "Activity",
+                "title": "Cardio & HIIT",
+                "description": "High-intensity interval training sessions that maximize calorie burn and boost endurance."
+              },
+              {
+                "icon": "Heart",
+                "title": "Yoga & Mindfulness",
+                "description": "Improve flexibility, reduce stress, and find inner balance with our yoga classes."
+              },
+              {
+                "icon": "Flame",
+                "title": "Boxing & MMA",
+                "description": "Learn the art of boxing and mixed martial arts in a safe, structured environment."
+              },
+              {
+                "icon": "Bike",
+                "title": "Cycling Classes",
+                "description": "Indoor cycling classes with motivating instructors and energizing music."
+              },
+              {
+                "icon": "Apple",
+                "title": "Nutrition Coaching",
+                "description": "Personalized nutrition plans crafted by certified dietitians to fuel your goals."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "pricing-1",
+          "type": "pricing",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Membership Plans",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "₹999/mo",
+                "features": [
+                  "Gym Access (6 AM–10 PM)",
+                  "Cardio & Free Weights",
+                  "Locker Room Access"
+                ],
+                "popular": false
+              },
+              {
+                "name": "Pro",
+                "price": "₹2,499/mo",
+                "features": [
+                  "24/7 Gym Access",
+                  "All Group Classes",
+                  "1 PT Session/month",
+                  "Nutrition Guidance",
+                  "App Access"
+                ],
+                "popular": true
+              },
+              {
+                "name": "Elite",
+                "price": "₹4,999/mo",
+                "features": [
+                  "24/7 Access",
+                  "Unlimited Classes",
+                  "4 PT Sessions/month",
+                  "Personalized Nutrition Plan",
+                  "Body Composition Analysis",
+                  "Priority Booking"
+                ],
+                "popular": false
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Trainers",
+            "members": [
+              {
+                "name": "Kiran Bose",
+                "role": "Head Trainer, CSCS",
+                "image": ""
+              },
+              {
+                "name": "Ananya Das",
+                "role": "Yoga & Mindfulness Coach",
+                "image": ""
+              },
+              {
+                "name": "Raj Kapoor",
+                "role": "Boxing & MMA Instructor",
+                "image": ""
+              },
+              {
+                "name": "Deepa Menon",
+                "role": "Nutritionist & Wellness Coach",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Member Success Stories",
+            "items": [
+              {
+                "name": "Arun P.",
+                "role": "Member since 2022",
+                "text": "Lost 18 kg in 6 months with the Pro plan. The trainers are incredibly supportive and knowledgeable.",
+                "rating": 5
+              },
+              {
+                "name": "Sneha R.",
+                "role": "Elite Member",
+                "text": "The nutrition coaching combined with training completely transformed how I feel. Best investment I've made.",
+                "rating": 5
+              },
+              {
+                "name": "Mihir V.",
+                "role": "Member",
+                "text": "Great equipment, clean facilities, and a super motivating community. Couldn't ask for more.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Start Your Free Trial",
+            "subheading": "Claim your 7-day free membership today. No credit card required."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Our Mission",
+            "body": "We believe fitness should be accessible to everyone. Founded in 2015, we've helped over 10,000 members achieve their health and fitness goals with world-class facilities, certified trainers, and a supportive community that makes every workout feel less like work and more like progress."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Join Us Today",
+            "subheading": "Drop us a message or visit us to start your fitness journey."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}

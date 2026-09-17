@@ -1,0 +1,1406 @@
+{
+  "sector": "legal_services",
+  "display_name": "Legal Services",
+  "icon": "⚖️",
+  "description": "Law firms & legal consultants",
+  "variants": [
+    "modern",
+    "bold",
+    "classic",
+    "luxury",
+    "minimal",
+    "vibrant"
+  ],
+  "theme": {
+    "primary": "#92400e",
+    "secondary": "#1c1917",
+    "accent": "#fcd34d",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter"
+  },
+  "variant_themes": [
+    {
+      "id": "modern",
+      "primary": "#92400e",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "bold",
+      "primary": "#1e3a8a",
+      "secondary": "#0f172a",
+      "accent": "#3b82f6"
+    },
+    {
+      "id": "classic",
+      "primary": "#166534",
+      "secondary": "#0f172a",
+      "accent": "#4ade80"
+    },
+    {
+      "id": "luxury",
+      "primary": "#b45309",
+      "secondary": "#1c1917",
+      "accent": "#fcd34d"
+    },
+    {
+      "id": "minimal",
+      "primary": "#475569",
+      "secondary": "#0f172a",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "vibrant",
+      "primary": "#7c3aed",
+      "secondary": "#1e1b4b",
+      "accent": "#a78bfa"
+    }
+  ],
+  "default_pages": {
+    "home": [
+      {
+        "id": "hero-1",
+        "type": "hero",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "use_carousel": true,
+          "image": "",
+          "bg_color": "#1C1917",
+          "slides": [
+            {
+              "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+              "heading": "Justice You Can Trust",
+              "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+              "cta_text": "Free Consultation",
+              "cta_link": "#contact"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+              "heading": "Corporate & Financial Counsel",
+              "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+              "cta_text": "Our Services",
+              "cta_link": "#services"
+            },
+            {
+              "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+              "heading": "Dedicated Family & Civil Advocacy",
+              "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+              "cta_text": "Contact Attorneys",
+              "cta_link": "#contact"
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "services-1",
+        "type": "services",
+        "order": 2,
+        "visible": true,
+        "content": {
+          "heading": "Practice Areas",
+          "subheading": "Comprehensive legal services across multiple disciplines.",
+          "items": [
+            {
+              "icon": "Building",
+              "title": "Corporate Law",
+              "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+            },
+            {
+              "icon": "Scale",
+              "title": "Civil Litigation",
+              "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+            },
+            {
+              "icon": "Users",
+              "title": "Family Law",
+              "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+            },
+            {
+              "icon": "Home",
+              "title": "Property & Real Estate",
+              "description": "Property transactions, title verification, registration, and dispute resolution."
+            },
+            {
+              "icon": "Briefcase",
+              "title": "Employment Law",
+              "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+            },
+            {
+              "icon": "Globe",
+              "title": "Intellectual Property",
+              "description": "Trademark registration, copyright protection, and IP enforcement across India."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "team-1",
+        "type": "team",
+        "order": 3,
+        "visible": true,
+        "content": {
+          "heading": "Our Attorneys",
+          "members": [
+            {
+              "name": "Adv. Rajeev Sinha",
+              "role": "Managing Partner, 25 yrs",
+              "image": ""
+            },
+            {
+              "name": "Adv. Meera Pillai",
+              "role": "Corporate Law Specialist",
+              "image": ""
+            },
+            {
+              "name": "Adv. Vikram Das",
+              "role": "Civil Litigation Expert",
+              "image": ""
+            },
+            {
+              "name": "Adv. Anitha Rao",
+              "role": "Family & Property Law",
+              "image": ""
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "testimonials-1",
+        "type": "testimonials",
+        "order": 4,
+        "visible": true,
+        "content": {
+          "heading": "Client Testimonials",
+          "items": [
+            {
+              "name": "Suresh B.",
+              "role": "Business Owner",
+              "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+              "rating": 5
+            },
+            {
+              "name": "Anita M.",
+              "role": "Individual Client",
+              "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+              "rating": 5
+            },
+            {
+              "name": "Rajesh P.",
+              "role": "Property Owner",
+              "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+              "rating": 5
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "faq-1",
+        "type": "faq",
+        "order": 5,
+        "visible": true,
+        "content": {
+          "heading": "Legal FAQ",
+          "items": [
+            {
+              "question": "How do I schedule a consultation?",
+              "answer": "You can fill out our contact form, call us, or email us. We offer a free 30-minute initial consultation for new clients."
+            },
+            {
+              "question": "What are your fee structures?",
+              "answer": "We offer various arrangements including fixed fees, hourly rates, and retainer agreements. Fees are discussed transparently at the initial consultation."
+            },
+            {
+              "question": "Do you handle cases outside your city?",
+              "answer": "Yes, our attorneys are enrolled in multiple High Courts and can handle cases across India. We also offer virtual consultations."
+            },
+            {
+              "question": "How long does a typical case take?",
+              "answer": "Timelines vary based on case complexity and court schedules. We provide realistic timelines at the outset and keep you updated throughout."
+            }
+          ]
+        },
+        "styles": {}
+      },
+      {
+        "id": "contact-1",
+        "type": "contact_form",
+        "order": 6,
+        "visible": true,
+        "content": {
+          "heading": "Schedule a Free Consultation",
+          "subheading": "Share your legal matter and we'll connect you with the right attorney."
+        },
+        "styles": {}
+      }
+    ],
+    "about": [
+      {
+        "id": "about-1",
+        "type": "about",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "About Our Firm",
+          "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+        },
+        "styles": {}
+      }
+    ],
+    "contact": [
+      {
+        "id": "contact-page-1",
+        "type": "contact_form",
+        "order": 1,
+        "visible": true,
+        "content": {
+          "heading": "Contact Our Legal Team",
+          "subheading": "We're here to listen and advise. Your first consultation is free."
+        },
+        "styles": {}
+      }
+    ]
+  },
+  "variant_layouts": {
+    "modern": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "Justice You Can Trust",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "Corporate & Financial Counsel",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "Dedicated Family & Civil Advocacy",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Practice Areas",
+            "subheading": "Comprehensive legal services across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Attorneys",
+            "members": [
+              {
+                "name": "Adv. Rajeev Sinha",
+                "role": "Managing Partner, 25 yrs",
+                "image": ""
+              },
+              {
+                "name": "Adv. Meera Pillai",
+                "role": "Corporate Law Specialist",
+                "image": ""
+              },
+              {
+                "name": "Adv. Vikram Das",
+                "role": "Civil Litigation Expert",
+                "image": ""
+              },
+              {
+                "name": "Adv. Anitha Rao",
+                "role": "Family & Property Law",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Testimonials",
+            "items": [
+              {
+                "name": "Suresh B.",
+                "role": "Business Owner",
+                "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+                "rating": 5
+              },
+              {
+                "name": "Anita M.",
+                "role": "Individual Client",
+                "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh P.",
+                "role": "Property Owner",
+                "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Legal FAQ",
+            "items": [
+              {
+                "question": "How do I schedule a consultation?",
+                "answer": "You can fill out our contact form, call us, or email us. We offer a free 30-minute initial consultation for new clients."
+              },
+              {
+                "question": "What are your fee structures?",
+                "answer": "We offer various arrangements including fixed fees, hourly rates, and retainer agreements. Fees are discussed transparently at the initial consultation."
+              },
+              {
+                "question": "Do you handle cases outside your city?",
+                "answer": "Yes, our attorneys are enrolled in multiple High Courts and can handle cases across India. We also offer virtual consultations."
+              },
+              {
+                "question": "How long does a typical case take?",
+                "answer": "Timelines vary based on case complexity and court schedules. We provide realistic timelines at the outset and keep you updated throughout."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Schedule a Free Consultation",
+            "subheading": "Share your legal matter and we'll connect you with the right attorney."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "bold": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "JUSTICE YOU CAN TRUST",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "CORPORATE & FINANCIAL COUNSEL",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "DEDICATED FAMILY & CIVIL ADVOCACY",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "PRACTICE AREAS",
+            "subheading": "COMPREHENSIVE LEGAL SERVICES ACROSS MULTIPLE DISCIPLINES.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "OUR ATTORNEYS",
+            "members": [
+              {
+                "name": "Adv. Rajeev Sinha",
+                "role": "Managing Partner, 25 yrs",
+                "image": ""
+              },
+              {
+                "name": "Adv. Meera Pillai",
+                "role": "Corporate Law Specialist",
+                "image": ""
+              },
+              {
+                "name": "Adv. Vikram Das",
+                "role": "Civil Litigation Expert",
+                "image": ""
+              },
+              {
+                "name": "Adv. Anitha Rao",
+                "role": "Family & Property Law",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "CLIENT TESTIMONIALS",
+            "items": [
+              {
+                "name": "Suresh B.",
+                "role": "Business Owner",
+                "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+                "rating": 5
+              },
+              {
+                "name": "Anita M.",
+                "role": "Individual Client",
+                "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh P.",
+                "role": "Property Owner",
+                "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "LEGAL FAQ",
+            "items": [
+              {
+                "question": "How do I schedule a consultation?",
+                "answer": "You can fill out our contact form, call us, or email us. We offer a free 30-minute initial consultation for new clients."
+              },
+              {
+                "question": "What are your fee structures?",
+                "answer": "We offer various arrangements including fixed fees, hourly rates, and retainer agreements. Fees are discussed transparently at the initial consultation."
+              },
+              {
+                "question": "Do you handle cases outside your city?",
+                "answer": "Yes, our attorneys are enrolled in multiple High Courts and can handle cases across India. We also offer virtual consultations."
+              },
+              {
+                "question": "How long does a typical case take?",
+                "answer": "Timelines vary based on case complexity and court schedules. We provide realistic timelines at the outset and keep you updated throughout."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "SCHEDULE A FREE CONSULTATION",
+            "subheading": "SHARE YOUR LEGAL MATTER AND WE'LL CONNECT YOU WITH THE RIGHT ATTORNEY."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "classic": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "Justice You Can Trust",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "Corporate & Financial Counsel",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "Dedicated Family & Civil Advocacy",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Legal FAQ",
+            "items": [
+              {
+                "question": "How do I schedule a consultation?",
+                "answer": "You can fill out our contact form, call us, or email us. We offer a free 30-minute initial consultation for new clients."
+              },
+              {
+                "question": "What are your fee structures?",
+                "answer": "We offer various arrangements including fixed fees, hourly rates, and retainer agreements. Fees are discussed transparently at the initial consultation."
+              },
+              {
+                "question": "Do you handle cases outside your city?",
+                "answer": "Yes, our attorneys are enrolled in multiple High Courts and can handle cases across India. We also offer virtual consultations."
+              },
+              {
+                "question": "How long does a typical case take?",
+                "answer": "Timelines vary based on case complexity and court schedules. We provide realistic timelines at the outset and keep you updated throughout."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Client Testimonials",
+            "items": [
+              {
+                "name": "Suresh B.",
+                "role": "Business Owner",
+                "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+                "rating": 5
+              },
+              {
+                "name": "Anita M.",
+                "role": "Individual Client",
+                "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh P.",
+                "role": "Property Owner",
+                "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Our Attorneys",
+            "members": [
+              {
+                "name": "Adv. Rajeev Sinha",
+                "role": "Managing Partner, 25 yrs",
+                "image": ""
+              },
+              {
+                "name": "Adv. Meera Pillai",
+                "role": "Corporate Law Specialist",
+                "image": ""
+              },
+              {
+                "name": "Adv. Vikram Das",
+                "role": "Civil Litigation Expert",
+                "image": ""
+              },
+              {
+                "name": "Adv. Anitha Rao",
+                "role": "Family & Property Law",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Practice Areas",
+            "subheading": "Comprehensive legal services across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Schedule a Free Consultation",
+            "subheading": "Share your legal matter and we'll connect you with the right attorney."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "luxury": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "Justice You Can Trust",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "Corporate & Financial Counsel",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "Dedicated Family & Civil Advocacy",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Practice Areas",
+            "subheading": "Comprehensive legal services across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Attorneys",
+            "members": [
+              {
+                "name": "Adv. Rajeev Sinha",
+                "role": "Managing Partner, 25 yrs",
+                "image": ""
+              },
+              {
+                "name": "Adv. Meera Pillai",
+                "role": "Corporate Law Specialist",
+                "image": ""
+              },
+              {
+                "name": "Adv. Vikram Das",
+                "role": "Civil Litigation Expert",
+                "image": ""
+              },
+              {
+                "name": "Adv. Anitha Rao",
+                "role": "Family & Property Law",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Testimonials",
+            "items": [
+              {
+                "name": "Suresh B.",
+                "role": "Business Owner",
+                "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+                "rating": 5
+              },
+              {
+                "name": "Anita M.",
+                "role": "Individual Client",
+                "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh P.",
+                "role": "Property Owner",
+                "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Schedule a Free Consultation",
+            "subheading": "Share your legal matter and we'll connect you with the right attorney."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "minimal": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": false,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "Justice You Can Trust",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "Corporate & Financial Counsel",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "Dedicated Family & Civil Advocacy",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Practice Areas",
+            "subheading": "Comprehensive legal services across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Schedule a Free Consultation",
+            "subheading": "Share your legal matter and we'll connect you with the right attorney."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    },
+    "vibrant": {
+      "home": [
+        {
+          "id": "hero-1",
+          "type": "hero",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "use_carousel": true,
+            "image": "",
+            "bg_color": "#1C1917",
+            "slides": [
+              {
+                "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200",
+                "heading": "🔥 Justice You Can Trust",
+                "subheading": "Experienced legal counsel for individuals and businesses. Protecting your rights with integrity and expertise.",
+                "cta_text": "Free Consultation",
+                "cta_link": "#contact"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200",
+                "heading": "🔥 Corporate & Financial Counsel",
+                "subheading": "Guiding businesses through complex transactions, mergers, and corporate disputes.",
+                "cta_text": "Our Services",
+                "cta_link": "#services"
+              },
+              {
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+                "heading": "🔥 Dedicated Family & Civil Advocacy",
+                "subheading": "Providing compassionate legal representation for sensitive civil matters.",
+                "cta_text": "Contact Attorneys",
+                "cta_link": "#contact"
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "services-1",
+          "type": "services",
+          "order": 2,
+          "visible": true,
+          "content": {
+            "heading": "Practice Areas",
+            "subheading": "Comprehensive legal services across multiple disciplines.",
+            "items": [
+              {
+                "icon": "Building",
+                "title": "Corporate Law",
+                "description": "Company formation, mergers & acquisitions, contracts, and corporate governance."
+              },
+              {
+                "icon": "Scale",
+                "title": "Civil Litigation",
+                "description": "Expert representation in civil disputes, property matters, and commercial litigation."
+              },
+              {
+                "icon": "Users",
+                "title": "Family Law",
+                "description": "Divorce, child custody, adoption, and all family-related legal matters handled with sensitivity."
+              },
+              {
+                "icon": "Home",
+                "title": "Property & Real Estate",
+                "description": "Property transactions, title verification, registration, and dispute resolution."
+              },
+              {
+                "icon": "Briefcase",
+                "title": "Employment Law",
+                "description": "Employment contracts, wrongful termination, workplace disputes, and HR compliance."
+              },
+              {
+                "icon": "Globe",
+                "title": "Intellectual Property",
+                "description": "Trademark registration, copyright protection, and IP enforcement across India."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "team-1",
+          "type": "team",
+          "order": 3,
+          "visible": true,
+          "content": {
+            "heading": "Our Attorneys",
+            "members": [
+              {
+                "name": "Adv. Rajeev Sinha",
+                "role": "Managing Partner, 25 yrs",
+                "image": ""
+              },
+              {
+                "name": "Adv. Meera Pillai",
+                "role": "Corporate Law Specialist",
+                "image": ""
+              },
+              {
+                "name": "Adv. Vikram Das",
+                "role": "Civil Litigation Expert",
+                "image": ""
+              },
+              {
+                "name": "Adv. Anitha Rao",
+                "role": "Family & Property Law",
+                "image": ""
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "testimonials-1",
+          "type": "testimonials",
+          "order": 4,
+          "visible": true,
+          "content": {
+            "heading": "Client Testimonials",
+            "items": [
+              {
+                "name": "Suresh B.",
+                "role": "Business Owner",
+                "text": "Their corporate team handled our acquisition flawlessly. Professional, thorough, and results-driven.",
+                "rating": 5
+              },
+              {
+                "name": "Anita M.",
+                "role": "Individual Client",
+                "text": "Guided me through a difficult divorce with compassion and expertise. Forever grateful for their support.",
+                "rating": 5
+              },
+              {
+                "name": "Rajesh P.",
+                "role": "Property Owner",
+                "text": "Resolved a complex property dispute that had been dragging for years. Exceptional legal acumen.",
+                "rating": 5
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "faq-1",
+          "type": "faq",
+          "order": 5,
+          "visible": true,
+          "content": {
+            "heading": "Legal FAQ",
+            "items": [
+              {
+                "question": "How do I schedule a consultation?",
+                "answer": "You can fill out our contact form, call us, or email us. We offer a free 30-minute initial consultation for new clients."
+              },
+              {
+                "question": "What are your fee structures?",
+                "answer": "We offer various arrangements including fixed fees, hourly rates, and retainer agreements. Fees are discussed transparently at the initial consultation."
+              },
+              {
+                "question": "Do you handle cases outside your city?",
+                "answer": "Yes, our attorneys are enrolled in multiple High Courts and can handle cases across India. We also offer virtual consultations."
+              },
+              {
+                "question": "How long does a typical case take?",
+                "answer": "Timelines vary based on case complexity and court schedules. We provide realistic timelines at the outset and keep you updated throughout."
+              }
+            ]
+          },
+          "styles": {}
+        },
+        {
+          "id": "contact-1",
+          "type": "contact_form",
+          "order": 6,
+          "visible": true,
+          "content": {
+            "heading": "Schedule a Free Consultation",
+            "subheading": "Share your legal matter and we'll connect you with the right attorney."
+          },
+          "styles": {}
+        }
+      ],
+      "about": [
+        {
+          "id": "about-1",
+          "type": "about",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "About Our Firm",
+            "body": "Established in 1999, our firm has built a reputation for excellence, integrity, and results. Over 25 years, we have represented thousands of clients — from multinational corporations to individuals — in some of the most complex legal matters in the country. Our team of 30+ attorneys brings specialized expertise across every area of law."
+          },
+          "styles": {}
+        }
+      ],
+      "contact": [
+        {
+          "id": "contact-page-1",
+          "type": "contact_form",
+          "order": 1,
+          "visible": true,
+          "content": {
+            "heading": "Contact Our Legal Team",
+            "subheading": "We're here to listen and advise. Your first consultation is free."
+          },
+          "styles": {}
+        }
+      ]
+    }
+  }
+}
