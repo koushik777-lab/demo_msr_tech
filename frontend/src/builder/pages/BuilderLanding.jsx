@@ -116,6 +116,246 @@ const TESTIMONIALS = [
   { name: 'Amit Verma', role: 'Supply Store Manager', text: 'Direct static HTML ZIP export saved us hundreds of hosting dollars. Clean, reliable, and solid.', avatar: 'AV' }
 ];
 
+const HERO_TEMPLATES = [
+  {
+    id: 'default',
+    name: 'HomeFinder',
+    desc: 'Blue & white, property card grid, portal style',
+    font: 'Inter',
+    tag: 'Clean Property Portal',
+    borderColor: '#2563EB',
+    bgHeader: '#DBEAFE',
+    colors: ['#2563EB', '#60A5FA', '#93C5FD'],
+    previewType: 'homefinder'
+  },
+  {
+    id: 'bold',
+    name: 'MetroRealty',
+    desc: 'Charcoal & amber, bold urban property agency',
+    font: 'Space Grotesk',
+    tag: 'Urban & Bold',
+    borderColor: '#F59E0B',
+    bgHeader: '#1E293B',
+    colors: ['#1E293B', '#F59E0B', '#78350F'],
+    previewType: 'metrorealty'
+  },
+  {
+    id: 'serif',
+    name: 'TrustEstate',
+    desc: 'Purple & cream, traditional serif, trusted agency look',
+    font: 'Merriweather',
+    tag: 'Traditional Agency',
+    borderColor: '#7C3AED',
+    bgHeader: '#F3E8FF',
+    colors: ['#7C3AED', '#C084FC', '#F3E8FF'],
+    previewType: 'trustestate'
+  },
+  {
+    id: 'luxury',
+    name: 'PlatinumProp',
+    desc: 'Black & gold, ultra-premium luxury real estate',
+    font: 'Cormorant Garamond',
+    tag: 'Ultra Luxury',
+    borderColor: '#D97706',
+    bgHeader: '#171717',
+    colors: ['#171717', '#D97706', '#B45309'],
+    previewType: 'platinumprop'
+  },
+  {
+    id: 'minimal',
+    name: 'CleanListings',
+    desc: 'White & mint, distraction-free listing browsing',
+    font: 'DM Sans',
+    tag: 'Minimal & Modern',
+    borderColor: '#059669',
+    bgHeader: '#ECFDF5',
+    colors: ['#059669', '#34D399', '#A7F3D0'],
+    previewType: 'cleanlistings'
+  },
+  {
+    id: 'vibrant',
+    name: 'UrbanNest',
+    desc: 'Teal & dark navy, contemporary urban living vibe',
+    font: 'Outfit',
+    tag: 'Colorful & Lively',
+    borderColor: '#0D9488',
+    bgHeader: '#0F172A',
+    colors: ['#0D9488', '#2DD4BF', '#0F172A'],
+    previewType: 'urbannest'
+  }
+];
+
+function HeroTemplateGrid({ navigate }) {
+  const [selectedId, setSelectedId] = useState('default');
+  const selectedTpl = HERO_TEMPLATES.find(t => t.id === selectedId) || HERO_TEMPLATES[0];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      
+      {/* 6 Template Cards Grid */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: 20,
+        width: '100%',
+        marginBottom: 32
+      }}>
+        {HERO_TEMPLATES.map((tpl) => {
+          const isSelected = selectedId === tpl.id;
+          return (
+            <motion.div
+              key={tpl.id}
+              onClick={() => setSelectedId(tpl.id)}
+              whileHover={{ y: -4, scale: 1.015 }}
+              whileTap={{ scale: 0.98 }}
+              style={{
+                background: '#FFFFFF',
+                borderRadius: 16,
+                border: isSelected ? `2.5px solid ${tpl.borderColor}` : '1.5px solid #E2E8F0',
+                boxShadow: isSelected ? `0 8px 30px ${tpl.borderColor}25` : '0 4px 16px rgba(15,23,42,0.04)',
+                cursor: 'pointer',
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                transition: 'all 0.25s ease'
+              }}
+            >
+              {/* Card Mockup Window Frame */}
+              <div style={{
+                background: tpl.bgHeader,
+                height: 160,
+                position: 'relative',
+                borderBottom: '1px solid #E2E8F0',
+                padding: 12,
+                overflow: 'hidden'
+              }}>
+                {/* Window Traffic Lights */}
+                <div style={{ display: 'flex', gap: 6, alignItems: 'center', marginBottom: 12 }}>
+                  <div style={{ width: 8, height: 8, borderRadius: '50%', background: isSelected ? tpl.borderColor : '#CBD5E1' }} />
+                  <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#CBD5E1' }} />
+                  <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#CBD5E1' }} />
+                </div>
+
+                {/* Mockup Inner Design Blocks */}
+                {tpl.previewType === 'homefinder' && (
+                  <div>
+                    <div style={{ background: '#BFDBFE', height: 40, borderRadius: 6, width: '40%', marginBottom: 10 }} />
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                      <div style={{ background: '#EFF6FF', height: 45, borderRadius: 6 }} />
+                      <div style={{ background: '#EFF6FF', height: 45, borderRadius: 6 }} />
+                      <div style={{ background: '#EFF6FF', height: 45, borderRadius: 6 }} />
+                    </div>
+                  </div>
+                )}
+
+                {tpl.previewType === 'metrorealty' && (
+                  <div>
+                    <div style={{ color: '#F59E0B', fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: 4 }}>BRAND</div>
+                    <div style={{ color: '#FFFFFF', fontSize: '0.75rem', fontWeight: 700, marginBottom: 12 }}>FEATURED</div>
+                    <div style={{ background: '#334155', height: 35, borderRadius: 6, width: '60%' }} />
+                  </div>
+                )}
+
+                {tpl.previewType === 'trustestate' && (
+                  <div>
+                    <div style={{ background: '#FFFFFF', height: 12, width: 80, borderRadius: 4, marginBottom: 14 }} />
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                      <div style={{ background: '#FFFFFF', height: 50, borderRadius: 6 }} />
+                      <div style={{ background: '#DDD6FE', height: 50, borderRadius: '50%', width: 50, margin: '0 auto' }} />
+                    </div>
+                  </div>
+                )}
+
+                {tpl.previewType === 'platinumprop' && (
+                  <div style={{ textAlign: 'center', paddingTop: 10 }}>
+                    <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#D97706', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFF', fontSize: '0.6rem' }}>★</div>
+                    <div style={{ background: '#D97706', color: '#000', fontSize: '0.62rem', fontWeight: 800, padding: '3px 10px', borderRadius: 4, display: 'inline-block' }}>Premium Service</div>
+                  </div>
+                )}
+
+                {tpl.previewType === 'cleanlistings' && (
+                  <div style={{ display: 'flex', gap: 8 }}>
+                    <div style={{ width: 30, background: '#D1FAE5', height: 100, borderRadius: 4 }} />
+                    <div style={{ flex: 1 }}>
+                      <div style={{ background: '#34D399', height: 10, borderRadius: 3, marginBottom: 8, width: '70%' }} />
+                      <div style={{ background: '#E2E8F0', height: 8, borderRadius: 3, marginBottom: 6 }} />
+                      <div style={{ background: '#E2E8F0', height: 8, borderRadius: 3, width: '85%' }} />
+                    </div>
+                  </div>
+                )}
+
+                {tpl.previewType === 'urbannest' && (
+                  <div style={{ textAlign: 'center', paddingTop: 10 }}>
+                    <div style={{ color: '#2DD4BF', fontSize: '0.72rem', fontWeight: 800, marginBottom: 12, textTransform: 'uppercase' }}>BOLD HEADLINE</div>
+                    <div style={{ background: '#0D9488', height: 20, width: 70, borderRadius: 4, margin: '0 auto 10px' }} />
+                    <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
+                      <div style={{ background: '#1E293B', width: 40, height: 25, borderRadius: 4 }} />
+                      <div style={{ background: '#1E293B', width: 40, height: 25, borderRadius: 4 }} />
+                      <div style={{ background: '#1E293B', width: 40, height: 25, borderRadius: 4 }} />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Card Footer Details */}
+              <div style={{ padding: '16px 18px', textAlign: 'left' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <span style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0F172A' }}>{tpl.name}</span>
+                    {isSelected && (
+                      <span style={{ fontSize: '0.66rem', fontWeight: 800, background: '#2563EB', color: '#FFFFFF', padding: '2px 8px', borderRadius: 99, textTransform: 'uppercase' }}>
+                        ✓ SELECTED
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <p style={{ color: '#334155', fontSize: '0.78rem', margin: '0 0 12px', lineHeight: 1.45 }}>{tpl.desc}</p>
+
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #F1F5F9', paddingTop: 10 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    {tpl.colors.map((c, ci) => (
+                      <span key={ci} style={{ width: 10, height: 10, borderRadius: '50%', background: c, border: '1px solid rgba(0,0,0,0.1)' }} />
+                    ))}
+                    <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#0F172A', marginLeft: 4 }}>{tpl.font}</span>
+                  </div>
+                  <span style={{ fontSize: '0.72rem', fontStyle: 'italic', color: '#2563EB', fontWeight: 600 }}>{tpl.tag}</span>
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Selected Action CTA Button */}
+      <motion.button
+        onClick={() => navigate(`/builder/login?template=realestate&variant=${selectedTpl.id}`)}
+        whileHover={{ scale: 1.04, y: -2 }}
+        whileTap={{ scale: 0.96 }}
+        style={{
+          background: selectedTpl.borderColor || '#2563EB',
+          color: '#FFFFFF',
+          border: 'none',
+          padding: '14px 34px',
+          borderRadius: 10,
+          fontWeight: 700,
+          fontSize: '0.96rem',
+          cursor: 'pointer',
+          boxShadow: `0 8px 25px ${selectedTpl.borderColor}35`,
+          display: 'flex',
+          alignItems: 'center',
+          gap: 8,
+          transition: 'all 0.25s ease'
+        }}
+      >
+        Use "{selectedTpl.name}" Template →
+      </motion.button>
+
+    </div>
+  );
+}
+
 export default function BuilderLanding() {
   const navigate = useNavigate();
   const [selectedSector, setSelectedSector] = useState('all');
@@ -468,6 +708,26 @@ export default function BuilderLanding() {
               <CountUpStat end={st.end} prefix={st.prefix} suffix={st.suffix} label={st.label} />
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* 6. INTERACTIVE 6-TEMPLATE VARIANT SHOWCASE (FROM SCREENSHOT) */}
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.7, delay: 0.2, ease: EASE_CURVE }}
+          style={{ maxWidth: 1080, margin: '60px auto 0', padding: '0 12px' }}
+        >
+          <div style={{ textAlign: 'center', marginBottom: 28 }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)', fontWeight: 800, margin: '0 0 8px', color: '#0F172A', letterSpacing: '-0.03em' }}>
+              Choose your Real Estate template
+            </h2>
+            <p style={{ color: '#334155', fontSize: '0.96rem', margin: 0 }}>
+              6 completely different designs — each built for real estate businesses.
+            </p>
+          </div>
+
+          <HeroTemplateGrid navigate={navigate} />
         </motion.div>
       </section>
 
