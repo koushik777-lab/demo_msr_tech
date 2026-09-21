@@ -1,11 +1,20 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.REACT_APP_API_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+const getBaseUrl = () => {
+  if (process.env.REACT_APP_API_URL) return process.env.REACT_APP_API_URL;
+  if (process.env.REACT_APP_BACKEND_URL) return process.env.REACT_APP_BACKEND_URL;
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return ''; // In production (e.g. msrtechhub.com), use relative path so Nginx reverse-proxies /api to backend
+  }
+  return 'http://localhost:8000';
+};
+
+const BASE_URL = getBaseUrl();
 
 export function resolveAssetUrl(url) {
   if (!url) return '';
   if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) return url;
-  if (url.startsWith('/api/')) return `${BASE_URL}${url}`;
+  if (url.startsWith('/api/')) return BASE_URL ? `${BASE_URL}${url}` : url;
   return url;
 }
 
