@@ -18,12 +18,19 @@ MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", 10))
 
 ALLOWED_MIME_TYPES = {
     "image/jpeg": "jpg",
+    "image/jpg": "jpg",
+    "image/pjpeg": "jpg",
     "image/png": "png",
+    "image/x-png": "png",
     "image/gif": "gif",
     "image/webp": "webp",
     "image/svg+xml": "svg",
+    "image/x-icon": "ico",
+    "image/vnd.microsoft.icon": "ico",
+    "image/bmp": "bmp",
+    "image/avif": "avif",
 }
-ALLOWED_EXTENSIONS = {"jpg", "jpeg", "png", "gif", "webp", "svg"}
+ALLOWED_EXTENSIONS = {"jpg", "jpeg", "png", "gif", "webp", "svg", "ico", "bmp", "avif", "jfif"}
 
 # S3 Configuration
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
@@ -48,18 +55,15 @@ async def upload_asset(
     file: UploadFile = File(...),
     current_user: dict = Depends(get_current_user_db),
 ):
-    if file.content_type not in ALLOWED_MIME_TYPES:
+    raw_ext = file.filename.rsplit(".", 1)[-1].lower() if file.filename and "." in file.filename else ""
+    
+    if file.content_type not in ALLOWED_MIME_TYPES and raw_ext not in ALLOWED_EXTENSIONS:
         raise HTTPException(
             status_code=400, 
-            detail=f"File type not allowed: {file.content_type}. Allowed: {list(ALLOWED_MIME_TYPES.keys())}"
+            detail=f"File type not allowed ({file.filename}). Please upload a valid image (PNG, JPG, WEBP, SVG, GIF, ICO)."
         )
 
-    # Validate file extension
-    raw_ext = file.filename.rsplit(".", 1)[-1].lower() if "." in file.filename else ""
-    if raw_ext not in ALLOWED_EXTENSIONS:
-        ext = ALLOWED_MIME_TYPES[file.content_type]
-    else:
-        ext = raw_ext
+    ext = raw_ext if raw_ext in ALLOWED_EXTENSIONS else ALLOWED_MIME_TYPES.get(file.content_type, "png")
 
     content = await file.read()
     if len(content) > MAX_UPLOAD_MB * 1024 * 1024:
