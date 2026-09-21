@@ -79,12 +79,21 @@ export default function AuthPage() {
   };
 
   const handleDemo = async () => {
+    setError('');
+    setSuccessMsg('');
     setLoading(true);
     try {
       await demoLogin();
       navigate('/builder/dashboard');
     } catch (err) {
-      setError('Could not start demo session. Please try again.');
+      const detail = err.response?.data?.detail;
+      let msg = 'Could not start demo session. Please try again.';
+      if (typeof detail === 'string') {
+        msg = detail;
+      } else if (!err.response) {
+        msg = 'Backend server is offline or unreachable. Please try again later.';
+      }
+      setError(msg);
     } finally {
       setLoading(false);
     }
@@ -131,7 +140,7 @@ export default function AuthPage() {
             MSR TECH HUB
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: '4px 0 0' }}>
-            SiteCraft Website Builder & Management
+            MSR Tech Hub Website Builder & Management
           </p>
         </div>
 

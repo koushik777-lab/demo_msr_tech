@@ -10,6 +10,8 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import PricingSection from "./builder/components/landing/PricingSection";
+import BuilderLanding from "./builder/pages/BuilderLanding";
 import BuilderRouter from "./builder/BuilderRouter";
 
 // ─── Existing Marketing Homepage ─────────────────────────────────────────────
@@ -51,6 +53,7 @@ function MarketingHome() {
       <Services />
       <Portfolio />
       <WhyChooseUs />
+      <PricingSection />
       <Testimonials />
       <Contact />
       <Footer />
@@ -62,8 +65,9 @@ function MarketingHome() {
 function App() {
   return (
     <BrowserRouter>
+      <Toaster position="top-right" />
       <Routes>
-        {/* Existing marketing site */}
+        {/* Main MSR Tech Hub Marketing Homepage */}
         <Route path="/" element={<MarketingHome />} />
 
         {/* Website Builder module — all routes at /builder/* */}

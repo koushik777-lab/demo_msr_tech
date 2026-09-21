@@ -22,8 +22,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ paddingTop: '80px', background: 'var(--hero-bg)' }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-36 lg:pt-40 pb-16"
+      style={{ background: 'var(--hero-bg)' }}
     >
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
@@ -157,7 +157,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative h-[600px] lg:h-[800px] w-full flex items-center justify-center lg:translate-x-10"
+            className="relative h-[360px] sm:h-[500px] lg:h-[750px] w-full flex items-center justify-center lg:translate-x-10"
           >
             {/* Transparent card wrapper that hosts the Spline so white spheres blend with background */}
             <div

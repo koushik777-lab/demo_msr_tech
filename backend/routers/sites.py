@@ -75,7 +75,124 @@ async def create_site(body: SiteCreate, request: Request,
         with open(template_path, encoding="utf-8") as f:
             template_data = json.load(f)
 
+    # 100% Accurate Variant Theme Map (Matches TemplatePicker)
+    VARIANT_THEME_MAP = {
+        "medical": {
+            "modern": {"primary": "#0d9488", "secondary": "#0f172a", "accent": "#14b8a6", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#0284c7", "secondary": "#0f172a", "accent": "#38bdf8", "font_heading": "Outfit", "font_body": "Inter"},
+            "classic": {"primary": "#15803d", "secondary": "#166534", "accent": "#22c55e", "font_heading": "Merriweather", "font_body": "Inter"},
+            "luxury": {"primary": "#d97706", "secondary": "#1c1917", "accent": "#fcd34d", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#475569", "secondary": "#0f172a", "accent": "#64748b", "font_heading": "Inter", "font_body": "Inter"},
+            "vibrant": {"primary": "#7c3aed", "secondary": "#1e1b4b", "accent": "#a78bfa", "font_heading": "Outfit", "font_body": "Inter"},
+        },
+        "restaurant": {
+            "modern": {"primary": "#ea580c", "secondary": "#1c1917", "accent": "#fb923c", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#dc2626", "secondary": "#1a0000", "accent": "#ef4444", "font_heading": "Outfit", "font_body": "Inter"},
+            "classic": {"primary": "#92400e", "secondary": "#292524", "accent": "#b45309", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "luxury": {"primary": "#ca8a04", "secondary": "#0c0a09", "accent": "#fcd34d", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "minimal": {"primary": "#059669", "secondary": "#064e3b", "accent": "#10b981", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#d946ef", "secondary": "#1e1b4b", "accent": "#e879f9", "font_heading": "Poppins", "font_body": "Inter"},
+        },
+        "construction": {
+            "modern": {"primary": "#ea580c", "secondary": "#111827", "accent": "#fb923c", "font_heading": "Outfit", "font_body": "Inter"},
+            "bold": {"primary": "#eab308", "secondary": "#0f172a", "accent": "#facc15", "font_heading": "Barlow Condensed", "font_body": "Inter"},
+            "classic": {"primary": "#1d4ed8", "secondary": "#0f172a", "accent": "#2563eb", "font_heading": "Inter", "font_body": "Inter"},
+            "luxury": {"primary": "#d97706", "secondary": "#1c1917", "accent": "#fbbf24", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#374151", "secondary": "#111827", "accent": "#6b7280", "font_heading": "Inter", "font_body": "Inter"},
+            "vibrant": {"primary": "#7c3aed", "secondary": "#1e1b4b", "accent": "#818cf8", "font_heading": "Space Grotesk", "font_body": "Inter"},
+        },
+        "ecommerce": {
+            "modern": {"primary": "#7c3aed", "secondary": "#1e1b4b", "accent": "#8b5cf6", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#ef4444", "secondary": "#000000", "accent": "#f87171", "font_heading": "Space Grotesk", "font_body": "Inter"},
+            "classic": {"primary": "#be185d", "secondary": "#4c0519", "accent": "#ec4899", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "luxury": {"primary": "#ca8a04", "secondary": "#0c0a09", "accent": "#fbbf24", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "minimal": {"primary": "#111827", "secondary": "#0f172a", "accent": "#6b7280", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#06b6d4", "secondary": "#042f2e", "accent": "#22d3ee", "font_heading": "Outfit", "font_body": "Inter"},
+        },
+        "fitness": {
+            "modern": {"primary": "#16a34a", "secondary": "#052e16", "accent": "#22c55e", "font_heading": "Outfit", "font_body": "Inter"},
+            "bold": {"primary": "#dc2626", "secondary": "#0a0a0a", "accent": "#ef4444", "font_heading": "Barlow Condensed", "font_body": "Inter"},
+            "classic": {"primary": "#1d4ed8", "secondary": "#0f172a", "accent": "#3b82f6", "font_heading": "Inter", "font_body": "Inter"},
+            "luxury": {"primary": "#d97706", "secondary": "#1c1917", "accent": "#fbbf24", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#0891b2", "secondary": "#042f2e", "accent": "#06b6d4", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#a855f7", "secondary": "#0f0520", "accent": "#d946ef", "font_heading": "Outfit", "font_body": "Inter"},
+        },
+        "real_estate": {
+            "modern": {"primary": "#1d4ed8", "secondary": "#0f172a", "accent": "#3b82f6", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#f59e0b", "secondary": "#111827", "accent": "#fbbf24", "font_heading": "Space Grotesk", "font_body": "Inter"},
+            "classic": {"primary": "#6d28d9", "secondary": "#1e1b4b", "accent": "#7c3aed", "font_heading": "Merriweather", "font_body": "Inter"},
+            "luxury": {"primary": "#ca8a04", "secondary": "#0a0800", "accent": "#fbbf24", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "minimal": {"primary": "#059669", "secondary": "#064e3b", "accent": "#10b981", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#0891b2", "secondary": "#042f2e", "accent": "#06b6d4", "font_heading": "Outfit", "font_body": "Inter"},
+        },
+        "education": {
+            "modern": {"primary": "#4338ca", "secondary": "#1e1b4b", "accent": "#6366f1", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#dc2626", "secondary": "#0f172a", "accent": "#ef4444", "font_heading": "Outfit", "font_body": "Inter"},
+            "classic": {"primary": "#92400e", "secondary": "#451a03", "accent": "#b45309", "font_heading": "Merriweather", "font_body": "Inter"},
+            "luxury": {"primary": "#0369a1", "secondary": "#082f49", "accent": "#38bdf8", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#a21caf", "secondary": "#4c0519", "accent": "#d946ef", "font_heading": "Nunito", "font_body": "Inter"},
+            "vibrant": {"primary": "#059669", "secondary": "#020d09", "accent": "#10b981", "font_heading": "Space Grotesk", "font_body": "Inter"},
+        },
+        "salon": {
+            "modern": {"primary": "#db2777", "secondary": "#4c0519", "accent": "#ec4899", "font_heading": "Outfit", "font_body": "Inter"},
+            "bold": {"primary": "#dc2626", "secondary": "#0f172a", "accent": "#ef4444", "font_heading": "Space Grotesk", "font_body": "Inter"},
+            "classic": {"primary": "#92400e", "secondary": "#451a03", "accent": "#b45309", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "luxury": {"primary": "#be185d", "secondary": "#0a0008", "accent": "#ec4899", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#0d9488", "secondary": "#042f2e", "accent": "#14b8a6", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#d946ef", "secondary": "#2e0050", "accent": "#e879f9", "font_heading": "Poppins", "font_body": "Inter"},
+        },
+        "legal_services": {
+            "modern": {"primary": "#1d4ed8", "secondary": "#0f172a", "accent": "#3b82f6", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#4b5563", "secondary": "#030712", "accent": "#9ca3af", "font_heading": "Barlow Condensed", "font_body": "Inter"},
+            "classic": {"primary": "#78350f", "secondary": "#451a03", "accent": "#b45309", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "luxury": {"primary": "#ca8a04", "secondary": "#0a0800", "accent": "#fbbf24", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "minimal": {"primary": "#059669", "secondary": "#064e3b", "accent": "#10b981", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#7c3aed", "secondary": "#1e1b4b", "accent": "#8b5cf6", "font_heading": "Space Grotesk", "font_body": "Inter"},
+        },
+        "agriculture": {
+            "modern": {"primary": "#15803d", "secondary": "#052e16", "accent": "#22c55e", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#eab308", "secondary": "#1a1400", "accent": "#facc15", "font_heading": "Barlow Condensed", "font_body": "Inter"},
+            "classic": {"primary": "#78350f", "secondary": "#451a03", "accent": "#b45309", "font_heading": "Merriweather", "font_body": "Inter"},
+            "luxury": {"primary": "#16a34a", "secondary": "#052e16", "accent": "#4ade80", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#0891b2", "secondary": "#042f2e", "accent": "#0ea5e9", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#ea580c", "secondary": "#431407", "accent": "#fb923c", "font_heading": "Poppins", "font_body": "Inter"},
+        },
+        "hotel": {
+            "modern": {"primary": "#0369a1", "secondary": "#082f49", "accent": "#0284c7", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#f59e0b", "secondary": "#030712", "accent": "#fbbf24", "font_heading": "Space Grotesk", "font_body": "Inter"},
+            "classic": {"primary": "#92400e", "secondary": "#451a03", "accent": "#d97706", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "luxury": {"primary": "#ca8a04", "secondary": "#0a0800", "accent": "#fbbf24", "font_heading": "Cormorant Garamond", "font_body": "Inter"},
+            "minimal": {"primary": "#0d9488", "secondary": "#042f2e", "accent": "#14b8a6", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#06b6d4", "secondary": "#042f2e", "accent": "#22d3ee", "font_heading": "Outfit", "font_body": "Inter"},
+        },
+        "hardware": {
+            "modern": {"primary": "#dc2626", "secondary": "#1f2937", "accent": "#ef4444", "font_heading": "Outfit", "font_body": "Inter"},
+            "bold": {"primary": "#eab308", "secondary": "#0f0f00", "accent": "#facc15", "font_heading": "Barlow Condensed", "font_body": "Inter"},
+            "classic": {"primary": "#1d4ed8", "secondary": "#0f172a", "accent": "#3b82f6", "font_heading": "Inter", "font_body": "Inter"},
+            "luxury": {"primary": "#d97706", "secondary": "#1c1917", "accent": "#fbbf24", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#374151", "secondary": "#111827", "accent": "#6b7280", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#0891b2", "secondary": "#042f2e", "accent": "#22d3ee", "font_heading": "Space Grotesk", "font_body": "Inter"},
+        },
+        "clinic": {
+            "modern": {"primary": "#0d9488", "secondary": "#042f2e", "accent": "#14b8a6", "font_heading": "Inter", "font_body": "Inter"},
+            "bold": {"primary": "#0284c7", "secondary": "#0f172a", "accent": "#38bdf8", "font_heading": "Outfit", "font_body": "Inter"},
+            "classic": {"primary": "#15803d", "secondary": "#052e16", "accent": "#22c55e", "font_heading": "Merriweather", "font_body": "Inter"},
+            "luxury": {"primary": "#d97706", "secondary": "#1c1917", "accent": "#fbbf24", "font_heading": "Playfair Display", "font_body": "Inter"},
+            "minimal": {"primary": "#475569", "secondary": "#0f172a", "accent": "#64748b", "font_heading": "DM Sans", "font_body": "Inter"},
+            "vibrant": {"primary": "#7c3aed", "secondary": "#1e1b4b", "accent": "#a78bfa", "font_heading": "Poppins", "font_body": "Inter"},
+        },
+    }
+
+    sector_themes = VARIANT_THEME_MAP.get(body.sector, {})
+    variant_theme = sector_themes.get(body.variant, {})
+
     theme = template_data.get("theme", {})
+    primary_color = variant_theme.get("primary") or theme.get("primary", "#6366f1")
+    secondary_color = variant_theme.get("secondary") or theme.get("secondary", "#1e293b")
+    accent_color = variant_theme.get("accent") or theme.get("accent", "#f59e0b")
+    font_heading = variant_theme.get("font_heading") or theme.get("font_heading", "Outfit")
+    font_body = variant_theme.get("font_body") or theme.get("font_body", "Inter")
+
     subdomain = slugify(body.name)
     expires_at = datetime.now(timezone.utc) + timedelta(hours=24) if is_demo else None
 
@@ -89,12 +206,12 @@ async def create_site(body: SiteCreate, request: Request,
         expires_at=expires_at,
         settings=SiteSettings(
             brand_colors={
-                "primary": theme.get("primary", "#6366f1"),
-                "secondary": theme.get("secondary", "#1e293b"),
-                "accent": theme.get("accent", "#f59e0b"),
+                "primary": primary_color,
+                "secondary": secondary_color,
+                "accent": accent_color,
             },
-            font_heading=theme.get("font_heading", "Outfit"),
-            font_body=theme.get("font_body", "Inter"),
+            font_heading=font_heading,
+            font_body=font_body,
             footer={
                 "company_name": body.name,
                 "description": f"We provide excellent {body.sector} services.",

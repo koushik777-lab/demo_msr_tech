@@ -13,9 +13,9 @@ PLAN_LIMITS = {
 
 PLAN_PRICES = {
     "free": 0,
-    "starter": 49900,    # ₹499/month in paise
-    "pro": 149900,       # ₹1499/month in paise
-    "agency": 399900,    # ₹3999/month in paise
+    "starter": 149900,   # ₹1,499/month in paise
+    "pro": 299900,       # ₹2,999/month in paise
+    "agency": 599900,    # ₹5,999/month in paise
 }
 
 PLAN_NAMES = {
@@ -39,6 +39,7 @@ class SubscriptionInDB(BaseModel):
     cancelled_at: Optional[datetime] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    expires_at: Optional[datetime] = None
 
     @property
     def limits(self):

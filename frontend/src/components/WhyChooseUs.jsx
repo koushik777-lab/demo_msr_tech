@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Sparkles, TrendingUp, Zap, Wrench, Award, Clock } from 'lucide-react';
+import { Sparkles, TrendingUp, Zap, Wrench, Award, Clock, ArrowRight, ShieldCheck } from 'lucide-react';
 import { whyChooseUs } from '../data/mock';
+import TiltCard from '../builder/components/landing/TiltCard';
 
 const iconMap = {
   Sparkles,
@@ -27,13 +28,14 @@ const WhyChooseUs = () => {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -30 },
+    hidden: { opacity: 0, scale: 0.92, y: 30 },
     visible: {
       opacity: 1,
-      x: 0,
+      scale: 1,
+      y: 0,
       transition: {
-        duration: 0.6,
-        ease: 'easeOut'
+        duration: 0.5,
+        ease: [0.25, 0.1, 0.25, 1]
       }
     }
   };
@@ -42,34 +44,40 @@ const WhyChooseUs = () => {
     <section
       id="why-us"
       ref={ref}
-      className="relative py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden" style={{ background: 'var(--bg-primary)' }}
+      className="relative py-24 md:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden"
+      style={{ background: 'var(--bg-primary, #090d16)' }}
     >
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 grid-pattern opacity-20"></div>
+      {/* Background Accent Gradients */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-1/3 right-0 w-[500px] h-[500px] rounded-full bg-teal-500/10 blur-[150px]" />
+        <div className="absolute bottom-10 left-10 w-[400px] h-[400px] rounded-full bg-purple-600/10 blur-[140px]" />
+      </div>
 
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-10 max-w-7xl">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-16 md:mb-24"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.85 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-2 rounded-full glass mb-6"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6 border border-teal-500/30 bg-teal-500/10 backdrop-blur-md"
           >
-            <span className="text-sm" style={{ color: 'var(--brand-primary)' }}>
+            <ShieldCheck size={16} className="text-[var(--brand-primary)]" />
+            <span className="text-xs md:text-sm font-bold tracking-wider uppercase text-[var(--brand-primary)]">
               Why Partner With Us
             </span>
           </motion.div>
 
-          <h2 className="display-large mb-6">Why Choose MSRTECH</h2>
-          <p className="body-large max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-            We don't just build websites. We craft digital experiences that
-            transform businesses and captivate audiences.
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-[var(--text-primary)]">
+            Engineering <span className="bg-gradient-to-r from-[var(--brand-primary)] via-sky-400 to-indigo-400 bg-clip-text text-transparent">Digital Excellence</span>
+          </h2>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-[var(--text-secondary)] leading-relaxed">
+            We don't just write code — we design scalable digital experiences that transform businesses, delight users, and drive long-term commercial success.
           </p>
         </motion.div>
 
@@ -84,81 +92,82 @@ const WhyChooseUs = () => {
             const IconComponent = iconMap[feature.icon] || Sparkles;
             
             return (
-              <motion.div
-                key={feature.id}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                className="p-8 cursor-pointer group relative"
-                style={{
-                  background: 'var(--bg-overlay)',
-                  backdropFilter: 'blur(12px)',
-                  border: '1px solid var(--border-subtle)',
-                  transition: 'all 0.4s ease-in-out'
-                }}
-              >
-                {/* Glow Effect on Hover */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  className="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)]/10 to-transparent pointer-events-none"
-                ></motion.div>
+              <motion.div key={feature.id} variants={itemVariants}>
+                <TiltCard maxTilt={8} className="h-full rounded-2xl">
+                  <div
+                    className="group relative h-full p-8 md:p-9 rounded-2xl flex flex-col justify-between overflow-hidden transition-all duration-500"
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      backdropFilter: 'blur(16px)',
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)'
+                    }}
+                  >
+                    {/* Glow Highlight */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/15 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                {/* Icon */}
-                <motion.div
-                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
-                  transition={{ duration: 0.5 }}
-                  className="mb-6"
-                >
-                  <IconComponent size={40} style={{ color: 'var(--brand-primary)' }} />
-                </motion.div>
+                    {/* Step Index Badge */}
+                    <div className="absolute top-6 right-6 px-3 py-1 rounded-full text-xs font-bold tracking-widest text-[var(--brand-primary)] bg-[var(--brand-primary)]/10 border border-[var(--brand-primary)]/30">
+                      0{index + 1}
+                    </div>
 
-                {/* Content */}
-                <h3 className="heading-3 mb-4 group-hover:text-[var(--brand-primary)] transition-colors">
-                  {feature.title}
-                </h3>
-                <p className="body-medium" style={{ color: 'var(--text-secondary)' }}>
-                  {feature.description}
-                </p>
+                    <div>
+                      {/* Icon Container */}
+                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 relative transition-transform duration-500 group-hover:scale-110"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(13,148,136,0.2) 0%, rgba(37,99,235,0.1) 100%)',
+                          border: '1.5px solid rgba(13,148,136,0.3)',
+                          boxShadow: '0 8px 24px rgba(13,148,136,0.15)'
+                        }}
+                      >
+                        <IconComponent size={28} className="text-[var(--brand-primary)] transition-transform duration-500 group-hover:rotate-12" />
+                      </div>
 
-                {/* Number Badge */}
-                <div
-                  className="absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm"
-                  style={{
-                    background: 'var(--brand-hover)',
-                    color: 'var(--brand-primary)',
-                    border: '1px solid var(--border-subtle)'
-                  }}
-                >
-                  {String(index + 1).padStart(2, '0')}
-                </div>
+                      {/* Content */}
+                      <h3 className="text-2xl font-bold mb-3 text-[var(--text-primary)] group-hover:text-[var(--brand-primary)] transition-colors duration-300">
+                        {feature.title}
+                      </h3>
+                      <p className="text-base text-[var(--text-secondary)] leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                </TiltCard>
               </motion.div>
             );
           })}
         </motion.div>
 
-        {/* Bottom CTA */}
+        {/* Next-Level Bottom Glass CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-20 text-center p-12 glass"
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="mt-20 relative rounded-3xl p-10 md:p-14 text-center overflow-hidden border border-teal-500/30"
           style={{
-            background: 'var(--brand-hover)',
-            border: '1px solid var(--border-subtle)'
+            background: 'linear-gradient(135deg, rgba(13,148,136,0.15) 0%, rgba(15,23,42,0.8) 100%)',
+            backdropFilter: 'blur(20px)',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.3)'
           }}
         >
-          <h3 className="display-medium mb-6">Ready to Elevate Your Digital Presence?</h3>
-          <p className="body-large mb-8 max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-            Let's transform your vision into a stunning digital reality.
-            Our team is ready to bring your ideas to life.
+          <h3 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] mb-4 tracking-tight">
+            Ready to Elevate Your Digital Presence?
+          </h3>
+          <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto mb-8 leading-relaxed">
+            Let's transform your vision into a high-converting digital reality. Our engineering team is ready to build your custom platform.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="btn-primary magnetic-btn"
+            className="px-10 py-4 rounded-full font-bold text-base text-white shadow-xl inline-flex items-center gap-3 transition-all"
+            style={{
+              background: 'linear-gradient(135deg, var(--brand-primary, #0d9488), #2563eb)',
+              boxShadow: '0 10px 30px rgba(13,148,136,0.4)'
+            }}
           >
-            Get Started Today
+            <span>Get Started Today</span>
+            <ArrowRight size={20} />
           </motion.button>
         </motion.div>
       </div>

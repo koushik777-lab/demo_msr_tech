@@ -21,39 +21,45 @@
   "variant_themes": [
     {
       "id": "modern",
-      "primary": "#2563eb",
+      "primary": "#1d4ed8",
       "secondary": "#0f172a",
-      "accent": "#60a5fa"
+      "accent": "#3b82f6",
+      "font_heading": "Inter"
     },
     {
       "id": "bold",
-      "primary": "#059669",
+      "primary": "#f59e0b",
       "secondary": "#111827",
-      "accent": "#34d399"
+      "accent": "#fbbf24",
+      "font_heading": "Space Grotesk"
     },
     {
       "id": "classic",
-      "primary": "#4f46e5",
-      "secondary": "#1e293b",
-      "accent": "#818cf8"
+      "primary": "#6d28d9",
+      "secondary": "#1e1b4b",
+      "accent": "#7c3aed",
+      "font_heading": "Merriweather"
     },
     {
       "id": "luxury",
-      "primary": "#b45309",
-      "secondary": "#1c1917",
-      "accent": "#fcd34d"
+      "primary": "#ca8a04",
+      "secondary": "#0a0800",
+      "accent": "#fbbf24",
+      "font_heading": "Cormorant Garamond"
     },
     {
       "id": "minimal",
-      "primary": "#475569",
-      "secondary": "#0f172a",
-      "accent": "#94a3b8"
+      "primary": "#059669",
+      "secondary": "#064e3b",
+      "accent": "#10b981",
+      "font_heading": "DM Sans"
     },
     {
       "id": "vibrant",
-      "primary": "#ec4899",
-      "secondary": "#1e1b4b",
-      "accent": "#f472b6"
+      "primary": "#0891b2",
+      "secondary": "#042f2e",
+      "accent": "#06b6d4",
+      "font_heading": "Outfit"
     }
   ],
   "default_pages": {

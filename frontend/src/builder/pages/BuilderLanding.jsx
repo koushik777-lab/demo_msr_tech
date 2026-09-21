@@ -1,432 +1,851 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring, useTransform } from 'framer-motion';
 import LucideIcon from '../components/common/LucideIcon';
+import MagneticButton from '../components/landing/MagneticButton';
+import TiltCard from '../components/landing/TiltCard';
+import CountUpStat from '../components/landing/CountUpStat';
+import PricingSection from '../components/landing/PricingSection';
 
 const SECTORS = [
-  { icon: 'HardHat',       label: 'Construction',   desc: 'Builders & contractors',    color: '#ea580c', grad: 'linear-gradient(135deg,#431407,#7c2d12)', light: '#fed7aa', count: 6 },
-  { icon: 'Activity',      label: 'Medical',         desc: 'Clinics & healthcare',       color: '#0d9488', grad: 'linear-gradient(135deg,#042f2e,#0f766e)', light: '#99f6e4', count: 6 },
-  { icon: 'Sparkles',      label: 'Salon & Beauty',  desc: 'Salons, spas & studios',     color: '#db2777', grad: 'linear-gradient(135deg,#4a0020,#9d174d)', light: '#fbcfe8', count: 6 },
-  { icon: 'ShoppingBag',   label: 'E-Commerce',      desc: 'Online stores & shops',      color: '#7c3aed', grad: 'linear-gradient(135deg,#2e1065,#5b21b6)', light: '#ddd6fe', count: 6 },
-  { icon: 'Utensils',      label: 'Restaurant',      desc: 'Cafés & food delivery',      color: '#dc2626', grad: 'linear-gradient(135deg,#450a0a,#991b1b)', light: '#fecaca', count: 6 },
-  { icon: 'Home',          label: 'Real Estate',     desc: 'Property & agencies',        color: '#1d4ed8', grad: 'linear-gradient(135deg,#172554,#1e40af)', light: '#bfdbfe', count: 6 },
-  { icon: 'GraduationCap', label: 'Education',       desc: 'Schools & online courses',   color: '#4338ca', grad: 'linear-gradient(135deg,#1e1b4b,#3730a3)', light: '#c7d2fe', count: 6 },
-  { icon: 'Dumbbell',      label: 'Fitness',         desc: 'Gyms & wellness studios',    color: '#16a34a', grad: 'linear-gradient(135deg,#052e16,#166534)', light: '#bbf7d0', count: 6 },
-  { icon: 'Wrench',        label: 'Hardware',        desc: 'Tools & supply stores',      color: '#ca8a04', grad: 'linear-gradient(135deg,#1a1200,#854d0e)', light: '#fde68a', count: 6 },
-  { icon: 'Scale',         label: 'Legal Services',  desc: 'Law firms & consultants',    color: '#78350f', grad: 'linear-gradient(135deg,#1c0a00,#92400e)', light: '#fde68a', count: 6 },
-  { icon: 'Sprout',        label: 'Agriculture',     desc: 'Farms & organic produce',    color: '#15803d', grad: 'linear-gradient(135deg,#052e16,#14532d)', light: '#bbf7d0', count: 6 },
-  { icon: 'Bed',           label: 'Hotel',           desc: 'Hotels & resorts',           color: '#0369a1', grad: 'linear-gradient(135deg,#082f49,#0c4a6e)', light: '#bae6fd', count: 6 },
-  { icon: 'Activity',      label: 'Clinic',          desc: 'Medical & dental clinics',   color: '#0891b2', grad: 'linear-gradient(135deg,#042f2e,#155e75)', light: '#a5f3fc', count: 6 },
+  { id: 'all', label: 'All Sectors' },
+  { id: 'construction', icon: 'HardHat', label: 'Construction', desc: 'Commercial builders, contractors & heavy infrastructure', color: '#2563EB', count: 6 },
+  { id: 'medical', icon: 'Activity', label: 'Medical & Dental', desc: 'Clinics, specialized healthcare & patient portals', color: '#0D9488', count: 6 },
+  { id: 'salon', icon: 'Sparkles', label: 'Salon & Spa', desc: 'Luxury beauty studios & booking funnels', color: '#DB2777', count: 6 },
+  { id: 'ecommerce', icon: 'ShoppingBag', label: 'E-Commerce', desc: 'Modern digital storefronts & product showcases', color: '#7C3AED', count: 6 },
+  { id: 'restaurant', icon: 'Utensils', label: 'Restaurant', desc: 'Fine dining, cafés & online menu systems', color: '#DC2626', count: 6 },
+  { id: 'realestate', icon: 'Home', label: 'Real Estate', desc: 'Property listings, brokerages & virtual tours', color: '#2563EB', count: 6 },
+  { id: 'education', icon: 'GraduationCap', label: 'Education', desc: 'Academies, online courses & institute portals', color: '#4338CA', count: 6 },
+  { id: 'fitness', icon: 'Dumbbell', label: 'Fitness & Gym', desc: 'Wellness centers, trainers & membership sites', color: '#16A34A', count: 6 },
+  { id: 'hardware', icon: 'Wrench', label: 'Hardware Supply', desc: 'Tools, industrial equipment & B2B distributors', color: '#D97706', count: 6 },
+  { id: 'legal', icon: 'Scale', label: 'Legal Services', desc: 'Law firms, corporate counsel & consultation', color: '#475569', count: 6 },
+];
+
+const TEMPLATE_PREVIEWS = [
+  {
+    title: 'Apex Construction & Heavy Build',
+    subtitle: 'Engineered for Scale, Commercial Safety & High Structural Impact',
+    sector: 'Construction',
+    tag: 'Industrial Suite',
+    accent: '#2563EB',
+    heroBtn: 'Request Project Audit',
+    services: ['Commercial Heavy Building', 'Architectural Design', 'Infrastructure Contracting']
+  },
+  {
+    title: 'Lumina Health & Clinical Care',
+    subtitle: 'Patient-First Clinical Funnel & Instant Online Appointment Desk',
+    sector: 'Medical',
+    tag: 'Clinical Care',
+    accent: '#0D9488',
+    heroBtn: 'Schedule Consultation',
+    services: ['General Dental Care', 'Orthodontic Surgery', '24/7 Virtual Triage']
+  },
+  {
+    title: 'Velvet Rose Spa & Beauty Studio',
+    subtitle: 'Bespoke Aesthetic Treatments & Instant Appointment Scheduler',
+    sector: 'Salon & Spa',
+    tag: 'Luxury Beauty',
+    accent: '#DB2777',
+    heroBtn: 'Book Treatment',
+    services: ['Hair Styling & Color Lab', 'Organic Skin Therapies', 'Bridal Package Suites']
+  },
+  {
+    title: 'Urban Storefront E-Commerce',
+    subtitle: 'Curated Apparel, Instant Cart Checkout & Lifestyle Collections',
+    sector: 'E-Commerce',
+    tag: 'Digital Store',
+    accent: '#7C3AED',
+    heroBtn: 'Explore Catalog',
+    services: ['Summer Apparel Line', 'Handcrafted Accessories', 'Global Shipping Desk']
+  },
+  {
+    title: 'Savory Table Gourmet & Bistro',
+    subtitle: 'Fine Dining Menus, Table Reservations & Catering Enquiries',
+    sector: 'Restaurant',
+    tag: 'Gourmet Bistro',
+    accent: '#DC2626',
+    heroBtn: 'Reserve Table Now',
+    services: ['Chef Special Tasting', 'Private Dining Suite', 'Event Catering Services']
+  },
+  {
+    title: 'Horizon Grand Real Estate',
+    subtitle: 'Luxury Property Showcases, Virtual Tours & Broker Listings',
+    sector: 'Real Estate',
+    tag: 'Estate Sapphire',
+    accent: '#2563EB',
+    heroBtn: 'View Estates',
+    services: ['Penthouse Collection', 'Commercial Leasing', 'Mortgage Estimator']
+  }
 ];
 
 const STEPS = [
-  { icon: 'LayoutTemplate', step: '01', title: 'Pick a Template', desc: 'Choose from 10+ industry-specific designs. Each one comes pre-filled with real content.' },
-  { icon: 'MousePointerClick', step: '02', title: 'Customize It', desc: 'Drag and drop sections, change colors, upload your logo. No code needed.' },
-  { icon: 'Globe', step: '03', title: 'Publish & Go Live', desc: 'Download a ready-to-host ZIP or connect your own domain in one click.' },
-];
-
-const FEATURES = [
-  ['LayoutGrid', 'Drag & Drop Editor', 'Visually arrange sections on a live canvas. No coding skills needed.'],
-  ['Smartphone', 'Mobile Responsive', 'Every website looks perfect on desktop, tablet, and mobile.'],
-  ['Search', 'SEO Ready', 'Auto-generated sitemap, meta tags, and robots.txt on every publish.'],
-  ['ShieldCheck', 'Legal Pages Included', 'Terms, Privacy, Cookie Policy, and 404 page auto-generated.'],
-  ['CreditCard', 'Flexible Plans', 'Start free. Upgrade to unlock custom domains and more sites.'],
-  ['DownloadCloud', '1-Click Publish', 'Download a ready-to-host ZIP or connect your own domain.'],
+  {
+    step: '01',
+    codeTag: 'INIT_PRESET',
+    title: 'Select Handcrafted Sector Preset',
+    desc: 'Choose from 13 commercial industry kits complete with human-written copy, conversion forms, and structural blocks.',
+    icon: 'LayoutTemplate',
+    color: '#2563EB'
+  },
+  {
+    step: '02',
+    codeTag: 'VISUAL_CANVAS',
+    title: 'Visual Drag-and-Drop Editor',
+    desc: 'Customize section hierarchy, tweak typography token scales, and update images in a real-time responsive viewport.',
+    icon: 'MousePointerClick',
+    color: '#2563EB'
+  },
+  {
+    step: '03',
+    codeTag: 'DEPLOY_BUILD',
+    title: 'Instant Production Deployment',
+    desc: 'Publish directly to your custom domain with free SSL, or download a clean static HTML/CSS ZIP bundle anytime.',
+    icon: 'Rocket',
+    color: '#2563EB'
+  }
 ];
 
 const TESTIMONIALS = [
-  { name: 'Sarah Ahmed', role: 'Salon Owner', text: 'I had my salon website live in under an hour. It looks amazing on mobile too!', avatar: 'SA' },
-  { name: 'Tariq Hussain', role: 'Restaurant Manager', text: 'The restaurant template was perfect. Added my menu, photos, and went live same day.', avatar: 'TH' },
-  { name: 'Fatima Khan', role: 'Real Estate Agent', text: 'Clients love the professional look. I got 3 new leads in the first week.', avatar: 'FK' },
+  { name: 'Rohan Sharma', role: 'Construction Director', text: 'MSR Tech Hub allowed us to deploy our commercial site in under 30 minutes. The layout precision is remarkable.', avatar: 'RS' },
+  { name: 'Dr. Ananya Roy', role: 'Clinic Lead', text: 'The medical template had our appointment funnel ready out of the box. Patient inquiries increased by 40%.', avatar: 'AR' },
+  { name: 'Kavita Patel', role: 'Salon Founder', text: 'Zero code needed. I updated our service menu and pricing right from my tablet with total ease.', avatar: 'KP' },
+  { name: 'Vikram Sethi', role: 'E-Store Operator', text: 'Fastest template engine I have used. Mobile responsiveness and page load times are exceptionally crisp.', avatar: 'VS' },
+  { name: 'Priya Malhotra', role: 'Real Estate Broker', text: 'The property showcase layout gave our agency an ultra-premium aesthetic. Clients notice the difference.', avatar: 'PM' },
+  { name: 'Amit Verma', role: 'Supply Store Manager', text: 'Direct static HTML ZIP export saved us hundreds of hosting dollars. Clean, reliable, and solid.', avatar: 'AV' }
 ];
-
-const viewportOptions = { once: true, margin: '-80px' };
 
 export default function BuilderLanding() {
   const navigate = useNavigate();
+  const [selectedSector, setSelectedSector] = useState('all');
+  const [activePreviewIndex, setActivePreviewIndex] = useState(0);
+  const [previewHovered, setPreviewHovered] = useState(null);
+  const [previewMode, setPreviewMode] = useState('desktop');
+  const [activeLayer, setActiveLayer] = useState('hero');
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 300, damping: 30 });
+
+  const stepsContainerRef = useRef(null);
+  const { scrollYProgress: stepsScroll } = useScroll({
+    target: stepsContainerRef,
+    offset: ["start center", "end center"]
+  });
+  const lineHeight = useTransform(stepsScroll, [0, 1], ["0%", "100%"]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActivePreviewIndex((prev) => (prev + 1) % TEMPLATE_PREVIEWS.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const filteredSectors = selectedSector === 'all' 
+    ? SECTORS.filter(s => s.id !== 'all') 
+    : SECTORS.filter(s => s.id === selectedSector);
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg-primary)', fontFamily: "'Outfit', sans-serif", overflowX: 'hidden', color: 'var(--text-primary)' }}>
-      {/* Background Orbs */}
-      <div style={{ position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0 }}>
-        <div style={{ position: 'absolute', top: '10%', left: '25%', width: 600, height: 600, borderRadius: '50%', background: 'radial-gradient(circle, rgba(13,148,136,0.06), transparent 70%)', filter: 'blur(100px)' }} />
-        <div style={{ position: 'absolute', bottom: '15%', right: '15%', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(15,118,110,0.04), transparent 70%)', filter: 'blur(80px)' }} />
-      </div>
+    <div style={{
+      minHeight: '100vh',
+      background: '#F8FAFC',
+      color: '#0F172A',
+      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      overflowX: 'hidden',
+      backgroundImage: 'radial-gradient(#E2E8F0 1.2px, transparent 1.2px)',
+      backgroundSize: '24px 24px'
+    }}>
+      
+      {/* Top Reading Progress Bar */}
+      <motion.div
+        style={{
+          scaleX,
+          transformOrigin: '0%',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 3,
+          background: '#2563EB',
+          zIndex: 1000
+        }}
+      />
 
-      {/* Navbar */}
-      <nav style={{ padding: '0 40px', borderBottom: '1px solid var(--border-subtle)', position: 'sticky', top: 0, zIndex: 100, background: 'var(--bg-secondary)', backdropFilter: 'blur(16px)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ color: 'var(--text-primary)', fontWeight: 800, fontSize: '1.4rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }} onClick={() => navigate('/')}>
-            <img src="/logo.png" alt="MSR Tech Hub Logo" style={{ height: 38, width: 'auto', objectFit: 'contain' }} />
-            <span style={{ fontSize: '1.25rem', fontWeight: 800 }}>MSR TECH HUB</span>
-          </span>
+      {/* Sleek Top Navbar */}
+      <nav style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 100,
+        padding: isScrolled ? '12px 28px' : '18px 28px',
+        background: isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(248, 250, 252, 0.85)',
+        backdropFilter: 'blur(16px)',
+        borderBottom: isScrolled ? '1px solid #E2E8F0' : '1px solid transparent',
+        boxShadow: isScrolled ? '0 4px 20px rgba(15,23,42,0.04)' : 'none',
+        transition: 'all 0.3s ease'
+      }}>
+        <div style={{ maxWidth: 1240, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          
+          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+            <img 
+              src="/logo.png" 
+              alt="MSR Tech Hub Logo" 
+              style={{ height: 38, width: 'auto', objectFit: 'contain' }} 
+            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ fontSize: '1.15rem', fontWeight: 800, letterSpacing: '-0.03em', color: '#0F172A' }}>
+                MSR Tech Hub
+              </span>
+              <span style={{ fontSize: '0.68rem', fontFamily: 'monospace', fontWeight: 700, background: '#DBEAFE', color: '#2563EB', border: '1px solid #BFDBFE', padding: '2px 8px', borderRadius: 4 }}>
+                STUDIO v2.4
+              </span>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', gap: 32, alignItems: 'center' }} className="hidden md:flex">
+            <a href="#templates" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
+              Sector Presets
+            </a>
+            <a href="#how-it-works" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
+              Workflow
+            </a>
+            <a href="#pricing" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
+              Pricing
+            </a>
+          </div>
+
           <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-            <button onClick={() => navigate('/builder/login')} style={{ background: 'transparent', border: '1px solid var(--border-subtle)', color: 'var(--text-secondary)', padding: '8px 20px', borderRadius: 8, cursor: 'pointer', fontFamily: 'inherit', fontWeight: 600, fontSize: '0.875rem', transition: 'all .2s' }}>
+            <button
+              onClick={() => navigate('/builder/login')}
+              style={{
+                background: '#FFFFFF',
+                border: '1px solid #E2E8F0',
+                color: '#0F172A',
+                padding: '8px 18px',
+                borderRadius: 8,
+                cursor: 'pointer',
+                fontWeight: 600,
+                fontSize: '0.86rem',
+                boxShadow: '0 2px 6px rgba(15,23,42,0.04)',
+                transition: 'all 0.2s'
+              }}
+            >
               Sign In
             </button>
-            <motion.button
+
+            <MagneticButton
               onClick={() => navigate('/builder/login')}
-              whileHover={{ scale: 1.05 }}
-              style={{ background: 'linear-gradient(135deg, var(--brand-primary), var(--brand-active))', border: 'none', borderRadius: 99, color: '#fff', padding: '8px 20px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 700, fontSize: '0.875rem', boxShadow: '0 4px 12px var(--brand-hover)' }}
+              style={{
+                background: '#2563EB',
+                color: '#FFFFFF',
+                padding: '8px 20px',
+                borderRadius: 8,
+                fontWeight: 700,
+                fontSize: '0.86rem',
+                boxShadow: '0 4px 14px rgba(37,99,235,0.25)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 6
+              }}
             >
-              Get Started Free
-            </motion.button>
+              Launch Studio →
+            </MagneticButton>
           </div>
         </div>
       </nav>
 
-      {/* ── Hero ── */}
-      <section style={{ textAlign: 'center', padding: '100px 24px 60px', position: 'relative', zIndex: 5 }}>
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'var(--brand-hover)', border: '1px solid var(--brand-primary)', borderRadius: 99, padding: '6px 16px', marginBottom: 28, color: 'var(--brand-primary)', fontSize: '0.85rem', fontWeight: 600 }}>
-            <LucideIcon name="Sparkles" size={14} /> No Code Required
-          </div>
-          <h1 style={{ color: 'var(--text-primary)', fontSize: 'clamp(2.8rem, 6vw, 4.8rem)', fontWeight: 800, margin: '0 0 20px', lineHeight: 1.1, letterSpacing: '-0.03em' }}>
-            Build a Professional<br />
-            <span style={{ background: 'linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-active) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-              Website in Minutes
+      {/* 1. BESPOKE HUMAN LIGHT HERO SECTION (NO AI DARK WIREFRAME) */}
+      <section style={{ textAlign: 'center', padding: '80px 24px 70px', position: 'relative', zIndex: 5 }}>
+        
+        {/* Soft Ambient Radial Light Glow */}
+        <div style={{
+          position: 'absolute',
+          top: -60,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: 800,
+          height: 450,
+          background: 'radial-gradient(circle, #DBEAFE 0%, rgba(219, 234, 254, 0.3) 45%, transparent 70%)',
+          pointerEvents: 'none',
+          zIndex: -1
+        }} />
+
+        {/* Product Status Pill */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 10,
+            background: '#FFFFFF',
+            border: '1px solid #E2E8F0',
+            borderRadius: 99,
+            padding: '6px 18px',
+            marginBottom: 32,
+            boxShadow: '0 4px 14px rgba(15,23,42,0.04)'
+          }}
+        >
+          <span style={{ fontSize: '0.72rem', fontFamily: 'monospace', fontWeight: 800, color: '#2563EB', background: '#DBEAFE', border: '1px solid #BFDBFE', padding: '2px 8px', borderRadius: 4 }}>
+            RELEASE v2.4
+          </span>
+          <span style={{ width: 1, height: 14, background: '#E2E8F0' }} />
+          <span style={{ color: '#334155', fontSize: '0.84rem', fontWeight: 600 }}>
+            13 Commercial Sector Suites Built & Ready
+          </span>
+          <LucideIcon name="ChevronRight" size={14} color="#334155" />
+        </motion.div>
+
+        {/* Main Headline */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          style={{ maxWidth: 940, margin: '0 auto 24px' }}
+        >
+          <h1 style={{
+            fontSize: 'clamp(2.6rem, 5.8vw, 4.8rem)',
+            fontWeight: 800,
+            lineHeight: 1.08,
+            letterSpacing: '-0.04em',
+            margin: 0,
+            color: '#0F172A'
+          }}>
+            Design & Launch Commercial Websites.<br />
+            <span style={{ color: '#2563EB' }}>
+              Visual precision. Zero code complexity.
             </span>
           </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', maxWidth: 560, margin: '0 auto 40px', lineHeight: 1.7 }}>
-            Choose from 10 industry-specific templates, customize every detail with our drag-and-drop editor, and publish to the world.
-          </p>
-          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 56 }}>
-            <motion.button
-              onClick={() => navigate('/builder/login')}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              style={{ background: 'linear-gradient(135deg, var(--brand-primary), var(--brand-active))', border: 'none', borderRadius: 14, color: '#fff', padding: '16px 36px', fontWeight: 700, fontSize: '1.05rem', cursor: 'pointer', fontFamily: 'inherit', boxShadow: '0 12px 40px var(--brand-hover)' }}
-            >
-              Start Building Free →
-            </motion.button>
-            <motion.button
-              onClick={() => navigate('/builder/login')}
-              whileHover={{ scale: 1.04 }}
-              style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-subtle)', color: 'var(--text-primary)', padding: '16px 36px', fontWeight: 600, fontSize: '1.05rem', cursor: 'pointer', fontFamily: 'inherit', borderRadius: 14 }}
-            >
-              View Templates
-            </motion.button>
-          </div>
-
-          {/* Trust Badges */}
-          <div style={{ display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {[['Users', '2,400+ businesses'], ['Star', '4.9/5 rating'], ['Zap', 'Live in minutes'], ['ShieldCheck', 'Free to start']].map(([icon, label]) => (
-              <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--text-muted)', fontSize: '0.875rem', fontWeight: 500 }}>
-                <LucideIcon name={icon} size={16} color="var(--brand-primary)" />
-                {label}
-              </div>
-            ))}
-          </div>
         </motion.div>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          style={{ color: '#334155', fontSize: '1.12rem', maxWidth: 660, margin: '0 auto 40px', lineHeight: 1.6, fontWeight: 500 }}
+        >
+          Pick a handcrafted sector preset, edit typography, layouts, and lead funnels visually in real time, and publish directly to your domain or export clean static HTML.
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 60 }}
+        >
+          <MagneticButton
+            onClick={() => navigate('/builder/login')}
+            style={{
+              background: '#2563EB',
+              color: '#FFFFFF',
+              padding: '14px 34px',
+              borderRadius: 10,
+              fontWeight: 700,
+              fontSize: '0.98rem',
+              boxShadow: '0 6px 20px rgba(37,99,235,0.25)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 10
+            }}
+          >
+            Start Building Free
+            <span style={{ background: 'rgba(255,255,255,0.25)', fontSize: '0.72rem', fontFamily: 'monospace', padding: '2px 6px', borderRadius: 4 }}>
+              ⌘ K
+            </span>
+          </MagneticButton>
+
+          <button
+            onClick={() => document.getElementById('templates')?.scrollIntoView({ behavior: 'smooth' })}
+            style={{
+              background: '#FFFFFF',
+              border: '1px solid #E2E8F0',
+              color: '#0F172A',
+              padding: '14px 28px',
+              borderRadius: 10,
+              fontWeight: 600,
+              fontSize: '0.98rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
+              boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
+              transition: 'all 0.2s'
+            }}
+          >
+            <LucideIcon name="Eye" size={16} color="#334155" /> Explore Presets
+          </button>
+        </motion.div>
+
+        {/* Bento Technical Metrics Cards */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))',
+          gap: 14,
+          maxWidth: 920,
+          margin: '0 auto'
+        }}>
+          {[
+            { end: 10000, suffix: '+', label: 'Sites Published Globally' },
+            { end: 13, suffix: ' Sectors', label: 'Handcrafted Preset Kits' },
+            { end: 99.9, suffix: '%', label: 'Uptime SLA' },
+            { end: 4.9, prefix: '★ ', suffix: '/5', label: 'Verified Client Rating' }
+          ].map((st, i) => (
+            <div
+              key={i}
+              style={{
+                background: '#FFFFFF',
+                border: '1px solid #E2E8F0',
+                borderRadius: 14,
+                padding: '18px 14px',
+                textAlign: 'center',
+                boxShadow: '0 4px 16px rgba(15,23,42,0.03)'
+              }}
+            >
+              <CountUpStat end={st.end} prefix={st.prefix} suffix={st.suffix} label={st.label} />
+            </div>
+          ))}
+        </div>
       </section>
 
-      {/* ── Visual Preview Mockup ── */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={viewportOptions}
-        transition={{ duration: 0.7 }}
-        style={{ padding: '0 24px 80px', position: 'relative', zIndex: 5 }}
-      >
-        <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 24, overflow: 'hidden', border: '1px solid var(--border-subtle)', boxShadow: '0 24px 80px rgba(0,0,0,0.12)', background: 'var(--bg-secondary)' }}>
-          {/* Browser chrome */}
-          <div style={{ background: 'var(--bg-tertiary, var(--bg-secondary))', borderBottom: '1px solid var(--border-subtle)', padding: '12px 20px', display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ display: 'flex', gap: 6 }}>
-              <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#ff5f56' }} />
-              <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#ffbd2e' }} />
-              <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#27c93f' }} />
-            </div>
-            <div style={{ flex: 1, background: 'var(--bg-primary)', borderRadius: 6, height: 28, display: 'flex', alignItems: 'center', paddingLeft: 12, color: 'var(--text-muted)', fontSize: '0.75rem', gap: 6 }}>
-              <LucideIcon name="Lock" size={11} /> sitecraft.io/preview
-            </div>
-          </div>
-          {/* Website Preview Content */}
-          <div style={{ padding: '40px 40px 40px', background: 'var(--bg-primary)' }}>
-            {/* Fake hero */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center', marginBottom: 40 }}>
-              <div>
-                <div style={{ width: '40%', height: 12, background: 'var(--brand-primary)', borderRadius: 4, marginBottom: 16, opacity: 0.6 }} />
-                <div style={{ width: '90%', height: 28, background: 'var(--border-subtle)', borderRadius: 6, marginBottom: 10 }} />
-                <div style={{ width: '75%', height: 28, background: 'var(--border-subtle)', borderRadius: 6, marginBottom: 24 }} />
-                <div style={{ display: 'flex', gap: 12 }}>
-                  <div style={{ width: 120, height: 36, borderRadius: 8, background: 'var(--brand-primary)', opacity: 0.8 }} />
-                  <div style={{ width: 100, height: 36, borderRadius: 8, border: '1px solid var(--border-subtle)', background: 'transparent' }} />
+      {/* 2. MAC STUDIO INTERACTIVE WORKSPACE CANVAS (LIGHT MODE STUDIO) */}
+      <section style={{ padding: '0 24px 90px', position: 'relative', zIndex: 5 }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          
+          <TiltCard maxTilt={4} style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid #E2E8F0', boxShadow: '0 20px 60px rgba(15,23,42,0.08)', background: '#FFFFFF' }}>
+            
+            {/* Window Top Title Bar */}
+            <div style={{ background: '#F1F5F9', borderBottom: '1px solid #E2E8F0', padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              
+              <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                <div style={{ width: 11, height: 11, borderRadius: '50%', background: '#FF5F56' }} />
+                <div style={{ width: 11, height: 11, borderRadius: '50%', background: '#FFBD2E' }} />
+                <div style={{ width: 11, height: 11, borderRadius: '50%', background: '#27C93F' }} />
+              </div>
+
+              {/* Center Address Pill */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: 6, padding: '4px 16px', color: '#334155', fontSize: '0.75rem', fontFamily: 'monospace', display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#10B981' }} />
+                  msrtechhub.com/studio/{TEMPLATE_PREVIEWS[activePreviewIndex].sector.toLowerCase()}
                 </div>
               </div>
-              <div style={{ height: 160, borderRadius: 16, background: `linear-gradient(135deg, var(--brand-hover) 0%, var(--bg-secondary) 100%)`, border: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <LucideIcon name="Globe" size={48} color="var(--brand-primary)" />
+
+              {/* Viewport controls & dots */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                <div style={{ display: 'flex', gap: 4, background: '#E2E8F0', padding: 2, borderRadius: 6 }}>
+                  {[['desktop', 'Monitor'], ['mobile', 'Smartphone']].map(([mode, icon]) => (
+                    <button
+                      key={mode}
+                      onClick={() => setPreviewMode(mode)}
+                      style={{
+                        background: previewMode === mode ? '#2563EB' : 'transparent',
+                        border: 'none',
+                        color: previewMode === mode ? '#FFFFFF' : '#334155',
+                        padding: '4px 8px',
+                        borderRadius: 4,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <LucideIcon name={icon} size={13} />
+                    </button>
+                  ))}
+                </div>
+
+                <div style={{ display: 'flex', gap: 6 }}>
+                  {TEMPLATE_PREVIEWS.map((_, idx) => (
+                    <div
+                      key={idx}
+                      onClick={() => setActivePreviewIndex(idx)}
+                      style={{
+                        width: activePreviewIndex === idx ? 20 : 6,
+                        height: 6,
+                        borderRadius: 3,
+                        background: activePreviewIndex === idx ? '#2563EB' : '#CBD5E1',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease'
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
-            {/* Fake service cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
-              {[['LayoutGrid', 'Web Design'], ['Smartphone', 'Mobile App'], ['Search', 'SEO & Growth']].map(([icon, label]) => (
-                <div key={label} style={{ padding: '20px', borderRadius: 12, border: '1px solid var(--border-subtle)', background: 'var(--bg-secondary)', textAlign: 'center' }}>
-                  <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--brand-hover)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}>
-                    <LucideIcon name={icon} size={20} color="var(--brand-primary)" />
+
+            {/* Studio Workspace Layout */}
+            <div style={{ display: 'grid', gridTemplateColumns: previewMode === 'mobile' ? '1fr' : '200px 1fr 220px', minHeight: 420 }}>
+              
+              {/* Left Layers Tree Sidebar */}
+              {previewMode === 'desktop' && (
+                <div style={{ borderRight: '1px solid #E2E8F0', background: '#F8FAFC', padding: 16 }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 14 }}>
+                    LAYOUT LAYERS
                   </div>
-                  <div style={{ height: 10, background: 'var(--border-subtle)', borderRadius: 4, width: '80%', margin: '0 auto 8px' }} />
-                  <div style={{ height: 8, background: 'var(--border-subtle)', borderRadius: 4, width: '60%', margin: '0 auto', opacity: 0.6 }} />
+                  
+                  {[
+                    { id: 'hero', name: 'Hero Header Block', icon: 'Layout' },
+                    { id: 'services', name: 'Services Grid', icon: 'Grid' },
+                    { id: 'cta', name: 'Booking Funnel Form', icon: 'FileText' },
+                    { id: 'footer', name: 'Footer & Navigation', icon: 'Menu' }
+                  ].map(layer => (
+                    <div
+                      key={layer.id}
+                      onClick={() => setActiveLayer(layer.id)}
+                      style={{
+                        padding: '8px 10px',
+                        borderRadius: 6,
+                        marginBottom: 4,
+                        cursor: 'pointer',
+                        background: activeLayer === layer.id ? '#DBEAFE' : 'transparent',
+                        border: activeLayer === layer.id ? '1px solid #BFDBFE' : '1px solid transparent',
+                        color: activeLayer === layer.id ? '#2563EB' : '#334155',
+                        fontSize: '0.78rem',
+                        fontWeight: activeLayer === layer.id ? 700 : 500,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8
+                      }}
+                    >
+                      <LucideIcon name={layer.icon} size={14} />
+                      {layer.name}
+                    </div>
+                  ))}
                 </div>
+              )}
+
+              {/* Center Canvas Preview Area */}
+              <div style={{
+                padding: previewMode === 'mobile' ? '30px 16px' : '36px 40px',
+                maxWidth: previewMode === 'mobile' ? 380 : '100%',
+                margin: '0 auto',
+                background: '#FFFFFF',
+                transition: 'all 0.3s ease'
+              }}>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activePreviewIndex}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -12 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <span style={{
+                      background: '#DBEAFE',
+                      color: '#2563EB',
+                      border: '1px solid #BFDBFE',
+                      fontSize: '0.7rem',
+                      fontWeight: 700,
+                      padding: '3px 10px',
+                      borderRadius: 4,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.04em'
+                    }}>
+                      {TEMPLATE_PREVIEWS[activePreviewIndex].tag}
+                    </span>
+
+                    <h3 style={{ fontSize: '1.75rem', fontWeight: 800, margin: '14px 0 10px', color: '#0F172A', lineHeight: 1.25 }}>
+                      {TEMPLATE_PREVIEWS[activePreviewIndex].title}
+                    </h3>
+                    
+                    <p style={{ color: '#334155', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: 24 }}>
+                      {TEMPLATE_PREVIEWS[activePreviewIndex].subtitle}
+                    </p>
+
+                    <button style={{
+                      background: TEMPLATE_PREVIEWS[activePreviewIndex].accent || '#2563EB',
+                      color: '#FFFFFF',
+                      border: 'none',
+                      padding: '10px 22px',
+                      borderRadius: 8,
+                      fontWeight: 700,
+                      fontSize: '0.86rem',
+                      cursor: 'pointer',
+                      marginBottom: 28,
+                      boxShadow: '0 4px 12px rgba(37,99,235,0.2)'
+                    }}>
+                      {TEMPLATE_PREVIEWS[activePreviewIndex].heroBtn} →
+                    </button>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: previewMode === 'mobile' ? '1fr' : 'repeat(3, 1fr)', gap: 12 }}>
+                      {TEMPLATE_PREVIEWS[activePreviewIndex].services.map((serv, sIdx) => (
+                        <div
+                          key={sIdx}
+                          style={{
+                            background: '#F8FAFC',
+                            border: '1px solid #E2E8F0',
+                            borderRadius: 8,
+                            padding: '12px 14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10
+                          }}
+                        >
+                          <LucideIcon name="CheckCircle2" size={15} color={TEMPLATE_PREVIEWS[activePreviewIndex].accent || '#2563EB'} />
+                          <span style={{ color: '#0F172A', fontWeight: 600, fontSize: '0.8rem' }}>
+                            {serv}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+
+              {/* Right Inspector Sidebar */}
+              {previewMode === 'desktop' && (
+                <div style={{ borderLeft: '1px solid #E2E8F0', background: '#F8FAFC', padding: 16 }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 14 }}>
+                    INSPECTOR TOKENS
+                  </div>
+                  
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.76rem' }}>
+                    <div>
+                      <div style={{ color: '#334155', marginBottom: 4 }}>SECTOR THEME</div>
+                      <div style={{ color: '#0F172A', fontFamily: 'monospace', background: '#FFFFFF', padding: '4px 8px', borderRadius: 4, border: '1px solid #E2E8F0' }}>
+                        {TEMPLATE_PREVIEWS[activePreviewIndex].accent}
+                      </div>
+                    </div>
+
+                    <div>
+                      <div style={{ color: '#334155', marginBottom: 4 }}>TYPOGRAPHY</div>
+                      <div style={{ color: '#0F172A', fontFamily: 'monospace', background: '#FFFFFF', padding: '4px 8px', borderRadius: 4, border: '1px solid #E2E8F0' }}>
+                        Inter Display (-0.03em)
+                      </div>
+                    </div>
+
+                    <div>
+                      <div style={{ color: '#334155', marginBottom: 4 }}>EXPORT TARGET</div>
+                      <div style={{ color: '#2563EB', fontFamily: 'monospace', background: '#DBEAFE', padding: '4px 8px', borderRadius: 4, border: '1px solid #BFDBFE' }}>
+                        Static HTML5 / Zip
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+            </div>
+          </TiltCard>
+
+        </div>
+      </section>
+
+      {/* 3. BENTO SHOWCASE: SECTOR PRESETS */}
+      <section id="templates" style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#FFFFFF', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}>
+        <div style={{ maxWidth: 1240, margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
+              Handcrafted <span style={{ color: '#2563EB' }}>Sector Kits</span>
+            </h2>
+            <p style={{ color: '#334155', fontSize: '1rem', maxWidth: 520, margin: '0 auto' }}>
+              Pre-populated commercial layout suites engineered with industry-specific copy, forms, and hero blocks.
+            </p>
+          </div>
+
+          {/* Sector Category Filters */}
+          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 48 }}>
+            {SECTORS.map((sec) => {
+              const isSelected = selectedSector === sec.id;
+              return (
+                <button
+                  key={sec.id}
+                  onClick={() => setSelectedSector(sec.id)}
+                  style={{
+                    position: 'relative',
+                    padding: '8px 18px',
+                    borderRadius: 99,
+                    border: isSelected ? 'none' : '1px solid #E2E8F0',
+                    background: isSelected ? '#2563EB' : '#FFFFFF',
+                    color: isSelected ? '#FFFFFF' : '#334155',
+                    fontWeight: 600,
+                    fontSize: '0.84rem',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  {sec.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Bento Cards Grid */}
+          <motion.div
+            layout
+            style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}
+          >
+            <AnimatePresence>
+              {filteredSectors.map((s, idx) => (
+                <motion.div
+                  layout
+                  key={s.id}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3, delay: idx * 0.04 }}
+                  onMouseEnter={() => setPreviewHovered(s.id)}
+                  onMouseLeave={() => setPreviewHovered(null)}
+                >
+                  <TiltCard maxTilt={6} style={{ borderRadius: 14, height: '100%' }}>
+                    <div style={{
+                      background: '#FFFFFF',
+                      border: '1px solid #E2E8F0',
+                      borderRadius: 14,
+                      padding: '28px 22px',
+                      height: '100%',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      position: 'relative',
+                      overflow: 'hidden',
+                      boxShadow: '0 4px 16px rgba(15,23,42,0.04)'
+                    }}>
+                      <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
+                          <div style={{
+                            width: 44,
+                            height: 44,
+                            borderRadius: 10,
+                            background: '#DBEAFE',
+                            border: '1px solid #BFDBFE',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                          }}>
+                            <LucideIcon name={s.icon} size={22} color="#2563EB" />
+                          </div>
+                          <span style={{ fontSize: '0.7rem', fontWeight: 700, fontFamily: 'monospace', color: '#2563EB', background: '#DBEAFE', border: '1px solid #BFDBFE', padding: '2px 8px', borderRadius: 4 }}>
+                            {s.count} PRESETS
+                          </span>
+                        </div>
+
+                        <h3 style={{ fontSize: '1.18rem', fontWeight: 700, margin: '0 0 6px', color: '#0F172A' }}>{s.label}</h3>
+                        <p style={{ color: '#334155', fontSize: '0.85rem', margin: '0 0 20px', lineHeight: 1.5 }}>{s.desc}</p>
+                      </div>
+
+                      {previewHovered === s.id && (
+                        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={{ position: 'absolute', inset: 0, background: 'rgba(255, 255, 255, 0.96)', backdropFilter: 'blur(10px)', padding: 22, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 20 }}>
+                          <LucideIcon name="Sparkles" size={26} color="#2563EB" style={{ marginBottom: 10 }} />
+                          <h4 style={{ color: '#0F172A', fontSize: '1.05rem', fontWeight: 700, margin: '0 0 4px' }}>{s.label} Suite</h4>
+                          <p style={{ color: '#334155', fontSize: '0.78rem', marginBottom: 16 }}>Pre-populated with real copy, lead capture form & high-converting layout.</p>
+                          <button onClick={() => navigate('/builder/login')} style={{ background: '#2563EB', color: '#FFFFFF', border: 'none', padding: '9px 20px', borderRadius: 7, fontWeight: 700, fontSize: '0.82rem', cursor: 'pointer' }}>
+                            Launch Studio →
+                          </button>
+                        </motion.div>
+                      )}
+
+                      <button onClick={() => navigate('/builder/login')} style={{ width: '100%', padding: '10px 16px', borderRadius: 8, border: '1px solid #E2E8F0', background: '#F8FAFC', color: '#0F172A', fontWeight: 600, fontSize: '0.85rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                        Explore Preset Suite →
+                      </button>
+                    </div>
+                  </TiltCard>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 4. TECHNICAL WORKFLOW ARCHITECTURE */}
+      <section id="how-it-works" style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#F8FAFC' }}>
+        <div style={{ maxWidth: 960, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
+              Engine <span style={{ color: '#2563EB' }}>Workflow</span>
+            </h2>
+            <p style={{ color: '#334155', fontSize: '1rem' }}>Three simple technical stages from zero to live production deployment.</p>
+          </div>
+
+          <div ref={stepsContainerRef} style={{ position: 'relative' }}>
+            <div style={{ position: 'absolute', top: 0, bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 2, background: '#E2E8F0', zIndex: 1, borderRadius: 1 }}>
+              <motion.div style={{ height: lineHeight, width: '100%', background: '#2563EB', borderRadius: 1 }} />
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 48, position: 'relative', zIndex: 2 }}>
+              {STEPS.map((s, idx) => (
+                <motion.div key={idx} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.45, delay: idx * 0.1 }} style={{ display: 'grid', gridTemplateColumns: '1fr 80px 1fr', alignItems: 'center' }}>
+                  <div style={{ textAlign: idx % 2 === 0 ? 'right' : 'left', order: idx % 2 === 0 ? 1 : 3 }}>
+                    <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: 14, padding: 26, boxShadow: '0 4px 16px rgba(15,23,42,0.04)' }}>
+                      <div style={{ display: 'flex', gap: 8, justifyContent: idx % 2 === 0 ? 'flex-end' : 'flex-start', marginBottom: 8 }}>
+                        <span style={{ fontSize: '0.72rem', fontFamily: 'monospace', fontWeight: 700, color: '#2563EB', background: '#DBEAFE', border: '1px solid #BFDBFE', padding: '2px 8px', borderRadius: 4 }}>
+                          STAGE {s.step} // {s.codeTag}
+                        </span>
+                      </div>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 700, margin: '8px 0', color: '#0F172A' }}>{s.title}</h3>
+                      <p style={{ color: '#334155', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>{s.desc}</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'center', order: 2 }}>
+                    <div style={{ width: 44, height: 44, borderRadius: '50%', background: '#FFFFFF', border: '2px solid #2563EB', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 16px rgba(37,99,235,0.2)', color: '#2563EB' }}>
+                      <LucideIcon name={s.icon} size={18} />
+                    </div>
+                  </div>
+                  <div style={{ order: idx % 2 === 0 ? 3 : 1 }} />
+                </motion.div>
               ))}
             </div>
           </div>
         </div>
-      </motion.section>
-
-      {/* ── How it Works ── */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={viewportOptions}
-        transition={{ duration: 0.5 }}
-        style={{ padding: '80px 24px', position: 'relative', zIndex: 5, background: 'var(--bg-secondary)' }}
-      >
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <h2 style={{ color: 'var(--text-primary)', fontSize: '2rem', fontWeight: 700, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
-              From Idea to Live Website — 3 Simple Steps
-            </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>No technical skills. No designer needed. Just results.</p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32 }}>
-            {STEPS.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={viewportOptions}
-                transition={{ delay: i * 0.1 }}
-                style={{ position: 'relative', padding: '36px 28px', borderRadius: 20, border: '1px solid var(--border-subtle)', background: 'var(--bg-primary)', backdropFilter: 'blur(12px)' }}
-              >
-                <div style={{ position: 'absolute', top: 20, right: 24, fontSize: '3rem', fontWeight: 900, color: 'var(--brand-primary)', opacity: 0.1 }}>{s.step}</div>
-                <div style={{ width: 56, height: 56, borderRadius: 14, background: 'var(--brand-hover)', border: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-                  <LucideIcon name={s.icon} size={26} color="var(--brand-primary)" />
-                </div>
-                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.15rem', fontWeight: 700, margin: '0 0 10px' }}>{s.title}</h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ── Sectors ── */}
-      <section style={{ padding: '100px 24px', position: 'relative', zIndex: 5, background: 'var(--bg-primary)' }}>
-        {/* Decorative background */}
-        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%)', width: 800, height: 400, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(13,148,136,0.06) 0%, transparent 70%)', filter: 'blur(60px)' }} />
-        </div>
-        <div style={{ maxWidth: 1180, margin: '0 auto', position: 'relative' }}>
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={viewportOptions}
-            style={{ textAlign: 'center', marginBottom: 64 }}
-          >
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--brand-hover)', border: '1px solid var(--brand-primary)', borderRadius: 99, padding: '6px 18px', marginBottom: 20, color: 'var(--brand-primary)', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-              <LucideIcon name="Layers" size={13} color="var(--brand-primary)" />
-              13 Industries · 78 Unique Designs
-            </div>
-            <h2 style={{ color: 'var(--text-primary)', fontSize: '2.6rem', fontWeight: 800, margin: '0 0 16px', letterSpacing: '-0.03em', lineHeight: 1.2 }}>
-              Templates for <span style={{ background: 'linear-gradient(135deg, var(--brand-primary), #38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Every Industry</span>
-            </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', maxWidth: 520, margin: '0 auto' }}>
-              Real content, real layouts — built specifically for your type of business. Pick yours and go live today.
-            </p>
-          </motion.div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 18 }}>
-            {SECTORS.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={viewportOptions}
-                transition={{ delay: i * 0.045, type: 'spring', stiffness: 200, damping: 20 }}
-                whileHover={{ y: -8, scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                onClick={() => navigate('/builder/login')}
-                style={{
-                  position: 'relative',
-                  background: s.grad,
-                  border: `1px solid ${s.color}33`,
-                  borderRadius: 20,
-                  padding: '28px 20px 24px',
-                  textAlign: 'center',
-                  cursor: 'pointer',
-                  overflow: 'hidden',
-                  transition: 'box-shadow .25s, border-color .25s',
-                  boxShadow: `0 2px 16px ${s.color}18`,
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.boxShadow = `0 16px 48px ${s.color}44`;
-                  e.currentTarget.style.borderColor = `${s.color}88`;
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.boxShadow = `0 2px 16px ${s.color}18`;
-                  e.currentTarget.style.borderColor = `${s.color}33`;
-                }}
-              >
-                {/* Decorative glow dot */}
-                <div style={{ position: 'absolute', top: -20, right: -20, width: 80, height: 80, borderRadius: '50%', background: `${s.color}22`, filter: 'blur(20px)', pointerEvents: 'none' }} />
-                {/* Number badge */}
-                <div style={{ position: 'absolute', top: 12, right: 14, background: `${s.color}22`, border: `1px solid ${s.color}44`, borderRadius: 99, padding: '2px 8px', fontSize: '0.62rem', fontWeight: 700, color: s.light, letterSpacing: '0.04em' }}>
-                  {s.count} templates
-                </div>
-                {/* Icon */}
-                <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 60, height: 60, borderRadius: 18, background: `${s.color}33`, border: `1.5px solid ${s.color}55`, marginBottom: 16, backdropFilter: 'blur(4px)' }}>
-                  <LucideIcon name={s.icon} size={26} color={s.light} />
-                </div>
-                <div style={{ color: '#fff', fontWeight: 700, fontSize: '0.95rem', marginBottom: 5, letterSpacing: '-0.01em' }}>{s.label}</div>
-                <div style={{ color: s.light, fontSize: '0.72rem', opacity: 0.7, lineHeight: 1.4 }}>{s.desc}</div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Bottom CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={viewportOptions}
-            style={{ textAlign: 'center', marginTop: 56 }}
-          >
-            <motion.button
-              onClick={() => navigate('/builder/login')}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              style={{ background: 'linear-gradient(135deg, var(--brand-primary), var(--brand-active))', border: 'none', borderRadius: 99, color: '#fff', padding: '14px 40px', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', fontFamily: 'inherit', boxShadow: '0 8px 24px var(--brand-hover)', display: 'inline-flex', alignItems: 'center', gap: 10 }}
-            >
-              <LucideIcon name="Wand2" size={18} color="#fff" />
-              Browse All Templates
-            </motion.button>
-          </motion.div>
-        </div>
       </section>
 
-      {/* ── Features ── */}
-      <section style={{ padding: '80px 24px', position: 'relative', zIndex: 5, background: 'var(--bg-secondary)' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={viewportOptions}
-            style={{ color: 'var(--text-primary)', textAlign: 'center', fontSize: '2rem', fontWeight: 700, margin: '0 0 48px', letterSpacing: '-0.02em' }}
-          >
-            Everything You Need
-          </motion.h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
-            {FEATURES.map(([icon, title, desc], i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={viewportOptions}
-                transition={{ delay: i * 0.07 }}
-                style={{
-                  background: 'var(--bg-primary)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 20, padding: '32px 28px',
-                  backdropFilter: 'blur(12px)',
-                }}
-              >
-                <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-hover)', border: '1px solid var(--border-subtle)', marginBottom: 20 }}>
-                  <LucideIcon name={icon} size={22} color="var(--brand-primary)" />
-                </div>
-                <h3 style={{ color: 'var(--text-primary)', fontWeight: 600, margin: '0 0 10px', fontSize: '1.1rem' }}>{title}</h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>{desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 5. PRICING SECTION */}
+      <PricingSection onSelectPlan={(planId) => navigate(`/builder/login?plan=${planId}`)} />
 
-      {/* ── Testimonials ── */}
-      <section style={{ padding: '80px 24px', position: 'relative', zIndex: 5 }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={viewportOptions}
-            style={{ textAlign: 'center', marginBottom: 48 }}
-          >
-            <h2 style={{ color: 'var(--text-primary)', fontSize: '2rem', fontWeight: 700, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
-              Loved by Business Owners
-            </h2>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginBottom: 8 }}>
-              {[1,2,3,4,5].map(s => <span key={s} style={{ color: '#f59e0b', fontSize: '1.2rem' }}>★</span>)}
-            </div>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>4.9/5 average from 2,400+ businesses</p>
-          </motion.div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
-            {TESTIMONIALS.map((t, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={viewportOptions}
-                transition={{ delay: i * 0.1 }}
-                style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-subtle)', borderRadius: 20, padding: '28px', backdropFilter: 'blur(12px)' }}
-              >
-                <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
-                  {[1,2,3,4,5].map(s => <span key={s} style={{ color: '#f59e0b', fontSize: '0.9rem' }}>★</span>)}
-                </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.7, margin: '0 0 24px', fontStyle: 'italic' }}>"{t.text}"</p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'linear-gradient(135deg, var(--brand-primary), var(--brand-active))', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>
-                    {t.avatar}
-                  </div>
-                  <div>
-                    <div style={{ color: 'var(--text-primary)', fontWeight: 600, fontSize: '0.9rem' }}>{t.name}</div>
-                    <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{t.role}</div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={viewportOptions}
-        transition={{ duration: 0.6 }}
-        style={{ padding: '80px 24px', textAlign: 'center', position: 'relative', zIndex: 5, background: 'var(--bg-secondary)' }}
-      >
-        <div style={{
-          background: 'linear-gradient(135deg, var(--brand-hover) 0%, var(--bg-primary) 100%)',
-          border: '1px solid var(--brand-primary)',
-          borderRadius: 28, padding: '72px 48px', maxWidth: 640, margin: '0 auto',
-          backdropFilter: 'blur(16px)',
-          position: 'relative',
-          overflow: 'hidden',
-        }}>
-          <div style={{ position: 'absolute', top: -60, right: -60, width: 200, height: 200, borderRadius: '50%', background: 'radial-gradient(circle, var(--brand-primary) 0%, transparent 70%)', opacity: 0.08 }} />
-          <div style={{ position: 'absolute', bottom: -40, left: -40, width: 160, height: 160, borderRadius: '50%', background: 'radial-gradient(circle, var(--brand-active) 0%, transparent 70%)', opacity: 0.06 }} />
-          <LucideIcon name="Rocket" size={40} color="var(--brand-primary)" style={{ marginBottom: 20 }} />
-          <h2 style={{ color: 'var(--text-primary)', fontSize: '2.2rem', fontWeight: 800, margin: '16px 0 12px', letterSpacing: '-0.03em' }}>
-            Ready to Build?
+      {/* 6. TESTIMONIALS MARQUEE */}
+      <section style={{ padding: '80px 0', position: 'relative', zIndex: 5, overflow: 'hidden', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto 40px', padding: '0 24px', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, margin: '0 0 10px', color: '#0F172A' }}>
+            Trusted by Commercial Businesses Nationwide
           </h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: 36, fontSize: '1.05rem', lineHeight: 1.6 }}>
-            Join thousands of businesses who launched their online presence with SiteCraft. It's free to start.
-          </p>
-          <motion.button
-            onClick={() => navigate('/builder/login')}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-            style={{ background: 'linear-gradient(135deg, var(--brand-primary), var(--brand-active))', border: 'none', borderRadius: 14, color: '#fff', padding: '16px 44px', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', fontFamily: 'inherit', boxShadow: '0 8px 32px var(--brand-hover)' }}
-          >
-            Get Started — It's Free →
-          </motion.button>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: 16 }}>No credit card required · Live in minutes</p>
+          <div style={{ color: '#F59E0B', fontSize: '1.2rem', marginBottom: 4 }}>★★★★★</div>
+          <p style={{ color: '#334155', fontSize: '0.9rem' }}>4.9/5 verified rating from active site owners</p>
         </div>
-      </motion.section>
 
-      {/* Footer */}
-      <footer style={{ padding: '32px 24px', borderTop: '1px solid var(--border-subtle)', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.85rem', position: 'relative', zIndex: 5 }}>
-        © {new Date().getFullYear()} SiteCraft · Powered by <span style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>MSR Tech Hub</span>
+        <div style={{ display: 'flex', width: '200%', overflow: 'hidden' }} className="marquee-container">
+          <motion.div animate={{ x: ['0%', '-50%'] }} transition={{ duration: 34, ease: 'linear', repeat: Infinity }} style={{ display: 'flex', gap: 20, paddingRight: 20 }} className="marquee-track">
+            {[...TESTIMONIALS, ...TESTIMONIALS].map((t, idx) => (
+              <div key={idx} style={{ width: 320, background: '#F8FAFC', border: '1px solid #E2E8F0', borderRadius: 14, padding: 22, flexShrink: 0 }}>
+                <div style={{ color: '#F59E0B', marginBottom: 8, fontSize: '0.9rem' }}>★★★★★</div>
+                <p style={{ color: '#334155', fontSize: '0.86rem', lineHeight: 1.6, fontStyle: 'italic', marginBottom: 16 }}>"{t.text}"</p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div style={{ width: 34, height: 34, borderRadius: '50%', background: '#2563EB', color: '#FFFFFF', fontWeight: 700, fontSize: '0.78rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{t.avatar}</div>
+                  <div>
+                    <div style={{ color: '#0F172A', fontWeight: 600, fontSize: '0.84rem' }}>{t.name}</div>
+                    <div style={{ color: '#334155', fontSize: '0.74rem' }}>{t.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+        <style>{`.marquee-container:hover .marquee-track { animation-play-state: paused !important; }`}</style>
+      </section>
+
+      {/* FOOTER CTA */}
+      <section style={{ padding: '80px 24px', textAlign: 'center', position: 'relative', zIndex: 5, background: '#F8FAFC' }}>
+        <div style={{ maxWidth: 680, margin: '0 auto', background: 'linear-gradient(135deg, #DBEAFE 0%, #EFF6FF 100%)', border: '1px solid #BFDBFE', borderRadius: 20, padding: '50px 32px', boxShadow: '0 8px 30px rgba(37,99,235,0.08)' }}>
+          <LucideIcon name="Rocket" size={34} color="#2563EB" style={{ marginBottom: 14 }} />
+          <h2 style={{ fontSize: '2.1rem', fontWeight: 800, margin: '0 0 12px', color: '#0F172A' }}>Ready to Launch Your Site Today?</h2>
+          <p style={{ color: '#334155', fontSize: '0.98rem', marginBottom: 30, lineHeight: 1.6 }}>Join thousands of business owners and teams. Build free with instant live visual previews.</p>
+          <MagneticButton onClick={() => navigate('/builder/login')} style={{ background: '#2563EB', color: '#FFFFFF', padding: '14px 38px', borderRadius: 8, fontWeight: 700, fontSize: '0.95rem', boxShadow: '0 8px 24px rgba(37,99,235,0.25)' }}>
+            Launch Studio Free →
+          </MagneticButton>
+        </div>
+      </section>
+      <footer style={{ padding: '28px 24px', borderTop: '1px solid #E2E8F0', textAlign: 'center', color: '#334155', fontSize: '0.82rem', background: '#F8FAFC' }}>
+        © {new Date().getFullYear()} MSR Tech Hub Website Builder · Engineered by <span style={{ color: '#0F172A', fontWeight: 700 }}>MSR Tech Hub</span>
       </footer>
+
     </div>
   );
 }
+
+
+

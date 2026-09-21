@@ -13,6 +13,7 @@ const Header = ({ theme, setTheme }) => {
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Why Us', href: '#why-us' },
+    { name: 'Pricing', href: '#pricing' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' }
   ];
@@ -32,7 +33,7 @@ const Header = ({ theme, setTheme }) => {
         initial={{ y: -100, x: "-50%" }}
         animate={{ y: 0, x: "-50%" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-6 left-1/2 z-50 w-[95%] max-w-5xl"
+        className="fixed top-3 sm:top-6 left-1/2 z-50 w-[92%] sm:w-[95%] max-w-5xl"
       >
         <GlassSurface
           borderRadius={40}
@@ -49,16 +50,16 @@ const Header = ({ theme, setTheme }) => {
             `
           }}
         >
-          <div className="flex items-center justify-between w-full px-6 py-3">
+          <div className="flex items-center justify-between w-full px-4 sm:px-6 py-2 sm:py-3">
             {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="cursor-pointer relative z-10 flex items-center gap-3"
+              className="cursor-pointer relative z-10 flex items-center gap-2.5"
               onClick={(e) => scrollToSection(e, '#home')}
             >
-              <img src="/logo.png" alt="MSR TECH HUB Logo" className="h-10 w-auto object-contain drop-shadow-sm" />
-              <h1 className="text-xl font-bold tracking-tight bg-gradient-to-r from-[var(--text-primary)] via-[var(--text-primary)]/80 to-[var(--text-primary)]/60 bg-clip-text text-transparent hidden sm:block">
+              <img src="/logo.png" alt="MSR TECH HUB Logo" className="h-8 sm:h-10 w-auto object-contain drop-shadow-sm" />
+              <h1 className="text-base sm:text-xl font-bold tracking-tight bg-gradient-to-r from-[var(--text-primary)] via-[var(--text-primary)]/80 to-[var(--text-primary)]/60 bg-clip-text text-transparent hidden sm:block">
                 MSR TECH HUB
                 <span className="text-[var(--brand-primary)] ml-1">•</span>
               </h1>

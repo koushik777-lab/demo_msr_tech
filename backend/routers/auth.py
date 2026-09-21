@@ -193,16 +193,16 @@ async def demo_login(request: Request):
         expires_at=expires_at,
     )
     user_doc = user.model_dump()
-    user_doc["created_at"] = user_doc["created_at"].isoformat()
-    user_doc["updated_at"] = user_doc["updated_at"].isoformat()
-    user_doc["expires_at"] = user_doc["expires_at"].isoformat()
+    user_doc["created_at"] = user_doc["created_at"].isoformat() if hasattr(user_doc["created_at"], "isoformat") else user_doc["created_at"]
+    user_doc["updated_at"] = user_doc["updated_at"].isoformat() if hasattr(user_doc["updated_at"], "isoformat") else user_doc["updated_at"]
+    user_doc["expires_at"] = user_doc["expires_at"].isoformat() if user_doc.get("expires_at") and hasattr(user_doc["expires_at"], "isoformat") else expires_at.isoformat()
     await db.demo_users.insert_one(user_doc)
 
     sub = SubscriptionInDB(user_id=demo_id, plan="pro", status="active", expires_at=expires_at)
     sub_doc = sub.model_dump()
-    sub_doc["created_at"] = sub_doc["created_at"].isoformat()
-    sub_doc["updated_at"] = sub_doc["updated_at"].isoformat()
-    sub_doc["expires_at"] = sub_doc["expires_at"].isoformat()
+    sub_doc["created_at"] = sub_doc["created_at"].isoformat() if hasattr(sub_doc["created_at"], "isoformat") else sub_doc["created_at"]
+    sub_doc["updated_at"] = sub_doc["updated_at"].isoformat() if hasattr(sub_doc["updated_at"], "isoformat") else sub_doc["updated_at"]
+    sub_doc["expires_at"] = sub_doc["expires_at"].isoformat() if sub_doc.get("expires_at") and hasattr(sub_doc["expires_at"], "isoformat") else expires_at.isoformat()
     await db.subscriptions.insert_one(sub_doc)
     await db.demo_users.update_one({"id": demo_id}, {"$set": {"subscription_id": sub.id}})
 
