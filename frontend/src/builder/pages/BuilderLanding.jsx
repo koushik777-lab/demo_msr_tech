@@ -7,6 +7,8 @@ import TiltCard from '../components/landing/TiltCard';
 import CountUpStat from '../components/landing/CountUpStat';
 import PricingSection from '../components/landing/PricingSection';
 
+const EASE_CURVE = [0.16, 1, 0.3, 1]; // Premium cubic-bezier easing
+
 const SECTORS = [
   { id: 'all', label: 'All Sectors' },
   { id: 'construction', icon: 'HardHat', label: 'Construction', desc: 'Commercial builders, contractors & heavy infrastructure', color: '#2563EB', count: 6 },
@@ -136,7 +138,7 @@ export default function BuilderLanding() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActivePreviewIndex((prev) => (prev + 1) % TEMPLATE_PREVIEWS.length);
-    }, 4500);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
@@ -157,10 +159,23 @@ export default function BuilderLanding() {
       color: '#0F172A',
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
       overflowX: 'hidden',
-      backgroundImage: 'radial-gradient(#E2E8F0 1.2px, transparent 1.2px)',
-      backgroundSize: '24px 24px'
+      position: 'relative'
     }}>
       
+      {/* Dynamic Animated Dot Grid Background with Radial Fade */}
+      <div 
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'radial-gradient(#CBD5E1 1.2px, transparent 1.2px)',
+          backgroundSize: '24px 24px',
+          maskImage: 'radial-gradient(ellipse at 50% 20%, black 50%, transparent 90%)',
+          WebkitMaskImage: 'radial-gradient(ellipse at 50% 20%, black 50%, transparent 90%)',
+          pointerEvents: 'none',
+          zIndex: 0
+        }} 
+      />
+
       {/* Top Reading Progress Bar */}
       <motion.div
         style={{
@@ -171,7 +186,7 @@ export default function BuilderLanding() {
           left: 0,
           right: 0,
           height: 3,
-          background: '#2563EB',
+          background: 'linear-gradient(90deg, #2563EB 0%, #3B82F6 100%)',
           zIndex: 1000
         }}
       />
@@ -182,15 +197,21 @@ export default function BuilderLanding() {
         top: 0,
         zIndex: 100,
         padding: isScrolled ? '12px 28px' : '18px 28px',
-        background: isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(248, 250, 252, 0.85)',
+        background: isScrolled ? 'rgba(255, 255, 255, 0.92)' : 'rgba(248, 250, 252, 0.82)',
         backdropFilter: 'blur(16px)',
+        WebkitBackdropFilter: 'blur(16px)',
         borderBottom: isScrolled ? '1px solid #E2E8F0' : '1px solid transparent',
         boxShadow: isScrolled ? '0 4px 20px rgba(15,23,42,0.04)' : 'none',
-        transition: 'all 0.3s ease'
+        transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
       }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           
-          <div onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+          <motion.div 
+            onClick={() => navigate('/')} 
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}
+          >
             <img 
               src="/logo.png" 
               alt="MSR Tech Hub Logo" 
@@ -204,28 +225,41 @@ export default function BuilderLanding() {
                 STUDIO v2.4
               </span>
             </div>
-          </div>
+          </motion.div>
 
           <div style={{ display: 'flex', gap: 32, alignItems: 'center' }} className="hidden md:flex">
-            <a href="#templates" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
-              Sector Presets
-            </a>
-            <a href="#how-it-works" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
-              Workflow
-            </a>
-            <a href="#pricing" style={{ color: '#334155', textDecoration: 'none', fontWeight: 600, fontSize: '0.88rem', transition: 'color 0.2s' }}>
-              Pricing
-            </a>
+            {[
+              { label: 'Sector Presets', href: '#templates' },
+              { label: 'Workflow', href: '#how-it-works' },
+              { label: 'Pricing', href: '#pricing' }
+            ].map(link => (
+              <a 
+                key={link.label}
+                href={link.href} 
+                style={{ 
+                  color: '#334155', 
+                  textDecoration: 'none', 
+                  fontWeight: 600, 
+                  fontSize: '0.88rem', 
+                  transition: 'color 0.2s',
+                  position: 'relative'
+                }}
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
 
           <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-            <button
+            <motion.button
               onClick={() => navigate('/builder/login')}
+              whileHover={{ scale: 1.03, y: -1 }}
+              whileTap={{ scale: 0.97 }}
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E2E8F0',
                 color: '#0F172A',
-                padding: '8px 18px',
+                padding: '9px 18px',
                 borderRadius: 8,
                 cursor: 'pointer',
                 fontWeight: 600,
@@ -235,14 +269,14 @@ export default function BuilderLanding() {
               }}
             >
               Sign In
-            </button>
+            </motion.button>
 
             <MagneticButton
               onClick={() => navigate('/builder/login')}
               style={{
                 background: '#2563EB',
                 color: '#FFFFFF',
-                padding: '8px 20px',
+                padding: '9px 20px',
                 borderRadius: 8,
                 fontWeight: 700,
                 fontSize: '0.86rem',
@@ -258,27 +292,36 @@ export default function BuilderLanding() {
         </div>
       </nav>
 
-      {/* 1. BESPOKE HUMAN LIGHT HERO SECTION (NO AI DARK WIREFRAME) */}
-      <section style={{ textAlign: 'center', padding: '80px 24px 70px', position: 'relative', zIndex: 5 }}>
+      {/* 1. STAGGERED ENTRANCE CASCAding HERO SECTION */}
+      <section style={{ textAlign: 'center', padding: '90px 24px 70px', position: 'relative', zIndex: 5 }}>
         
-        {/* Soft Ambient Radial Light Glow */}
-        <div style={{
-          position: 'absolute',
-          top: -60,
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: 800,
-          height: 450,
-          background: 'radial-gradient(circle, #DBEAFE 0%, rgba(219, 234, 254, 0.3) 45%, transparent 70%)',
-          pointerEvents: 'none',
-          zIndex: -1
-        }} />
+        {/* Soft Ambient Floating Glow Blob 1 */}
+        <motion.div 
+          animate={{ 
+            scale: [1, 1.12, 1], 
+            opacity: [0.3, 0.45, 0.3],
+            y: [0, -15, 0]
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+          style={{
+            position: 'absolute',
+            top: -40,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: 850,
+            height: 480,
+            background: 'radial-gradient(circle, rgba(37,99,235,0.14) 0%, rgba(219,234,254,0.35) 45%, transparent 70%)',
+            pointerEvents: 'none',
+            zIndex: -1,
+            filter: 'blur(30px)'
+          }} 
+        />
 
-        {/* Product Status Pill */}
+        {/* 1. Product Status Badge (Stagger 1) */}
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.05, ease: EASE_CURVE }}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -301,43 +344,48 @@ export default function BuilderLanding() {
           <LucideIcon name="ChevronRight" size={14} color="#334155" />
         </motion.div>
 
-        {/* Main Headline */}
+        {/* 2. Main Headline (Stagger 2) */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          style={{ maxWidth: 940, margin: '0 auto 24px' }}
+          transition={{ duration: 0.7, delay: 0.15, ease: EASE_CURVE }}
+          style={{ maxWidth: 960, margin: '0 auto 24px' }}
         >
           <h1 style={{
-            fontSize: 'clamp(2.6rem, 5.8vw, 4.8rem)',
+            fontSize: 'clamp(2.8rem, 6vw, 5rem)',
             fontWeight: 800,
-            lineHeight: 1.08,
+            lineHeight: 1.06,
             letterSpacing: '-0.04em',
             margin: 0,
             color: '#0F172A'
           }}>
             Design & Launch Commercial Websites.<br />
-            <span style={{ color: '#2563EB' }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              display: 'inline-block'
+            }}>
               Visual precision. Zero code complexity.
             </span>
           </h1>
         </motion.div>
 
-        {/* Subtitle */}
+        {/* 3. Subtitle (Stagger 3) */}
         <motion.p
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          style={{ color: '#334155', fontSize: '1.12rem', maxWidth: 660, margin: '0 auto 40px', lineHeight: 1.6, fontWeight: 500 }}
+          transition={{ duration: 0.6, delay: 0.25, ease: EASE_CURVE }}
+          style={{ color: '#334155', fontSize: '1.14rem', maxWidth: 680, margin: '0 auto 40px', lineHeight: 1.6, fontWeight: 500 }}
         >
           Pick a handcrafted sector preset, edit typography, layouts, and lead funnels visually in real time, and publish directly to your domain or export clean static HTML.
         </motion.p>
 
-        {/* CTAs */}
+        {/* 4. CTAs (Stagger 4) */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.35, ease: EASE_CURVE }}
           style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 60 }}
         >
           <MagneticButton
@@ -345,11 +393,11 @@ export default function BuilderLanding() {
             style={{
               background: '#2563EB',
               color: '#FFFFFF',
-              padding: '14px 34px',
+              padding: '14px 36px',
               borderRadius: 10,
               fontWeight: 700,
               fontSize: '0.98rem',
-              boxShadow: '0 6px 20px rgba(37,99,235,0.25)',
+              boxShadow: '0 8px 24px rgba(37,99,235,0.25)',
               display: 'flex',
               alignItems: 'center',
               gap: 10
@@ -361,8 +409,10 @@ export default function BuilderLanding() {
             </span>
           </MagneticButton>
 
-          <button
+          <motion.button
             onClick={() => document.getElementById('templates')?.scrollIntoView({ behavior: 'smooth' })}
+            whileHover={{ scale: 1.03, y: -2 }}
+            whileTap={{ scale: 0.97 }}
             style={{
               background: '#FFFFFF',
               border: '1px solid #E2E8F0',
@@ -376,29 +426,36 @@ export default function BuilderLanding() {
               alignItems: 'center',
               gap: 8,
               boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
-              transition: 'all 0.2s'
+              transition: 'all 0.2s ease'
             }}
           >
             <LucideIcon name="Eye" size={16} color="#334155" /> Explore Presets
-          </button>
+          </motion.button>
         </motion.div>
 
-        {/* Bento Technical Metrics Cards */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))',
-          gap: 14,
-          maxWidth: 920,
-          margin: '0 auto'
-        }}>
+        {/* 5. Bento Technical Metrics Cards (Stagger 5) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.45, ease: EASE_CURVE }}
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))',
+            gap: 14,
+            maxWidth: 920,
+            margin: '0 auto'
+          }}
+        >
           {[
             { end: 10000, suffix: '+', label: 'Sites Published Globally' },
             { end: 13, suffix: ' Sectors', label: 'Handcrafted Preset Kits' },
             { end: 99.9, suffix: '%', label: 'Uptime SLA' },
             { end: 4.9, prefix: '★ ', suffix: '/5', label: 'Verified Client Rating' }
           ].map((st, i) => (
-            <div
+            <motion.div
               key={i}
+              whileHover={{ y: -4, scale: 1.02, boxShadow: '0 8px 24px rgba(15,23,42,0.06)' }}
+              transition={{ duration: 0.2 }}
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #E2E8F0',
@@ -409,16 +466,21 @@ export default function BuilderLanding() {
               }}
             >
               <CountUpStat end={st.end} prefix={st.prefix} suffix={st.suffix} label={st.label} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
-      {/* 2. MAC STUDIO INTERACTIVE WORKSPACE CANVAS (LIGHT MODE STUDIO) */}
+      {/* 2. MAC STUDIO INTERACTIVE WORKSPACE CANVAS (Scroll Scale-In Entrance) */}
       <section style={{ padding: '0 24px 90px', position: 'relative', zIndex: 5 }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          
-          <TiltCard maxTilt={4} style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid #E2E8F0', boxShadow: '0 20px 60px rgba(15,23,42,0.08)', background: '#FFFFFF' }}>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.96, y: 30 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.8, ease: EASE_CURVE }}
+          style={{ maxWidth: 1100, margin: '0 auto' }}
+        >
+          <TiltCard maxTilt={3} style={{ borderRadius: 18, overflow: 'hidden', border: '1px solid #E2E8F0', boxShadow: '0 25px 60px -10px rgba(15,23,42,0.1)', background: '#FFFFFF' }}>
             
             {/* Window Top Title Bar */}
             <div style={{ background: '#F1F5F9', borderBottom: '1px solid #E2E8F0', padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -510,7 +572,8 @@ export default function BuilderLanding() {
                         fontWeight: activeLayer === layer.id ? 700 : 500,
                         display: 'flex',
                         alignItems: 'center',
-                        gap: 8
+                        gap: 8,
+                        transition: 'all 0.2s ease'
                       }}
                     >
                       <LucideIcon name={layer.icon} size={14} />
@@ -534,7 +597,7 @@ export default function BuilderLanding() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -12 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.3, ease: EASE_CURVE }}
                   >
                     <span style={{
                       background: '#DBEAFE',
@@ -558,20 +621,24 @@ export default function BuilderLanding() {
                       {TEMPLATE_PREVIEWS[activePreviewIndex].subtitle}
                     </p>
 
-                    <button style={{
-                      background: TEMPLATE_PREVIEWS[activePreviewIndex].accent || '#2563EB',
-                      color: '#FFFFFF',
-                      border: 'none',
-                      padding: '10px 22px',
-                      borderRadius: 8,
-                      fontWeight: 700,
-                      fontSize: '0.86rem',
-                      cursor: 'pointer',
-                      marginBottom: 28,
-                      boxShadow: '0 4px 12px rgba(37,99,235,0.2)'
-                    }}>
+                    <motion.button 
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 0.96 }}
+                      style={{
+                        background: TEMPLATE_PREVIEWS[activePreviewIndex].accent || '#2563EB',
+                        color: '#FFFFFF',
+                        border: 'none',
+                        padding: '10px 22px',
+                        borderRadius: 8,
+                        fontWeight: 700,
+                        fontSize: '0.86rem',
+                        cursor: 'pointer',
+                        marginBottom: 28,
+                        boxShadow: '0 4px 12px rgba(37,99,235,0.2)'
+                      }}
+                    >
                       {TEMPLATE_PREVIEWS[activePreviewIndex].heroBtn} →
-                    </button>
+                    </motion.button>
 
                     <div style={{ display: 'grid', gridTemplateColumns: previewMode === 'mobile' ? '1fr' : 'repeat(3, 1fr)', gap: 12 }}>
                       {TEMPLATE_PREVIEWS[activePreviewIndex].services.map((serv, sIdx) => (
@@ -632,19 +699,25 @@ export default function BuilderLanding() {
 
             </div>
           </TiltCard>
-
-        </div>
+        </motion.div>
       </section>
 
-      {/* 3. BENTO SHOWCASE: SECTOR PRESETS */}
-      <section id="templates" style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#FFFFFF', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}>
+      {/* 3. BENTO SHOWCASE: SECTOR PRESETS (Scroll Fade-In) */}
+      <motion.section 
+        id="templates" 
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.7, ease: EASE_CURVE }}
+        style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#FFFFFF', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}
+      >
         <div style={{ maxWidth: 1240, margin: '0 auto' }}>
           
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3.2rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
               Handcrafted <span style={{ color: '#2563EB' }}>Sector Kits</span>
             </h2>
-            <p style={{ color: '#334155', fontSize: '1rem', maxWidth: 520, margin: '0 auto' }}>
+            <p style={{ color: '#334155', fontSize: '1.02rem', maxWidth: 540, margin: '0 auto' }}>
               Pre-populated commercial layout suites engineered with industry-specific copy, forms, and hero blocks.
             </p>
           </div>
@@ -654,9 +727,11 @@ export default function BuilderLanding() {
             {SECTORS.map((sec) => {
               const isSelected = selectedSector === sec.id;
               return (
-                <button
+                <motion.button
                   key={sec.id}
                   onClick={() => setSelectedSector(sec.id)}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.96 }}
                   style={{
                     position: 'relative',
                     padding: '8px 18px',
@@ -667,11 +742,11 @@ export default function BuilderLanding() {
                     fontWeight: 600,
                     fontSize: '0.84rem',
                     cursor: 'pointer',
-                    transition: 'all 0.2s'
+                    transition: 'all 0.2s ease'
                   }}
                 >
                   {sec.label}
-                </button>
+                </motion.button>
               );
             })}
           </div>
@@ -686,14 +761,14 @@ export default function BuilderLanding() {
                 <motion.div
                   layout
                   key={s.id}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, scale: 0.95, y: 15 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.3, delay: idx * 0.04 }}
+                  transition={{ duration: 0.35, delay: idx * 0.03, ease: EASE_CURVE }}
                   onMouseEnter={() => setPreviewHovered(s.id)}
                   onMouseLeave={() => setPreviewHovered(null)}
                 >
-                  <TiltCard maxTilt={6} style={{ borderRadius: 14, height: '100%' }}>
+                  <TiltCard maxTilt={5} style={{ borderRadius: 14, height: '100%' }}>
                     <div style={{
                       background: '#FFFFFF',
                       border: '1px solid #E2E8F0',
@@ -731,7 +806,12 @@ export default function BuilderLanding() {
                       </div>
 
                       {previewHovered === s.id && (
-                        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={{ position: 'absolute', inset: 0, background: 'rgba(255, 255, 255, 0.96)', backdropFilter: 'blur(10px)', padding: 22, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 20 }}>
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }} 
+                          animate={{ opacity: 1, y: 0 }} 
+                          transition={{ duration: 0.2 }}
+                          style={{ position: 'absolute', inset: 0, background: 'rgba(255, 255, 255, 0.96)', backdropFilter: 'blur(10px)', padding: 22, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 20 }}
+                        >
                           <LucideIcon name="Sparkles" size={26} color="#2563EB" style={{ marginBottom: 10 }} />
                           <h4 style={{ color: '#0F172A', fontSize: '1.05rem', fontWeight: 700, margin: '0 0 4px' }}>{s.label} Suite</h4>
                           <p style={{ color: '#334155', fontSize: '0.78rem', marginBottom: 16 }}>Pre-populated with real copy, lead capture form & high-converting layout.</p>
@@ -751,16 +831,23 @@ export default function BuilderLanding() {
             </AnimatePresence>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* 4. TECHNICAL WORKFLOW ARCHITECTURE */}
-      <section id="how-it-works" style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#F8FAFC' }}>
+      {/* 4. TECHNICAL WORKFLOW ARCHITECTURE (Scroll-Triggered Beam Line) */}
+      <motion.section 
+        id="how-it-works" 
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.7, ease: EASE_CURVE }}
+        style={{ padding: '90px 24px', position: 'relative', zIndex: 5, background: '#F8FAFC' }}
+      >
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3.2rem)', fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.03em', color: '#0F172A' }}>
               Engine <span style={{ color: '#2563EB' }}>Workflow</span>
             </h2>
-            <p style={{ color: '#334155', fontSize: '1rem' }}>Three simple technical stages from zero to live production deployment.</p>
+            <p style={{ color: '#334155', fontSize: '1.02rem' }}>Three simple technical stages from zero to live production deployment.</p>
           </div>
 
           <div ref={stepsContainerRef} style={{ position: 'relative' }}>
@@ -770,9 +857,19 @@ export default function BuilderLanding() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 48, position: 'relative', zIndex: 2 }}>
               {STEPS.map((s, idx) => (
-                <motion.div key={idx} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.45, delay: idx * 0.1 }} style={{ display: 'grid', gridTemplateColumns: '1fr 80px 1fr', alignItems: 'center' }}>
+                <motion.div 
+                  key={idx} 
+                  initial={{ opacity: 0, y: 30 }} 
+                  whileInView={{ opacity: 1, y: 0 }} 
+                  viewport={{ once: true, margin: '-50px' }} 
+                  transition={{ duration: 0.5, delay: idx * 0.12, ease: EASE_CURVE }} 
+                  style={{ display: 'grid', gridTemplateColumns: '1fr 80px 1fr', alignItems: 'center' }}
+                >
                   <div style={{ textAlign: idx % 2 === 0 ? 'right' : 'left', order: idx % 2 === 0 ? 1 : 3 }}>
-                    <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: 14, padding: 26, boxShadow: '0 4px 16px rgba(15,23,42,0.04)' }}>
+                    <motion.div 
+                      whileHover={{ y: -3, boxShadow: '0 8px 24px rgba(15,23,42,0.06)' }}
+                      style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: 14, padding: 26, boxShadow: '0 4px 16px rgba(15,23,42,0.04)' }}
+                    >
                       <div style={{ display: 'flex', gap: 8, justifyContent: idx % 2 === 0 ? 'flex-end' : 'flex-start', marginBottom: 8 }}>
                         <span style={{ fontSize: '0.72rem', fontFamily: 'monospace', fontWeight: 700, color: '#2563EB', background: '#DBEAFE', border: '1px solid #BFDBFE', padding: '2px 8px', borderRadius: 4 }}>
                           STAGE {s.step} // {s.codeTag}
@@ -780,7 +877,7 @@ export default function BuilderLanding() {
                       </div>
                       <h3 style={{ fontSize: '1.2rem', fontWeight: 700, margin: '8px 0', color: '#0F172A' }}>{s.title}</h3>
                       <p style={{ color: '#334155', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>{s.desc}</p>
-                    </div>
+                    </motion.div>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'center', order: 2 }}>
                     <div style={{ width: 44, height: 44, borderRadius: '50%', background: '#FFFFFF', border: '2px solid #2563EB', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 16px rgba(37,99,235,0.2)', color: '#2563EB' }}>
@@ -793,19 +890,32 @@ export default function BuilderLanding() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* 5. PRICING SECTION */}
-      <PricingSection onSelectPlan={(planId) => navigate(`/builder/login?plan=${planId}`)} />
+      {/* 5. PRICING SECTION (Scroll-Triggered) */}
+      <motion.div
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.7, ease: EASE_CURVE }}
+      >
+        <PricingSection onSelectPlan={(planId) => navigate(`/builder/login?plan=${planId}`)} />
+      </motion.div>
 
       {/* 6. TESTIMONIALS MARQUEE */}
-      <section style={{ padding: '80px 0', position: 'relative', zIndex: 5, overflow: 'hidden', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+      <motion.section 
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.7, ease: EASE_CURVE }}
+        style={{ padding: '80px 0', position: 'relative', zIndex: 5, overflow: 'hidden', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}
+      >
         <div style={{ maxWidth: 1200, margin: '0 auto 40px', padding: '0 24px', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, margin: '0 0 10px', color: '#0F172A' }}>
+          <h2 style={{ fontSize: 'clamp(1.9rem, 3.2vw, 2.7rem)', fontWeight: 800, margin: '0 0 10px', color: '#0F172A' }}>
             Trusted by Commercial Businesses Nationwide
           </h2>
           <div style={{ color: '#F59E0B', fontSize: '1.2rem', marginBottom: 4 }}>★★★★★</div>
-          <p style={{ color: '#334155', fontSize: '0.9rem' }}>4.9/5 verified rating from active site owners</p>
+          <p style={{ color: '#334155', fontSize: '0.92rem' }}>4.9/5 verified rating from active site owners</p>
         </div>
 
         <div style={{ display: 'flex', width: '200%', overflow: 'hidden' }} className="marquee-container">
@@ -826,19 +936,26 @@ export default function BuilderLanding() {
           </motion.div>
         </div>
         <style>{`.marquee-container:hover .marquee-track { animation-play-state: paused !important; }`}</style>
-      </section>
+      </motion.section>
 
       {/* FOOTER CTA */}
-      <section style={{ padding: '80px 24px', textAlign: 'center', position: 'relative', zIndex: 5, background: '#F8FAFC' }}>
-        <div style={{ maxWidth: 680, margin: '0 auto', background: 'linear-gradient(135deg, #DBEAFE 0%, #EFF6FF 100%)', border: '1px solid #BFDBFE', borderRadius: 20, padding: '50px 32px', boxShadow: '0 8px 30px rgba(37,99,235,0.08)' }}>
-          <LucideIcon name="Rocket" size={34} color="#2563EB" style={{ marginBottom: 14 }} />
+      <motion.section 
+        initial={{ opacity: 0, scale: 0.96 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.7, ease: EASE_CURVE }}
+        style={{ padding: '80px 24px', textAlign: 'center', position: 'relative', zIndex: 5, background: '#F8FAFC' }}
+      >
+        <div style={{ maxWidth: 680, margin: '0 auto', background: 'linear-gradient(135deg, #DBEAFE 0%, #EFF6FF 100%)', border: '1px solid #BFDBFE', borderRadius: 24, padding: '50px 32px', boxShadow: '0 12px 36px rgba(37,99,235,0.08)' }}>
+          <LucideIcon name="Rocket" size={36} color="#2563EB" style={{ marginBottom: 14 }} />
           <h2 style={{ fontSize: '2.1rem', fontWeight: 800, margin: '0 0 12px', color: '#0F172A' }}>Ready to Launch Your Site Today?</h2>
           <p style={{ color: '#334155', fontSize: '0.98rem', marginBottom: 30, lineHeight: 1.6 }}>Join thousands of business owners and teams. Build free with instant live visual previews.</p>
           <MagneticButton onClick={() => navigate('/builder/login')} style={{ background: '#2563EB', color: '#FFFFFF', padding: '14px 38px', borderRadius: 8, fontWeight: 700, fontSize: '0.95rem', boxShadow: '0 8px 24px rgba(37,99,235,0.25)' }}>
             Launch Studio Free →
           </MagneticButton>
         </div>
-      </section>
+      </motion.section>
+
       <footer style={{ padding: '28px 24px', borderTop: '1px solid #E2E8F0', textAlign: 'center', color: '#334155', fontSize: '0.82rem', background: '#F8FAFC' }}>
         © {new Date().getFullYear()} MSR Tech Hub Website Builder · Engineered by <span style={{ color: '#0F172A', fontWeight: 700 }}>MSR Tech Hub</span>
       </footer>
